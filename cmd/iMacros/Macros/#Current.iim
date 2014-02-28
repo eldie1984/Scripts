@@ -1,0 +1,13 @@
+﻿VERSION BUILD=8601111 RECORDER=FX
+TAB T=1
+CMDLINE !DATASOURCE consulta.csv
+'Number of columns in the CSV file. This must be accurate!
+SET !DATASOURCE_COLUMNS 1
+'Start at line 2 to skip the header in the file
+SET !LOOP 1
+'Increase the current position in the file with each loop 
+SET !DATASOURCE_LINE {{!LOOP}}
+URL GOTO=http://reportes.int.cmd.com.ar/reportDetail.action?reportId=725
+TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:reportDetail ATTR=NAME:clubcupon<SP>-<SP>lista<SP>mails CONTENT={{!COL1}}
+TAG POS=1 TYPE=SELECT FORM=NAME:reportDetail ATTR=NAME:CC_City_newsletter_all CONTENT=%0
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:reportDetail ATTR=NAME:submitType

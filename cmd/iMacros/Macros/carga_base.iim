@@ -1,0 +1,28 @@
+﻿VERSION BUILD=7210419 RECORDER=FX
+'Uses a Windows script to submit several datasets to a website, e. g. for filling an online database
+TAB T=1     
+' Specify input file (if !COL variables are used, IIM automatically assume a CSV format of the input file
+'CSV = Comma Separated Values in each line of the file
+CMDLINE !DATASOURCE datasource.csv
+'Number of columns in the CSV file. This must be accurate!
+SET !DATASOURCE_COLUMNS 9
+'Start at line 2 to skip the header in the file
+SET !LOOP 2
+'Increase the current position in the file with each loop 
+SET !DATASOURCE_LINE {{!LOOP}}
+URL GOTO=http://v281uprod.int.cmd.com.ar/reportesce/listDataSources.action
+TAG POS=1 TYPE=A ATTR=TXT:Add<SP>DataSource
+TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:dsForm ATTR=NAME:name CONTENT={{!COL1}}
+TAG POS=1 TYPE=TD ATTR=TXT:Name
+TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:dsForm ATTR=NAME:url CONTENT={{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:dsForm ATTR=ID:testD CONTENT={{!COL2}}
+TAG POS=1 TYPE=TD ATTR=TXT:User<SP>Name
+TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:dsForm ATTR=NAME:userName CONTENT={{!COL4}}
+TAG POS=1 TYPE=TD ATTR=TXT:User<SP>Name
+SET !ENCRYPTION NO
+TAG POS=1 TYPE=INPUT:PASSWORD FORM=NAME:dsForm ATTR=NAME:password CONTENT={{!COL5}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:dsForm ATTR=NAME:maxIdle CONTENT={{!COL6}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:dsForm ATTR=NAME:maxActive CONTENT={{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:dsForm ATTR=NAME:maxWait CONTENT={{!COL8}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:dsForm ATTR=NAME:validationQuery CONTENT={{!COL9}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:dsForm ATTR=NAME:submitOk&&VALUE:Save

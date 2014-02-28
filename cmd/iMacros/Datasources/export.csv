@@ -1,0 +1,194 @@
+MO - Detalle Avisos Activos,Detalle Avisos Activos
+MO - Limite de credito Usuarios No Suspendidos,Diario -Limite de credito Usuarios no suspendidos
+MO - Txs PS Mayores a 500 - 8AM,Diario - Txs PS Mayores a 500 - 8AM
+MO - Txs PS Mayores a 500 - 16PM,Diario - Txs PS Mayores a 500 - 16PM
+MO - Destaques contratados el dia anterior,Diario - Destaques contratados el dia anterior
+MO - Destaques del día anterior,Diario - Destaques del día anterior
+MO - Usuarios Registrados entre Fechas,Usuarios que se registraron en determinadas fechas
+MO - Consistencia - Lotes que van a generarse,Lotes que van a generarse
+MO - Consistencia - Cuentas de PS con saldo <> 0, con info de cargos confirmados y enlotados,Cuentas de PS con saldo <> 0, con info de cargos confirmados y enlotados
+MO - Monitoreo - Cantidad de usuarios que no validaron su registro ayer,Cantidad de usuarios que no validaron su registro ayer
+MO - Consistencia - Cuentas de PS con saldo <> 0,Cuentas de PS con saldo <> 0
+MO - DDestaques Dia Anterior,Diario - Destaques Dia Anterior
+MO - Pago Seguro - Mediaciones ,Mediaciones de PS
+MO - Usuarios Registrados Mery,Reporte Usuarios Registrados Newsletter Mery
+MO - Consistencia - Operaciones de PS PENDIENTES hace mas de 14 días,Operaciones de PS PENDIENTES hace mas de 14 días
+MO - Consistencia - Operaciones PS NUEVAs cuya calificacion ya fue definida,Operaciones PS NUEVAs cuya calificacion ya fue definida
+MO - Consistencia - Cargos de transacciones sin PS GENERADOs hace mas de 26 dias ,Cargos de transacciones sin PS GENERADOs hace mas de 26 dias 
+MO - Consistencia - Calificaciones PENDIENTEs sin PS hace mas de 26 días,Calificaciones PENDIENTEs sin PS hace mas de 26 días
+MO - Consistencia - Cargos GENERADOs hace mas de 26 dias con calificacion confirmada,Cargos GENERADOs hace mas de 26 dias con calificacion confirmada
+MO - Consistencia - Pagos de PS ENVIADOs que no figuran en ERP_MOVIMIENTO,Pagos de PS ENVIADOs que no figuran en ERP_MOVIMIENTO
+MO - Consistencia - Pagos de NPS ENVIADOs que no figuran en ERP_MOVIMIENTO,Pagos de NPS ENVIADOs que no figuran en ERP_MOVIMIENTO
+MO - Consistencia - Pagos de DM ENVIADOs que no figuran en ERP_MOVIMIENTO,Pagos de DM ENVIADOs que no figuran en ERP_MOVIMIENTO
+MO - Consistencia - Pagos de DM PENDIENTEs hace mas de 3 días,Pagos de DM PENDIENTEs hace mas de 3 días
+MO - Consistencia - Pagos de NPS PENDIENTEs hace mas de 3 días,Pagos de NPS PENDIENTEs hace mas de 3 días
+MO - Monitoreo - Registro de precio en pesos de las transacciones,Se está grabando el precio en pesos de las transacciones en todos los casos (operaciones de ayer)?
+MO - Monitoreo - Actividad del proceso de cierre de avisos,Actividad del proceso de cierre de avisos
+MO - Monitoreo - Consistencia de las fechas de las subastas,Consistencia de las fechas de las subastas
+MO - Monitoreo - Actividad del login,Actividad del login (ayer)
+MO - Monitoreo - Usuarios que se loguean multiples veces por día,Usuarios que se loguean multiples veces por día
+MO - Monitoreo - Registros del día de ayer,Registros del día de ayer
+MO - Consistencia - Pdfs sin movimientos asociados,Pdfs sin movimientos asociados
+MO - Consistencia - Movimientos sin PDFs,Movimientos sin PDFs
+MO - Consistencia - Brokers sin datos fidedignos,Brokers sin datos fidedignos
+MO - Consistencia - Usuarios suspendidos graves con publicaciones activas,Usuarios suspendidos graves con publicaciones activas
+MO - Consistencia - Usuarios con alto porcentaje de anulacion,Usuarios con alto porcentaje de anulacion (mas de 5 cargos y mas del 50% anulado)
+MO - Consistencia - Usuarios con mas de 1 suspension activa,Usuarios con mas de 1 suspension activa
+MO - Monitoreo - Avisos publicados ayer por canal y tipo,Avisos publicados ayer por canal y tipo
+MO - Monitoreo - Actividad de los avisos el día de ayer,Actividad de los avisos el día de ayer
+MO - Monitoreo - Cantidad de compras de ayer,Hubo compras ayer? Web y SMS? Compras inmediatas y subastas?
+MO - Monitoreo - Ofertas en subastas de ayer,Hubo ofertas en subastas el día de ayer?
+MO - Monitoreo - Pagos de NPS de ayer,Hubo pagos AUTORIZADOS? Hay pagos ANULADOS y ENVIADOS (eso es inconsistente) ?
+MO - Monitoreo - Pagos de NPS pendientes hace mas de 3 dias,Pagos de NPS pendientes hace mas de 3 dias
+MO - Monitoreo - Pagos de transferencias de dinero mail de ayer,Pagos de transferencias de dinero mail de ayer
+MO - Monitoreo - Calificaciones de ayer,Hubo calificaciones ayer? Por si y por no?
+MO - Monitoreo - Calificaciones vs cargos de ayer,Ayer hubo la misma cantidad de calificaciones que de cargos por comision?
+MO - Monitoreo - Motivo de no realizacion de las transacciones de ayer,Se esta grabando el motivo de no realizacion de las transacciones?
+MO - Monitoreo - Usuarios registrados ayer con nombre igual a su apellido,Usuarios registrados ayer con nombre igual a su apellido
+MO - Monitoreo - Errores de ayer y lo que va del día - GNR_LOG,Errores de ayer y lo que va del día
+MO - Monitoreo - Actividad del archivador el día de ayer,Actividad del archivador el día de ayer
+MO - Monitoreo - Busqueda -> Consistencia de BSQ_BUSQUEDA,Consistencia de BSQ_BUSQUEDA
+MO - Consistencia - Usuarios enviados a Presea que nunca volvieron con OK,Usuarios enviados a Presea que nunca volvieron con OK
+MO - Consistencia - Pagos que figuran como PS pero no lo son,Pagos que figuran como PS pero no lo son
+MO - Consistencia - Cargos sin respuesta de Presea,Cargos sin respuesta de Presea
+MO - Consistencia - Pagos sin respuesta de Presea,Pagos sin respuesta de Presea
+MO - Monitoreo - Direcciones de mail duplicadas,Direcciones de mail duplicadas (con ellas fallará la impersonificacion)
+MO - Monitoreo - Direcciones de mail de servicios anonimos,Direcciones de mail de servicios anonimos
+MO - Consistencia - Cargos con lote inconsistente ,Cargos con lote inconsistente (no figura el cargo en ERP_CARGO o el id de lote es nulo)
+MO-OperacionesPS500$(8am),Operaciones de PS > 500$ (entre las 16pm del dia anterior y las 8am de hoy)
+MO-OperacionesPS>500$(16pm),Operaciones de PS > 500$ (entre las 8am del dia de hoy y las 16pm)
+MO - Reporting - Usuarios sin compras,Usuarios sin compras registrados en un rango de fechas
+MO - Moderacion - Reporte de moderacion por usuario,Reporte de moderacion por usuario
+MO - Moderacion - Reporte de moderacion por aviso,Reporte de moderacion por aviso
+MO - MENSUAL GMS,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - Reporting - Movimientos en la cuenta de un usuario,Movimientos en la cuenta de un usuario (ERP_MOVIMIENTO)
+MO - Reporting - Saldos,Movimientos en la cuenta de un usuario (ERP_MOVIMIENTO)
+MO - Consistencia - Movimientos duplicados en cuenta,Movimientos duplicados en cuenta
+MO - Reporting - Pagos de NPS ,Pagos de NPS
+MO - Reporting - Pagos de DM,Pagos de DM
+MO - Reporting - Pagos de PS,Pagos de PS
+MO - Facturacion - Detalle,Detalle de Facturacion
+MO - Cargos - Detalle,Detalle de Cargos
+MO - Reporting - Movimientos de un aviso,Movimientos de un aviso
+DESA MO - Cargos - Resumen - BACK,Resumen de Cargos
+MO - Facturacion - Resumen,Resumen de Facturacion
+MO - Consistencia - Cargos de PS, con mediacion resuelta a favor del vendedor, sin pago creado,Cargos de PS, con mediacion resuelta a favor del vendedor, sin pago creado
+MO - Verificacion PDF con fecha proceso de hoy,verifica la tabla sacar.erp_pdf_seq
+MO-Ventas de Ayer x Tipo Usuario (Reporte Diario 2),Ventas de Ayer x Tipo Usuario (Reporte Diario 2)
+MO - DIARIO Verificacion proceso Estatificador,Informa la cantidad de avisos sin estatificar
+MO - Consistencia - Avisos en categoria no hoja,Avisos en categoria no hoja
+MO - Reporting - Mails enviados a un usuario ,Mails enviados a un usuario
+MO - Reporting - Reporte de cargos,Reportes de cargos (filtros de idusuario, apodo, fechas, tipo cargo, estado)
+MO - Facturacion - Control pre facturacion,Reporte de cargos enlotados
+MO - Facturacion - Cargos confirmados no enlotados de usuarios suspendidos ,Cargos confirmados no enlotados de usuarios suspendidos 
+MO - Pago Seguro - Cantidad de avisos activos con PS,Cantidad de avisos activos con Pago Seguro
+MO - Pago Seguro - Operaciones - Cantidad de operaciones en cada estado en un rango de fechas,Cantidad de operaciones de PS en cada estado en un rango de fechas
+MO - Pago Seguro - Operaciones - Detalle de operaciones de PS filtradas por estado y rango de fecha,Detalle de operaciones de PS filtradas por estado y rango de fecha
+MO - Pago Seguro - Mediacion - Cantidad de compradores que solicitaron mediacion y el vendedor no respondio,Cantidad de comrpadores que solicitaron mediacion y el vendedor no respondio
+MO - Pago Seguro - Mediacion - Detalle de operaciones de compradores que solicitaron mediacion y el vendedor no respondio,Detalle de operaciones de compradores que solicitaron mediacion y el vendedor no respondio
+MO - Pago Seguro - Solicitudes - Cantidad de pedidos pendientes de pago seguro,Cantidad de pedidos pendientes de pago seguro
+MO - Pago Seguro - Solicitudes - Detalle de pedidos pendientes de pago seguro,Detalle de pedidos pendientes de pago seguro
+MO - Pago Seguro - Solicitudes - Cantidad de pedidos aceptados de pago seguro,Cantidad de pedidos aceptados de pago seguro
+MO - Pago Seguro - Solicitudes - Detalle de pedidos aceptados de pago seguro,Detalle de pedidos aceptados de pago seguro
+MO - Reporting - Usuarios no validados,Usuarios no validados en un rango de fechas
+MO - Reporting - Mails enviados por fecha y hora,Mails enviados por fecha y hora
+MO - Reporting - Mails enviados por rango de fechas,Mails enviados por rango de fechas
+MO - MAILS - Mails erroneos,Cantidad de mails con estado erroneo
+MO - Mails Enviados - Resumen,reporte de mails enviados
+MO - Reporting - Movimientos de un aviso archivado,Movimientos de un aviso
+MO - Reporting - Reporte diario de cargos cerrado,Reportes de cargos generados ayer
+MO - Facturacion - Perfiles de usuarios y rubros,Perfiles de usuarios y rubros
+MO - Gestion - Usuarios en condiciones de ser inhabilitados,Usuarios en condiciones de ser inhabilitados
+MO - Gestion - Monto por el que sera inhabilitado un usuario,Monto por el que sera inhabilitado un usuario
+MO - Facturacion - Perfiles de usuarios y rubros detalle,Perfiles de usuarios y rubros detalle
+MO - Inhabilitaciones - Detalle,Detalle de Inhabilitaciones
+MO - Cargos - Resumen,Resumen de cargos
+MO - Reporting - Control de cargos generados,Control de cargos generados
+MO - Reporting - Clientes en limite de credito,Clientes en limite de credito
+MO - REPORTE DE CORRECCION DE CARGOS,Cargos corregidos por el proceso automático de corrección de cargos
+MO - Monitoreo - Passwords monitoreadas,Passwords monitoreadas
+MO - Monitoreo - Telefonos monitoreados,Telefonos monitoreados
+MO - Monitoreo - Usuarios con mas de 3 compras en el dia,Usuarios con mas de 3 compras en el día
+MO - Monitoreo - Apellidos monitoreados,Apellidos monitoreados
+MO - Monitoreo - IPs monitoreadas,IPs monitoreadas
+MO - Consistencia - Cargos ENVIADOs que no figuran en ERP_MOVIMIENTO,Cargos enviados (enlotados) que no figuran en ERP_MOVIMIENTO (filtrado por fecha de generacion del lote)
+MO - Monitoreo - Cantidad de mails pendientes de enviar,Cantidad de mails pendientes de enviar
+MO - Consistencia - Movimientos sin PDFs (exceptuando notas de crèdito),Movimientos sin PDFs (exceptuando notas de crèdito)
+MO - Reporting - Suspensiones de un usuario,Suspensiones de un usuario
+MO - Reporting - Apercibimientos,Apercibimientos
+MO - Administracion Datos Facturación,Adminstrar los DF
+MO - DIARIO Verificacion Envio Mails,Verificacion encolamiento de mails a traves de la tabla mail_registro
+MO - Verificacion de Mails Erroneos ,Verifica si quedaron mail con error en la tabla mail_registro
+MO - Verificacion Replicador HTML y Resize de Imagenes,te dice si existieron problemas con el Replicador de HTMLs y el Resize de Imágenes
+MO - Consistencia - Operaciones de PS PAGADAS hace mas de 14 días,Operaciones de PS PAGADAS hace mas de 14 días
+MO - Monitoreo - Operaciones de PS > 500$ (Sabados y Domingos 8am),Operaciones de PS > 500$ (entre las 16pm del dia anterior y las 8am de hoy)
+MO - Monitoreo - Operaciones de PS > 500$ (Sabados y Domingos 16pm),Operaciones de PS > 500$ (entre las 8am del dia de hoy y las 16pm)
+MO - Reporting - Cantidad de preguntas y respuestas moderadas,Cantidad de preguntas y respuestas moderadas
+MO - Reporting - Reporte de cobros por fecha,Reporte de cobros por fecha
+MO - DIARIO Verificacion del proceso Cierre de Avisos,Muestra la cantidad de avisos que faltan correr
+MO - Reporting - Movimientos en la cuenta de un usuario 2,Movimientos en la cuenta de un usuario (ERP_MOVIMIENTO) - montos agrupados por tipo de cargo
+MO - MENSUAL GV Reputacion, Avisos Activos y Cargos GV con Cargos,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - MENSUAL GV Reputacion, Avisos Activos y Cargos GV con Anulados,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - MENSUAL Recluting - Cuenta de Avisos Activos,Mensual
+MO - MENSUAL Recluting - Cuenta de Avisos Historicos,Exportar como CSV +200Mil registros - tarda mucho(pedir a soporte)
+MO - MENSUAL Recluting - QVentasyDestaques,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - MENSUAL General Q Avisos Activos-Tipo Aviso,Mensual Reporte General
+MO - MENSUAL General Q Ventas GMS,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - Inhabilitaciones - Detalle - Backup,Detalle de Inhabilitaciones
+MO - Inhabilitaciones - Resumen,Resumen de Inhabilitaciones
+MO - Mails Enviados - Detalle,Detalle por usuario de mails enviados
+MO - Reporting - Preguntas que faltan Moderar,Preguntas que faltan Moderar
+Promociones Comprador,resumen promociones comprador
+MO - Moderacion - Patrones que se buscan en preguntas,Moderacion - Patrones que se buscan en preguntas
+MO - MENSUAL GMV x Mes x Tipo Cliente - Bonificaciones,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - MENSUAL GMV x Mes x Categoria - Comisiones,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - MENSUAL GMV Listing total x Tipo Usuario,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - MENSUAL GMS x Categoria,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - MENSUAL UsuariosConPublicacionEnLosUltimos6meses,Exportar como CSV +200Mil registros - tarda mucho
+Fer - prueba de schedule,Fer - prueba de schedule
+MO - MENSUAL GrandesVendedoresReputacionVentasL1,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+Promociones Comprador Ventas,Ventas con promociones al comprador
+MO - MENSUAL General Saldo (Facturado - Cobrado),Ejecutar los dias 1. Parametro el 1 del mes anterior
+MO - Buscador - Mapeo término categoria,MO - Buscador - Mapeo término categoria
+MO - Buscador - Uso de los buscadores (ultimos 10 dias),MO - Buscador - Uso de los buscadores (ultimos 10 dias)
+MO - Buscador - Busquedas sin resultados (ultimos 10 dias),MO - Buscador - Busquedas sin resultados (ultimos 10 dias)
+MO - Buscador - 25 Palabras mas buscadas (ultimos 10 días),MO - Buscador - 25 Palabras mas buscadas (ultimos 10 días)
+MO - MENSUAL GMV Listing Live,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - Buscador - Busquedas con pocos resultados (ultimos 10 dias),MO - Buscador - Busquedas con pocos resultados (ultimos 10 dias)
+MO-RepublicacionAvisos,Muesta la republicacion de avisos del dia anterior
+MO - Categorias - Listado,Categorias - Listado
+MO-AvisosModeradosDiaAnterior,Avisos Moderados el dia anterior
+MO-Avisos que faltan Moderar,Avisos que faltan Moderar
+MO - Procesos de interfase con PRESEA corridos ayer,Se fija en la GNR_LOG el OBJETO_TIPO = 'INTERFAZ_PRESEA' para ayer
+MO - MENSUAL GMV x Mes x Tipo Cliente - Comisiones sobre Ventas,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - MENSUAL GMV x Mes x Tipo Producto,Ejecutar los dias 1. Parametros del 1 al 31 del mes anterior
+MO - Percepciones Recibidas,Percepciones Recibidas
+MO - Usuarios generados los ultimos 7 días con publicaciones,Usuarios generados los ultimos 7 días con publicaciones
+MO - Usuarios sin CUIT y su inversion en destaques,Usuarios sin CUIT y su inversion en destaques
+MO_ACEPTARON_CLUB_CUPON,Usuarios que aceptaron recibir mails de club cupon
+MO - Usuarios con una unica compra (solo ultimos 6 meses),Usuarios con una unica compra (solo ultimos 6 meses)
+MO - Usuarios con avisos que se inactivaron ayer,Usuarios con avisos que se inactivaron ayer
+LOTES_ENVIADOS_A_FACTURAR,Lotes de comision o destaque que se enviaron a presea en el periodo indicado
+MO - Listing de usuarios con avisos cargados por VendedorPro,Listing de usuarios con avisos cargados por VendedorPro
+MO - Usuarios con avisos que se inactivaron ayer (BETA),Usuarios con avisos que se inactivaron ayer
+FACTURACION_LOTES_EXCLUIDOS,lotes no enviados a presea
+MO - Log Publicación,Muestra el log de publicación de MO para los ultimos 7 días
+MO - Estadistica - Destaques por hora,Estadistica - Destaques por hora
+MO - Estadistica - Comisiones por hora,Estadistica - Comisiones por hora
+MO - Estadistica - Publicaciones por hora,Estadistica - Publicaciones por hora
+MO - Usuarios que nunca compraron (filtrados por fechas de registro),Usuarios que nunca compraron (filtrados por fechas de registro)
+ZZ_MO_Oper_PS500_16hs_reducido,Operaciones de PS > 500$ (entre las 8am del dia de hoy y las 16pm)
+MO - Log Publicacion - Resumen,Log Publicacion - resumen
+CARGOS_ENVIADOS_A_FACTURAR,los cargos que se enviaron a facturar
+MO - Estadistica - Registros por hora,Estadistica - Registros por hora
+MO - Usuarios que tuvieron listing activo en los ultimos 3 meses,Usuarios que tuvieron listing activo en los ultimos 3 meses
+MO - Controles - Avisos con muchas compras,Muestra los avisos que obtuvieron mas de 7 compras en los ultimos 5 dias
+MO - Carga de fotos - Detalle,Carga de fotos - Detalle
+MO_ARCIBA_MENSUAL,codigo norma arciba para percepciones
+MO - Controles - Compras con usuarios recientes,Compras de usuarios con menos de un mes en el sitio
+MO - Moderacion - Avisos con video de ayer,Muestra los avisos creados el dia de ayer con videos
+OR-Republicacion de Avisos del Dia Anterior - adaptado,OR-Republicacion de Avisos del Dia Anterior - adaptado
+MO - Facturacion_Tipo_Lote - Resumen,Resumen de Facturacion discriminado por tipo de lote y tipo de usuario
+MO - Log - Carga tarifario cliente,Log - Carga tarifario cliente
+MO - compradores por ciudad,MO - compradores por ciudad
+MO - vendedores por ciudad,MO - vendedores por ciudad

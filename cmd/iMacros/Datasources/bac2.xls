@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">name</Data></Cell>
+			<Cell><Data ss:Type="String">data</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_portal</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_portal, nombre  from bac_portal order by 1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">bac_portal_fac</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_portal, nombre  from bac_portal order by 1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">bac_medio_pago_todos</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_medio_pago, nombre  from bac_medio_pago  order by 1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CO_country</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_pais, nombre  from bac_pais ORDER BY 1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_portal</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_portal, nombre  from bac_portal bp  where bp.notifica_facturador = &#39;Y&#39;  order by 1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">bac_portal_fac</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_portal, nombre  from bac_portal bp  where bp.notifica_facturador = &#39;Y&#39;  order by 1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_cce_tipo_cliente</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_tipo_USUARIO, nombre  from cce_tipo_usuario  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_provincia</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_provincia, nombre  from bac_provincia order by 1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_estado_cuenta</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;TODOS&#39;  from dual  union  select estado  from cce_cliente  group by estado  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_estado_cuenta</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;TODOS&#39;  from dual  union  select estado  from cce_cliente  group by estado  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_retailer</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  union  select id_USUARIO, login  from cce_usuario  where id_tipo_USUARIO = 2 order by 1  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_sdp_paquete_estado</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_paquete_estado, nombre   from sdp_paquete_estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">cce_tipo_producto</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;Todos&#39; from dual  UNION  select id_producto, concat(portal.nombre,&#39; - &#39;,prod.nombre)  from bac_producto prod, bac_portal portal  where prod.id_portal = portal.id_portal</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_gnr_log_proceso</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;TODOS&#39; from dual  UNION  select PROCESO  from bac_gnr_log  group by PROCESO</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_gnr_log_nivel</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;TODOS&#39; from dual  UNION  select NIVEL  from bac_gnr_log   group by NIVEL  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_gnr_log_objeto_tipo</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;TODOS&#39; from dual  UNION  select OBJETO_TIPO  from bac_gnr_log  group by OBJETO_TIPO</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_producto</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;Todos&#39; from dual  UNION  select id_producto, concat(portal.nombre,&#39; - &#39;,prod.nombre)  from bac_producto prod, bac_portal portal  where prod.id_portal = portal.id_portal  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_producto_dependiente_portal</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;Todos&#39; from dual  UNION  select id_producto, concat(portal.nombre,&#39; - &#39;,prod.nombre)  from bac_producto prod, bac_portal portal  where prod.id_portal = portal.id_portal  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_cce_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">( select &#39;TODOS&#39; from dual )  UNION  ( select estado from cce_cargo group by estado )</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_promo_comprador_filter_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">( select &#39;TODOS&#39; from dual )  UNION  ( select estado from cce_cargo group by estado )</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">( select &#39;TODOS&#39; from dual )  UNION  ( select estado from cce_cargo group by estado )</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_estado_cargo_combo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">( select &#39;TODOS&#39; from dual )  UNION  ( select estado from cce_cargo group by estado )</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_cce_estado_pago</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from cce_pago group by 1  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">bac_tipo_fecha</Data></Cell>
+			<Cell><Data ss:Type="String">select 1, &#39;Fecha Conciliacion&#39;   UNION  select 2, &#39;Fecha Generacion&#39;   UNION  select 3, &#39;Fecha Actualizacion&#39;</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_gateway</Data></Cell>
+			<Cell><Data ss:Type="String">select id_gateway, descripcion  from bac_gateway</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">bac_gateway_todos</Data></Cell>
+			<Cell><Data ss:Type="String">select id_gateway, descripcion  from bac_gateway</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_gateway</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_gateway, descripcion  from bac_gateway  order by 1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">bac_gateway_todos</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;TODOS&#39; from dual  UNION  select id_gateway, descripcion  from bac_gateway  order by 1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_año</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT &#39;0&#39;, &#39;Indistinto&#39;  FROM dual  UNION  SELECT DISTINCT(CONVERT(devengamiento_anio,CHAR)), CONVERT(devengamiento_anio,CHAR)  FROM cce_devengamiento</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_mes2</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT &#39;0&#39;, &#39;Indistinto&#39;  FROM dual  UNION  SELECT DISTINCT(CONVERT(devengamiento_mes,CHAR)), CONVERT(devengamiento_mes,CHAR)  FROM cce_devengamiento</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_producto</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;Todos&#39; from dual  UNION  select id_producto, concat(portal.nombre,&#39; - &#39;,prod.nombre)  from bac_producto prod, bac_portal portal  where prod.id_portal = portal.id_portal  and (portal.id_portal = $P{Copy_bac_portal} or $P{Copy_bac_portal} = 0 )  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_producto_dependiente_portal</Data></Cell>
+			<Cell><Data ss:Type="String">select 0, &#39;Todos&#39; from dual  UNION  select id_producto, concat(portal.nombre,&#39; - &#39;,prod.nombre)  from bac_producto prod, bac_portal portal  where prod.id_portal = portal.id_portal  and (portal.id_portal = $P{Copy_bac_portal} or $P{Copy_bac_portal} = 0 )  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">bac_descripcion</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_tipo_usu</Data></Cell>
+			<Cell><Data ss:Type="String">Indistinto|Web|Broker</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_suspendido_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;Indistinto&#39; as a1,  &#39;Indistinto&#39; as a2   from dual  union  select &#39;S&#39; as a1,  &#39;Si&#39; as a2   from dual  union  select &#39;N&#39; as a1,  &#39;No&#39; as a2   from dual </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_usuario</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_mail_template_id_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select distinct(significado)   from cta_dominio  where nombre like &#39;CCE_MAIL_GESTION_COBRANZA_MAIL_TEMPLATE_ID&#39;  order by significado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_estado_cargo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from cce_cargo  group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_tipo_cargo_value_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select -1 as id, &#39;Indistinto&#39; as descr from dual  union  select id, deuda_motivo from cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_tipo_cargo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select -1 as id, &#39;Indistinto&#39; as descr from dual  union  select id, deuda_motivo from cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_apodo</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">filtro_clave_propiedad</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">filtro_fecha</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_fecha_DATE</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">filtro_tipo_usuario</Data></Cell>
+			<Cell><Data ss:Type="String">select *  from sacar.sac_tipo_usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_suspendido_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">S|N</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">filtro_apodo</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_origen_values_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">Indistinto|WEB|INTRANET|SMS</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_cce_tipo_cliente</Data></Cell>
+			<Cell><Data ss:Type="String">FIDEDIGNO|CERTIFICADO|BROKER|PARTICULAR</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">DF_filtro_estado</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT &#39;Todos los Ultimos&#39; AS DESCRIPCION    FROM DUAL  UNION  SELECT DESCRIPCION      FROM SACAR.CCE_ESTADO_DATOS_FACTURACION</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_apodo</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CO_country</Data></Cell>
+			<Cell><Data ss:Type="String">select id, name  from country  order by name;</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_iva</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;Seleccione Condicion IVA&#39;, &#39;Seleccione Condicion IVA&#39; from dual  union  select id, condicion  from sacar.CCE_CONDICION_IVA </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_tipo_usu</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;Seleccione Tipo Usuario&#39; from dual  union  select codigo  from sacar.CCE_LIMITE_CUENTA</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_alicIIBB</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_cce_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from sacar.cce_cargo group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_promo_comprador_filter_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from sacar.cce_cargo group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from sacar.cce_cargo group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_estado_cargo_combo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from sacar.cce_cargo group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">jaco - prueba</Data></Cell>
+			<Cell><Data ss:Type="String">select codigo  from sacar.cce_limite_cuenta</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_cce_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from sacar.cce_cargo  group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_promo_comprador_filter_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from sacar.cce_cargo  group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from sacar.cce_cargo  group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_estado_cargo_combo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from sacar.cce_cargo  group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_cce_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT   estado      FROM sacar.cce_cargo  GROUP BY estado  UNION  SELECT &#39;TODOS&#39; AS estado    FROM DUAL</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_promo_comprador_filter_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT   estado      FROM sacar.cce_cargo  GROUP BY estado  UNION  SELECT &#39;TODOS&#39; AS estado    FROM DUAL</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT   estado      FROM sacar.cce_cargo  GROUP BY estado  UNION  SELECT &#39;TODOS&#39; AS estado    FROM DUAL</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_estado_cargo_combo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT   estado      FROM sacar.cce_cargo  GROUP BY estado  UNION  SELECT &#39;TODOS&#39; AS estado    FROM DUAL</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_tipo_cargo_value_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;Indistinto&#39; as descr from dual  union  select deuda_motivo from sacar.cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_tipo_cargo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;Indistinto&#39; as descr from dual  union  select deuda_motivo from sacar.cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_origen_values_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT &#39;Indistinto&#39; as name from dual  union  SELECT &#39;WEB&#39; as name from dual  union  SELECT &#39;INTRANET&#39; as name from dual  UNION  SELECT &#39;SMS&#39; as name from dual</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_usuario</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_apodo</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_promo_comprador_filter_estado_promo</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;N&#39; from dual  union  select &#39;Y&#39; from dual  union  select &#39;TODAS&#39; from dual    </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">filtro_fecha</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_fecha_DATE</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_cce_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT   estado      FROM cce_cargo  GROUP BY estado  UNION  SELECT &#39;TODOS&#39; AS estado    FROM DUAL</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_promo_comprador_filter_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT   estado      FROM cce_cargo  GROUP BY estado  UNION  SELECT &#39;TODOS&#39; AS estado    FROM DUAL</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_estado_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT   estado      FROM cce_cargo  GROUP BY estado  UNION  SELECT &#39;TODOS&#39; AS estado    FROM DUAL</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_estado_cargo_combo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT   estado      FROM cce_cargo  GROUP BY estado  UNION  SELECT &#39;TODOS&#39; AS estado    FROM DUAL</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CO_biz_country</Data></Cell>
+			<Cell><Data ss:Type="String">select id, name  from biz  where country = $P{CO_country}  order by name;</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CO_categoria</Data></Cell>
+			<Cell><Data ss:Type="String">select id, name from category</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_fecha</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_promo_comprador_filter_tipo_promo</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;P&#39; from dual  union  select &#39;C&#39; from dual</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_apodo</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_estado_cargo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from cce_cargo  group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_usuario</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_mail_template_id_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select distinct(significado)   from cta_dominio  where nombre like &#39;CCE_MAIL_GESTION_COBRANZA_MAIL_TEMPLATE_ID&#39;  order by significado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_origen_values_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">Indistinto|WEB|INTRANET|SMS</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_suspendido_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;Indistinto&#39; as a1,  &#39;Indistinto&#39; as a2   from dual  union  select &#39;S&#39; as a1,  &#39;Si&#39; as a2   from dual  union  select &#39;N&#39; as a1,  &#39;No&#39; as a2   from dual </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_tipo_cargo_value_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select -1 as id, &#39;Indistinto&#39; as descr from dual  union  select id, deuda_motivo from cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_tipo_cargo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select -1 as id, &#39;Indistinto&#39; as descr from dual  union  select id, deuda_motivo from cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_tipo_usu</Data></Cell>
+			<Cell><Data ss:Type="String">Indistinto|Web|Broker</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_estado_operacion_ps</Data></Cell>
+			<Cell><Data ss:Type="String">select minimo  from sacar.cta_dominio  where nombre = &#39;PGS_OPERACION.ESTADO&#39;  group by minimo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">filtro_apodo</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_tipo_cargo</Data></Cell>
+			<Cell><Data ss:Type="String">select -1 as id, &#39;Indistinto&#39; as descr from dual  union  select id, deuda_motivo from sacar.cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_apodo</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_estado_cargo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select estado from SACAR.cce_cargo  group by estado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_usuario</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_mail_template_id_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select distinct(significado)   from SACAR.cta_dominio  where nombre like &#39;CCE_MAIL_GESTION_COBRANZA_MAIL_TEMPLATE_ID&#39;  order by significado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_origen_values_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">Indistinto|WEB|INTRANET|SMS</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_suspendido_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;Indistinto&#39; as a1,  &#39;Indistinto&#39; as a2   from dual  union  select &#39;S&#39; as a1,  &#39;Si&#39; as a2   from dual  union  select &#39;N&#39; as a1,  &#39;No&#39; as a2   from dual </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_tipo_cargo_value_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select -1 as id, &#39;Indistinto&#39; as descr from dual  union  select id, deuda_motivo from SACAR.cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_tipo_cargo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select -1 as id, &#39;Indistinto&#39; as descr from dual  union  select id, deuda_motivo from SACAR.cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">percep_filtro_tipo_usu</Data></Cell>
+			<Cell><Data ss:Type="String">Indistinto|Web|Broker</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_bac_estado_cuenta</Data></Cell>
+			<Cell><Data ss:Type="String">select minimo  from sacar.cta_dominio  where nombre = &#39;CCE_CUENTA.ESTADO&#39;</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_estado_cuenta</Data></Cell>
+			<Cell><Data ss:Type="String">select minimo  from sacar.cta_dominio  where nombre = &#39;CCE_CUENTA.ESTADO&#39;</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_tipo_cargo_value_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;Indistinto&#39; as descr from dual  union  select deuda_motivo from cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_tipo_cargo_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">select &#39;Indistinto&#39; as descr from dual  union  select deuda_motivo from cce_tipo_cargo</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">GC_filtro_origen_values_PROD</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT &#39;Indistinto&#39; as name from dual  union  SELECT &#39;WEB&#39; as name from dual  union  SELECT &#39;INTRANET&#39; as name from dual  UNION  SELECT &#39;SMS&#39; as name from dual</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_rubro_cliente</Data></Cell>
+			<Cell><Data ss:Type="String">Indistinto|BROKER|PARTICULAR|CERTIFICADO|FIDEDIGNO  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CC_questions</Data></Cell>
+			<Cell><Data ss:Type="String">select id, name  from questions</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">VXV-usuarios-micrositios</Data></Cell>
+			<Cell><Data ss:Type="String">select id_user, nickname   from users  where (microsite_status = 1 OR nickname=&#39;vxvnews&#39;)  order by nickname</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CC_City</Data></Cell>
+			<Cell><Data ss:Type="String">select id, name  from cities  where is_approved = 1  union  select &#39;-1&#39;, &#39;Todas las ciudades&#39;  union  select &#39;-2&#39;, &#39;Más de 1 ciudad&#39;  ;  </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CC_company</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CO_precio</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CC_Deal_Pending</Data></Cell>
+			<Cell><Data ss:Type="String">select d.id, substr(cast(concat(date_format(d.start_date, &#39;%Y/%m/%d&#39;),                            &#39; - &#39;,                            c.name,                            &#39; - &#39;,                            d.name) AS char),                1,                60) company  from deals d, companies c  where d.company_id = c.id  and exists (    select 1    from deal_externals de    where d.id = de.deal_id    and de.external_status in (&#39;W&#39;,&#39;P&#39;)  )  order by d.start_date</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CC_turismo</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CC_Deal</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT d.id,         substr(cast(concat(date_format(d.start_date, &#39;%Y/%m/%d&#39;),                            &#39; - &#39;,                            c.name,                            &#39; - &#39;,                            d.name) AS char),                1,                60)    FROM deals d, companies c   WHERE d.company_id = c.id  ORDER BY start_date DESC;</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Copy_cce_estado_pago</Data></Cell>
+			<Cell><Data ss:Type="String">Todos|  Acreditado|  Cancelado|  Pendiente</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CC_deal_status</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT 0, &#39;Todos&#39;  UNION  SELECT id, name  FROM deal_statuses d    </Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">filtro_fecha</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MO_reporting_filtro_fecha_DATE</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CC_buy_ip</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CC_transaction_type</Data></Cell>
+			<Cell><Data ss:Type="String">select -1, &#39;TODAS&#39;  union  select id, name  from transaction_types  where id in (1,2,3,6,11)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">CC_company</Data></Cell>
+			<Cell><Data ss:Type="String">SELECT c.id,         substr(cast(c.name AS char), 1, 60)    FROM companies c  ORDER BY c.name ASC;</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

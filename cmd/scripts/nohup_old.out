@@ -1,0 +1,43 @@
+./enviarMails.sh[4]: /export/home/mo/moar/scripts/set_parametros_comunes.sh:  not found
+./enviarMails.sh[4]: /export/home/mo/moar/scripts/set_parametros_comunes.sh:  not found
+./cierreDeAvisos.sh: line 10: 14427 Killed                  $JAVA_HOME/java -Xms12M -Xmx24M -classpath $CLASSPATH -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 14429 Killed
+./enviarMails.sh[10]: 21372 Killed
+./enviarMails.sh[10]: 15940 Killed
+./enviarMails.sh[10]: 2196 Killed
+./enviarMails.sh[10]: 21700 Killed
+./enviarMails.sh[10]: 20425 Killed
+./cierreDeAvisos.sh: line 10: 23508 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 6129 Killed
+./enviarMails.sh[10]: 12164 Killed
+./cierreDeAvisos.sh: line 10:  5236 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 29155 Killed
+./cierreDeAvisos.sh: line 10:   692 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 27534 Killed
+./cierreDeAvisos.sh: line 10: 29851 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 29223 Killed
+./cierreDeAvisos.sh: line 10:  2067 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 13395 Killed
+./cierreDeAvisos.sh: line 10: 13892 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./cierreDeAvisos.sh: line 10:  9549 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 24653 Killed
+./enviarMails.sh[10]: 9991 Killed
+./cierreDeAvisos.sh: line 10:  9989 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 10669 Killed
+./cierreDeAvisos.sh: line 10: 10663 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./cierreDeAvisos.sh: line 10: 17558 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./cierreDeAvisos.sh: line 10: 17661 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 17920 Killed
+./cierreDeAvisos.sh: line 10: 21562 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 22179 Killed
+./cierreDeAvisos.sh: line 10: 22015 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 22712 Killed
+./cierreDeAvisos.sh: line 10: 22709 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 27449 Killed
+./cierreDeAvisos.sh: line 10: 27466 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 18896 Killed
+./cierreDeAvisos.sh: line 10: 14066 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./cierreDeAvisos.sh: line 10:  8779 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 15365 Killed
+./cierreDeAvisos.sh: line 10: 15363 Killed                  $JAVA_HOME/java -Xms120M -Xmx120M -classpath $CLASSPATH -Duser.timezone=$TZ -Dlog4j.configuration=log4j-cierreDeAvisos.xml clarin.procesos.avisos.CierreDeAvisos >>$LOG 2>&1
+./enviarMails.sh[10]: 17908 Killed

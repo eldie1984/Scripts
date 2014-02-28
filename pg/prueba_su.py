@@ -3,10 +3,10 @@ ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(
     paramiko.AutoAddPolicy())
 
-ssh.connect('yvasa850', username='e449806', 
-    password='Ema84nue')
+ssh.connect('xxxxxx', username='xxxxxxxx', 
+    password='xxxxxx')
 #stdin, stdout, stderr = ssh.exec_command(
-#    "su - mwpsyz01")
+#    "su - xxxxxx")
 print "Sam0la\'P\n"
 #stdin.write('Sam0la\'P\n')
 #stdin.flush()

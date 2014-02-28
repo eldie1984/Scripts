@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>ECOTree Simple Tree 3</title>
+		<script type="text/javascript" src={{ static_url('scripts/ECOTree.js') }}></script>
+		<link type="text/css" rel="stylesheet" href={{ static_url('scripts/ECOTree.css') }}/>
+		<xml:namespace ns="urn:schemas-microsoft-com:vml" prefix="v"/>
+		<style>v\:*{ behavior:url(#default#VML);}</style> 
+		<style>
+			.copy {
+				font-family : "Verdana";				
+				font-size : 10px;
+				color : #CCCCCC;
+			}	
+		</style>
+			
+		<script>
+			var myTree = null;
+			
+			function CreateTree() {
+				myTree = new ECOTree('myTree','myTreeContainer');	
+				myTree.config.colorStyle = ECOTree.CS_NODE;
+				myTree.config.nodeFill = ECOTree.NF_FLAT;
+				myTree.config.useTarget = false;
+				myTree.config.selectMode = ECOTree.SL_NONE;
+				myTree.config.defaultNodeWidth = 65;
+				myTree.config.defaultNodeHeight = 20;
+				myTree.config.iSubtreeSeparation = 20;
+				myTree.config.iSiblingSeparation = 15;
+				myTree.config.iLevelSeparation = 30;
+				{% for dato in datos %}
+				myTree.add({{ dato[0] }}, {{ dato[1] }} ,'{{ dato[2] }}',null,null,"{{ dato[3] }} ")
+				{% end %}
+				myTree.UpdateTree();
+			}			
+		</script>			
+	</head>
+	<body onload="CreateTree();">
+		<div id="myTreeContainer">
+		</div>
+	</body>
+</html>

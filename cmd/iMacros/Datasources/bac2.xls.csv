@@ -1,0 +1,450 @@
+name,data
+Copy_bac_portal,"select 0, 'TODOS' from dual
+UNION
+select id_portal, nombre
+from bac_portal order by 1"
+bac_portal_fac,"select 0, 'TODOS' from dual
+UNION
+select id_portal, nombre
+from bac_portal order by 1"
+bac_medio_pago_todos,"select 0, 'TODOS' from dual
+UNION
+select id_medio_pago, nombre
+from bac_medio_pago
+order by 1"
+CO_country,"select 0, 'TODOS' from dual
+UNION
+select id_pais, nombre
+from bac_pais ORDER BY 1"
+Copy_bac_portal,"select 0, 'TODOS' from dual
+UNION
+select id_portal, nombre
+from bac_portal bp  where bp.notifica_facturador = 'Y'
+order by 1"
+bac_portal_fac,"select 0, 'TODOS' from dual
+UNION
+select id_portal, nombre
+from bac_portal bp  where bp.notifica_facturador = 'Y'
+order by 1"
+Copy_cce_tipo_cliente,"select 0, 'TODOS' from dual
+UNION
+select id_tipo_USUARIO, nombre
+from cce_tipo_usuario
+"
+Copy_bac_provincia,"select 0, 'TODOS' from dual
+UNION
+select id_provincia, nombre
+from bac_provincia order by 1"
+Copy_bac_estado_cuenta,"select 'TODOS'
+from dual
+union
+select estado
+from cce_cliente
+group by estado
+"
+MO_reporting_filtro_estado_cuenta,"select 'TODOS'
+from dual
+union
+select estado
+from cce_cliente
+group by estado
+"
+Copy_bac_retailer,"select 0, 'TODOS' from dual
+union
+select id_USUARIO, login
+from cce_usuario
+where id_tipo_USUARIO = 2 order by 1
+"
+Copy_sdp_paquete_estado,"select 0, 'TODOS' from dual
+UNION
+select id_paquete_estado, nombre 
+from sdp_paquete_estado"
+cce_tipo_producto,"select 0, 'Todos' from dual
+UNION
+select id_producto, concat(portal.nombre,' - ',prod.nombre)
+from bac_producto prod, bac_portal portal
+where prod.id_portal = portal.id_portal"
+Copy_bac_gnr_log_proceso,"select 'TODOS' from dual
+UNION
+select PROCESO
+from bac_gnr_log
+group by PROCESO"
+Copy_bac_gnr_log_nivel,"select 'TODOS' from dual
+UNION
+select NIVEL
+from bac_gnr_log 
+group by NIVEL
+"
+Copy_bac_gnr_log_objeto_tipo,"select 'TODOS' from dual
+UNION
+select OBJETO_TIPO
+from bac_gnr_log
+group by OBJETO_TIPO"
+Copy_bac_producto,"select 0, 'Todos' from dual
+UNION
+select id_producto, concat(portal.nombre,' - ',prod.nombre)
+from bac_producto prod, bac_portal portal
+where prod.id_portal = portal.id_portal
+"
+Copy_bac_producto_dependiente_portal,"select 0, 'Todos' from dual
+UNION
+select id_producto, concat(portal.nombre,' - ',prod.nombre)
+from bac_producto prod, bac_portal portal
+where prod.id_portal = portal.id_portal
+"
+Copy_cce_estado_cargo,"( select 'TODOS' from dual )
+UNION
+( select estado from cce_cargo group by estado )"
+MO_promo_comprador_filter_estado_cargo,"( select 'TODOS' from dual )
+UNION
+( select estado from cce_cargo group by estado )"
+MO_reporting_filtro_estado_cargo,"( select 'TODOS' from dual )
+UNION
+( select estado from cce_cargo group by estado )"
+GC_filtro_estado_cargo_combo_PROD,"( select 'TODOS' from dual )
+UNION
+( select estado from cce_cargo group by estado )"
+Copy_cce_estado_pago,"select estado from cce_pago group by 1
+"
+bac_tipo_fecha,"select 1, 'Fecha Conciliacion' 
+UNION
+select 2, 'Fecha Generacion' 
+UNION
+select 3, 'Fecha Actualizacion'"
+Copy_bac_gateway,"select id_gateway, descripcion
+from bac_gateway"
+bac_gateway_todos,"select id_gateway, descripcion
+from bac_gateway"
+Copy_bac_gateway,"select 0, 'TODOS' from dual
+UNION
+select id_gateway, descripcion
+from bac_gateway
+order by 1"
+bac_gateway_todos,"select 0, 'TODOS' from dual
+UNION
+select id_gateway, descripcion
+from bac_gateway
+order by 1"
+Copy_bac_año,"SELECT '0', 'Indistinto'
+FROM dual
+UNION
+SELECT DISTINCT(CONVERT(devengamiento_anio,CHAR)), CONVERT(devengamiento_anio,CHAR)
+FROM cce_devengamiento"
+Copy_bac_mes2,"SELECT '0', 'Indistinto'
+FROM dual
+UNION
+SELECT DISTINCT(CONVERT(devengamiento_mes,CHAR)), CONVERT(devengamiento_mes,CHAR)
+FROM cce_devengamiento"
+Copy_bac_producto,"select 0, 'Todos' from dual
+UNION
+select id_producto, concat(portal.nombre,' - ',prod.nombre)
+from bac_producto prod, bac_portal portal
+where prod.id_portal = portal.id_portal
+and (portal.id_portal = $P{Copy_bac_portal} or $P{Copy_bac_portal} = 0 )
+"
+Copy_bac_producto_dependiente_portal,"select 0, 'Todos' from dual
+UNION
+select id_producto, concat(portal.nombre,' - ',prod.nombre)
+from bac_producto prod, bac_portal portal
+where prod.id_portal = portal.id_portal
+and (portal.id_portal = $P{Copy_bac_portal} or $P{Copy_bac_portal} = 0 )
+"
+bac_descripcion,
+percep_filtro_tipo_usu,Indistinto|Web|Broker
+GC_filtro_suspendido_PROD,"select 'Indistinto' as a1,
+'Indistinto' as a2 
+from dual
+union
+select 'S' as a1,
+'Si' as a2 
+from dual
+union
+select 'N' as a1,
+'No' as a2 
+from dual "
+percep_filtro_usuario,
+GC_filtro_mail_template_id_PROD,"select distinct(significado) 
+from cta_dominio
+where nombre like 'CCE_MAIL_GESTION_COBRANZA_MAIL_TEMPLATE_ID'
+order by significado"
+GC_filtro_estado_cargo_PROD,"select estado from cce_cargo
+group by estado"
+GC_filtro_tipo_cargo_value_PROD,"select -1 as id, 'Indistinto' as descr from dual
+union
+select id, deuda_motivo from cce_tipo_cargo"
+GC_filtro_tipo_cargo_PROD,"select -1 as id, 'Indistinto' as descr from dual
+union
+select id, deuda_motivo from cce_tipo_cargo"
+percep_filtro_apodo,
+filtro_clave_propiedad,
+filtro_fecha,
+MO_reporting_filtro_fecha_DATE,
+filtro_tipo_usuario,"select *
+from sacar.sac_tipo_usuario"
+GC_filtro_suspendido_PROD,S|N
+filtro_apodo,
+GC_filtro_origen_values_PROD,Indistinto|WEB|INTRANET|SMS
+Copy_cce_tipo_cliente,FIDEDIGNO|CERTIFICADO|BROKER|PARTICULAR
+DF_filtro_estado,"SELECT 'Todos los Ultimos' AS DESCRIPCION
+  FROM DUAL
+UNION
+SELECT DESCRIPCION
+    FROM SACAR.CCE_ESTADO_DATOS_FACTURACION"
+percep_filtro_apodo,
+CO_country,"select id, name
+from country
+order by name;"
+percep_filtro_iva,"select 'Seleccione Condicion IVA', 'Seleccione Condicion IVA' from dual
+union
+select id, condicion
+from sacar.CCE_CONDICION_IVA "
+percep_filtro_tipo_usu,"select 'Seleccione Tipo Usuario' from dual
+union
+select codigo
+from sacar.CCE_LIMITE_CUENTA"
+percep_filtro_alicIIBB,
+Copy_cce_estado_cargo,"select estado from sacar.cce_cargo group by estado"
+MO_promo_comprador_filter_estado_cargo,"select estado from sacar.cce_cargo group by estado"
+MO_reporting_filtro_estado_cargo,"select estado from sacar.cce_cargo group by estado"
+GC_filtro_estado_cargo_combo_PROD,"select estado from sacar.cce_cargo group by estado"
+"jaco - prueba","select codigo
+from sacar.cce_limite_cuenta"
+Copy_cce_estado_cargo,"select estado from sacar.cce_cargo
+group by estado"
+MO_promo_comprador_filter_estado_cargo,"select estado from sacar.cce_cargo
+group by estado"
+MO_reporting_filtro_estado_cargo,"select estado from sacar.cce_cargo
+group by estado"
+GC_filtro_estado_cargo_combo_PROD,"select estado from sacar.cce_cargo
+group by estado"
+Copy_cce_estado_cargo,"SELECT   estado
+    FROM sacar.cce_cargo
+GROUP BY estado
+UNION
+SELECT 'TODOS' AS estado
+  FROM DUAL"
+MO_promo_comprador_filter_estado_cargo,"SELECT   estado
+    FROM sacar.cce_cargo
+GROUP BY estado
+UNION
+SELECT 'TODOS' AS estado
+  FROM DUAL"
+MO_reporting_filtro_estado_cargo,"SELECT   estado
+    FROM sacar.cce_cargo
+GROUP BY estado
+UNION
+SELECT 'TODOS' AS estado
+  FROM DUAL"
+GC_filtro_estado_cargo_combo_PROD,"SELECT   estado
+    FROM sacar.cce_cargo
+GROUP BY estado
+UNION
+SELECT 'TODOS' AS estado
+  FROM DUAL"
+GC_filtro_tipo_cargo_value_PROD,"select 'Indistinto' as descr from dual
+union
+select deuda_motivo from sacar.cce_tipo_cargo"
+GC_filtro_tipo_cargo_PROD,"select 'Indistinto' as descr from dual
+union
+select deuda_motivo from sacar.cce_tipo_cargo"
+GC_filtro_origen_values_PROD,"SELECT 'Indistinto' as name from dual
+union
+SELECT 'WEB' as name from dual
+union
+SELECT 'INTRANET' as name from dual
+UNION
+SELECT 'SMS' as name from dual"
+percep_filtro_usuario,
+percep_filtro_apodo,
+MO_promo_comprador_filter_estado_promo,"select 'N' from dual
+union
+select 'Y' from dual
+union
+select 'TODAS' from dual
+
+"
+filtro_fecha,
+MO_reporting_filtro_fecha_DATE,
+Copy_cce_estado_cargo,"SELECT   estado
+    FROM cce_cargo
+GROUP BY estado
+UNION
+SELECT 'TODOS' AS estado
+  FROM DUAL"
+MO_promo_comprador_filter_estado_cargo,"SELECT   estado
+    FROM cce_cargo
+GROUP BY estado
+UNION
+SELECT 'TODOS' AS estado
+  FROM DUAL"
+MO_reporting_filtro_estado_cargo,"SELECT   estado
+    FROM cce_cargo
+GROUP BY estado
+UNION
+SELECT 'TODOS' AS estado
+  FROM DUAL"
+GC_filtro_estado_cargo_combo_PROD,"SELECT   estado
+    FROM cce_cargo
+GROUP BY estado
+UNION
+SELECT 'TODOS' AS estado
+  FROM DUAL"
+CO_biz_country,"select id, name
+from biz
+where country = $P{CO_country}
+order by name;"
+CO_categoria,"select id, name from category"
+percep_filtro_fecha,
+MO_promo_comprador_filter_tipo_promo,"select 'P' from dual
+union
+select 'C' from dual"
+percep_filtro_apodo,
+GC_filtro_estado_cargo_PROD,"select estado from cce_cargo
+group by estado"
+percep_filtro_usuario,
+GC_filtro_mail_template_id_PROD,"select distinct(significado) 
+from cta_dominio
+where nombre like 'CCE_MAIL_GESTION_COBRANZA_MAIL_TEMPLATE_ID'
+order by significado"
+GC_filtro_origen_values_PROD,Indistinto|WEB|INTRANET|SMS
+GC_filtro_suspendido_PROD,"select 'Indistinto' as a1,
+'Indistinto' as a2 
+from dual
+union
+select 'S' as a1,
+'Si' as a2 
+from dual
+union
+select 'N' as a1,
+'No' as a2 
+from dual "
+GC_filtro_tipo_cargo_value_PROD,"select -1 as id, 'Indistinto' as descr from dual
+union
+select id, deuda_motivo from cce_tipo_cargo"
+GC_filtro_tipo_cargo_PROD,"select -1 as id, 'Indistinto' as descr from dual
+union
+select id, deuda_motivo from cce_tipo_cargo"
+percep_filtro_tipo_usu,Indistinto|Web|Broker
+MO_reporting_filtro_estado_operacion_ps,"select minimo
+from sacar.cta_dominio
+where nombre = 'PGS_OPERACION.ESTADO'
+group by minimo"
+filtro_apodo,
+MO_reporting_filtro_tipo_cargo,"select -1 as id, 'Indistinto' as descr from dual
+union
+select id, deuda_motivo from sacar.cce_tipo_cargo"
+percep_filtro_apodo,
+GC_filtro_estado_cargo_PROD,"select estado from SACAR.cce_cargo
+group by estado"
+percep_filtro_usuario,
+GC_filtro_mail_template_id_PROD,"select distinct(significado) 
+from SACAR.cta_dominio
+where nombre like 'CCE_MAIL_GESTION_COBRANZA_MAIL_TEMPLATE_ID'
+order by significado"
+GC_filtro_origen_values_PROD,Indistinto|WEB|INTRANET|SMS
+GC_filtro_suspendido_PROD,"select 'Indistinto' as a1,
+'Indistinto' as a2 
+from dual
+union
+select 'S' as a1,
+'Si' as a2 
+from dual
+union
+select 'N' as a1,
+'No' as a2 
+from dual "
+GC_filtro_tipo_cargo_value_PROD,"select -1 as id, 'Indistinto' as descr from dual
+union
+select id, deuda_motivo from SACAR.cce_tipo_cargo"
+GC_filtro_tipo_cargo_PROD,"select -1 as id, 'Indistinto' as descr from dual
+union
+select id, deuda_motivo from SACAR.cce_tipo_cargo"
+percep_filtro_tipo_usu,Indistinto|Web|Broker
+Copy_bac_estado_cuenta,"select minimo
+from sacar.cta_dominio
+where nombre = 'CCE_CUENTA.ESTADO'"
+MO_reporting_filtro_estado_cuenta,"select minimo
+from sacar.cta_dominio
+where nombre = 'CCE_CUENTA.ESTADO'"
+GC_filtro_tipo_cargo_value_PROD,"select 'Indistinto' as descr from dual
+union
+select deuda_motivo from cce_tipo_cargo"
+GC_filtro_tipo_cargo_PROD,"select 'Indistinto' as descr from dual
+union
+select deuda_motivo from cce_tipo_cargo"
+GC_filtro_origen_values_PROD,"SELECT 'Indistinto' as name from dual
+union
+SELECT 'WEB' as name from dual
+union
+SELECT 'INTRANET' as name from dual
+UNION
+SELECT 'SMS' as name from dual"
+MO_reporting_filtro_rubro_cliente,"Indistinto|BROKER|PARTICULAR|CERTIFICADO|FIDEDIGNO
+"
+CC_questions,"select id, name
+from questions"
+VXV-usuarios-micrositios,"select id_user, nickname 
+from users
+where (microsite_status = 1 OR nickname='vxvnews')
+order by nickname"
+CC_City,"select id, name
+from cities
+where is_approved = 1
+union
+select '-1', 'Todas las ciudades'
+union
+select '-2', 'Más de 1 ciudad'
+;
+"
+CC_company,
+CO_precio,
+CC_Deal_Pending,"select d.id, substr(cast(concat(date_format(d.start_date, '%Y/%m/%d'),
+                          ' - ',
+                          c.name,
+                          ' - ',
+                          d.name) AS char),
+              1,
+              60) company
+from deals d, companies c
+where d.company_id = c.id
+and exists (
+  select 1
+  from deal_externals de
+  where d.id = de.deal_id
+  and de.external_status in ('W','P')
+)
+order by d.start_date"
+CC_turismo,
+CC_Deal,"SELECT d.id,
+       substr(cast(concat(date_format(d.start_date, '%Y/%m/%d'),
+                          ' - ',
+                          c.name,
+                          ' - ',
+                          d.name) AS char),
+              1,
+              60)
+  FROM deals d, companies c
+ WHERE d.company_id = c.id
+ORDER BY start_date DESC;"
+Copy_cce_estado_pago,"Todos|
+Acreditado|
+Cancelado|
+Pendiente"
+CC_deal_status,"SELECT 0, 'Todos'
+UNION
+SELECT id, name
+FROM deal_statuses d
+
+"
+filtro_fecha,
+MO_reporting_filtro_fecha_DATE,
+CC_buy_ip,
+CC_transaction_type,"select -1, 'TODAS'
+union
+select id, name
+from transaction_types
+where id in (1,2,3,6,11)"
+CC_company,"SELECT c.id,
+       substr(cast(c.name AS char), 1, 60)
+  FROM companies c
+ORDER BY c.name ASC;"

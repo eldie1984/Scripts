@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Super hiper tablero re POWER</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+                  </head>
+                        <body>
+        <table style="width: 98%; border: 1px solid #808080;" border="0" cellspacing="0" cellpadding="1">
+        <tbody>
+        <tr align="center" valign="middle">
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Equipo</strong>
+		</td>                
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Sesion</strong>
+                </td>
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Descripcion</strong>
+		</td>
+	</tr>
+	{% for ses in sesiones %}
+	<tr>
+        <td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">{{ ses[2] }}
+        </td>
+	<td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">{{ ses[0] }}
+	</td>
+	<td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;"> 
+		{{ ses[1] }}
+	</td>
+	</tr>
+	{% end %}
+	</tbody>
+		</table>
+			<p> </p>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+        <table style="width: 98%; border: 1px solid #808080;" border="0" cellspacing="0" cellpadding="1">
+        <tbody>
+        <tr align="center" valign="middle">
+                <td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>UPR</strong>
+                </td>
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Descripcion</strong>
+                </td>
+                <td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Inicio</strong>
+                </td>
+                <td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Fin</strong>
+                </td>
+                <td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Duracion</strong>
+                </td>
+        </tr>
+        {% for ses in datos %}
+        </td>
+        <td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">
+                {{ ses[1] }}
+        </td>
+	<td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">
+                 {{ ses[2] }}
+        </td>
+<td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">
+                {{ ses[3] }}
+        </td>
+        <td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">
+                {{ ses[4] }}
+        </td>
+        <td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">
+                {{ ses[5] }}
+        </td>
+
+        </tr>
+        {% end %}
+        </tbody>
+                </table>
+
+                        </body>
+              </html>

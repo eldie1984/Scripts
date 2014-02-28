@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	
+	<appender name="dailyAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/export/home/mo/moar/logs/mo-registrarPdfPresea.log"/>
+		<param name="Append" value="true"/>
+		<param name="DatePattern" value="'.'yyyy-MM-dd"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ISO8601} %-5p %c{1} - %m%n"/>
+		</layout>
+	</appender>
+
+	<category name="clarin" additivity="true">
+		<priority value="info" />
+	</category>
+	
+	<category name="org.hibernate" additivity="true">
+		<priority value="info" />
+	</category>
+	
+	<category name="net.sf.ehcache" additivity="true">
+		<priority value="warn" />
+	</category>
+	
+	<category name="org.apache.struts" additivity="true">
+		<priority value="warn" />
+	</category>
+
+	<category name="org.apache.jasper" additivity="true">
+		<priority value="warn" />
+	</category>
+
+	<category name="org.springframework" additivity="true">
+		<priority value="warn" />
+	</category>
+
+	<root>
+		<priority value="warn" />
+		<appender-ref ref="dailyAppender" />
+	</root>
+	
+</log4j:configuration>

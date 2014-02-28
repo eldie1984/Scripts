@@ -1,0 +1,115 @@
+#! /bin/bash
+#set -x
+
+#HOSTNAME=`hostname`
+
+DIR_APP=/export/home/mo/moar	 		# Directorio de la aplicacion  (PARAMETRO)
+DIR_REP=/export/home/mo/moar/reportes	# Directorio de los reportes
+MAILS_FILE=${DIR_APP}/scripts/mails.dat		# Archivo con las direccion de mail de los procesos
+URL_INTRA=http://intranet.clasificados.int.clarin.com:81/intramoar  # URL usada para generar los XMLs de la 4º columna
+FILER_MO=
+LIBS_PATH=/export/home/mo/moar/java_libs
+
+#ARCHIVADOR
+DIR_APP_ARCHIVADOR=/export/home/mo/moar/scripts/archivador	# Directorio de la aplicacion  (PARAMETRO)
+MAILS_FILE_ARCHIVADOR=${DIR_APP}/scripts/archivador/mails.dat				# Archivo con las direccion de mail de los procesos
+
+
+#DINEROMAIL_HOST=ftp_mo.dineromail.com           # Servidor de DineroMail
+#DINEROMAIL_USER=mo_ftp                          # Usuario DineroMail
+#DINEROMAIL_PASS=aspi89mopdm                                # Pass de DineroMail
+
+#DINEROMAIL_HOST=200.41.90.114     # prepro
+
+JAVA_HOME=/usr/bin/          	# Directorio donde se ejecuta java (PARAMETRO)
+RSYNC_HOME=/usr/bin			# Directorio donde se ejecuta el rsync (PARAMETRO)
+FTP_HOME=/usr/kerberos/bin/		# Directorio donde se ejecuta el ftp (PARAMETRO)
+
+ENTORNO=PROD				# Si el valor es PROD se mandan los mails segun mails.dat, sino se manda el configurado en cada script
+USUARIO_BD=sacar/r2cs2c2r24		# Usuario con el que se conecta a la base de datos (PARAMETRO)
+INSTANCIA_BD=BALANCEO		# instancia de conexion
+
+USUARIO_H_BD= 	# Usuario con el que se conecta a la base de datos (PARAMETRO)=
+
+#Parametros para Oracle
+export ORACLE_BASE=/var/opt/oracle
+export ORACLE_HOME=$ORACLE_BASE/product/10.2.0/client_1
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+export PATH=$ORACLE_HOME/bin:$PATH
+
+TNS_ADMIN=$ORACLE_HOME/network/admin
+NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P1
+ORA_NLS33=$ORACLE_HOME/ocommon/nls/admin/data
+
+LD_LIBRARY_PATH=/usr/lib:$ORACLE_HOME/lib:$ORACLE_HOME/jdbc/lib:$ORACLE_HOME/ctx/lib
+
+PATH=.:$PATH:$ORACLE_HOME/bin:/bin:/usr/local/bin:/usr/bin:/usr/ccs/bin:/opt/bin
+
+
+################ CLASSPATH #####################################
+################################################################
+
+CLASSPATH=${LIBS_PATH}:${LIBS_PATH}/antlr.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/asm.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/asm-attrs.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/axis.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/cglib-2.1.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/clarin_mail.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/clasificadosWeb.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/classes12.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/commons-beanutils.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/commons-collections-3.2.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/commons-configuration-1.4.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/commons-digester.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/commons-discovery-0.2.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/commons-fileupload.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/commons-io-1.3.1.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/commons-lang-2.3.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/commons-logging.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/commons-validator.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/destaques.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/dom4j-1.6.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/edtftpj.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/ehcache-1.1.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/googleSitemap.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/hibernate2-swarmcache.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/hibernate3.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/jakarta-oro.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/jakarta-regexp-1.3.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/jasperreports-1.0.1.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/jaxen-1.1-beta-6.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/jaxrpc.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/jdev-rt.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/jdom.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/jgroups-all.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/jsr173_1.0_api.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/jta.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/log4j-1.2.8.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/mailer.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/mo-common.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/mo.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/notificador.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/ojdbc14.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/saaj.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/stylebook-1.0-b2.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/swarmcache-1.0RC2.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/webserviceutils.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/wsdl4j-1.5.1.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/xalan.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/xbean.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/xerces.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/xercesImpl.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/xml.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/xml-apis.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/xmlAvisos.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/xmlparserv2.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/xmlrpc-2.0.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/encript.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/c3p0-0.9.1.jar
+CLASSPATH=${CLASSPATH}:${LIBS_PATH}/xstream-1.3.1.jar
+
+# export USUARIO_BD MAILS_FILE DIR_APP JAVA_HOME ORACLE_HOME NLS_LANG ORA_NLS33 LD_LIBRARY_PATH PATH ORACLE_BIN TNS_ADMIN INSTANCIA_BD ENTORNO HOSTNAME
+
+export URL_INTRA ORA_NLS33 FILER_MO DIR_APP DIR_REP DINEROMAIL_HOST DINEROMAIL_USER DINEROMAIL_PASS MAILS_FILE JAVA_HOME RSYNC_HOME FTP_HOME ENTORNO USUARIO_BD INSTANCIA_BD ORACLE_HOME ORACLE_BIN ORACLE_BASE ORA_CRS_HOME LD_LIBRARY_PATH TNS_ADMIN NLS_LANG LD_LIBRARY_PATH PATH CLASSPATH USUARIO_H_BD FTP_PRESEA_HOST FTP_PRESEA_USER FTP_PRESEA_PASS MAIL_ERROR_TO
+
+

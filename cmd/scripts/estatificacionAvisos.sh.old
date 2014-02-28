@@ -1,0 +1,18 @@
+#!/bin/bash
+#set -x
+. /export/home/mo/moar/scripts/set_parametros_comunes.sh
+ 
+LOG=/export/home/mo/moar/logs/estatificacionAvisos.log
+
+libs_path=/export/home/mo/moar/java_libs
+LANG=es_AR
+
+libs=$libs_path:$libs_path/ojdbc14.jar:$libs_path/FilerWebService.jar:$libs_path/mo.jar:$libs_path/log4j-1.2.8.jar:$libs_path/xbean.jar:$libs_path/xmlAvisos.jar:$libs_path/xml.jar:$libs_path/xml-apis.jar:$libs_path/jsr173_1.0_api.jar:$libs_path/commons-collections-3.2.jar:$libs_path/antlr-2.7.5H3.jar:$libs_path/mailer.jar:$libs_path/antlr.jar:$libs_path/asm-attrs.jar:$libs_path/asm.jar:$libs_path/axis.jar:$libs_path/cglib-2.1.jar:$libs_path/classes12.jar:$libs_path/commons-beanutils.jar:$libs_path/commons-collections-3.1.jar:$libs_path/commons-digester.jar:$libs_path/commons-discovery-0.2.jar:$libs_path/commons-fileupload.jar:$libs_path/commons-lang-2.4.jar:$libs_path/commons-logging.jar:$libs_path/commons-validator.jar:$libs_path/dom4j-1.6.jar:$libs_path/ehcache-1.1.jar:$libs_path/hibernate3.jar:$libs_path/jakarta-oro.jar:$libs_path/jakarta-regexp-1.3.jar:$libs_path/jasperreports-1.0.1.jar:$libs_path/jaxrpc.jar:$libs_path/jdev-rt.jar:$libs_path/jdom.jar:$libs_path/jta.jar:$libs_path/log4j-1.2.8.jar:$libs_path/saaj.jar:$libs_path/stylebook-1.0-b2.jar:$libs_path/webserviceutils.jar:$libs_path/wsdl4j-1.5.1.jar:$libs_path/xalan.jar:$libs_path/xerces.jar:$libs_path/xercesImpl.jar:$libs_path/xml-apis.jar:$libs_path/xml.jar:$libs_path/xmlparserv2.jar:$libs_path/xmlrpc-1.2-b1.jar:$libs_path/xmlrpc-2.0.jar
+
+echo "Inicio de proceso" 
+
+##Escribe en el LOG declarado en la variable LOG 
+$JAVA_HOME/java -Xms500M -Xmx500M -Dclarin.log4j.LOCAL=True -classpath $libs  clarin.procesos.archivador.EstatificadorAvisos $libs_path/archivador.properties >> $LOG
+
+echo "Fin de proceso" 
+

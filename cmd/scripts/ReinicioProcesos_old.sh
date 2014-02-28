@@ -1,0 +1,52 @@
+#!/bin/bash
+#set -x
+LANG=en_US.UTF-8
+LANGUAGE=en
+LC_CTYPE=en_US.UTF-8
+
+####################################################################
+# 
+# Reinicio cierre de avisos 
+#
+####################################################################
+
+# Busco el pid del sh cierreDeAvisos.sh
+pid=`ps -fea | grep cierreDeAvisos.sh | grep -v grep | awk '{ print $2}'`
+echo $pid 
+
+#Busco el pid del java CierreDeAvisos.java
+pid2=`ps -fea | grep java | grep $pid | grep -v grep | awk '{ print $2}'`
+echo $pid2 
+
+#Mato los dos procesos (sh y java)
+/usr/bin/kill -9 $pid
+/usr/bin/kill -9 $pid2
+
+#Relanzo el proceso
+nohup /export/home/mo/moar/scripts/cierreDeAvisos.sh &
+
+
+####################################################################
+#
+# Reinicio el envio de mails 
+#
+####################################################################
+
+# Busco el pid del sh enviarMails.sh
+pid3=`ps -fea | grep enviarMails.sh | grep -v grep | awk '{ print $2}'`
+echo $pid3
+
+#Busco el pid del java EnviarMails.java
+pid4=`ps -fea | grep java | grep $pid3 | grep -v grep | awk '{ print $2}'`
+echo $pid4
+
+#Mato los dos procesos (sh y java)
+/usr/bin/kill -9 $pid3
+/usr/bin/kill -9 $pid4
+
+
+
+#Relanzo el proceso
+nohup /export/home/mo/moar/scripts/enviarMails.sh &
+
+

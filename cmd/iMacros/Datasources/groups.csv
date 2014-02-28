@@ -1,0 +1,64 @@
+name,description
+Schedule,
+"Blogs de la gente","Reportes de blogs de la gente"
+"Club Cupon","Club Cupon"
+"Club Cupon - Envio de Mails","Mails que se envian diariamente en club cupon"
+"Club Cupon - Ofertas",Ofertas
+"Club Cupon - Pagos",Pagos
+"Club Cupon - Perfiles",Perfiles
+"Club Cupon - Postventa",Postventa
+"Club Cupon - Producto","Club Cupon - Producto"
+"Club Cupon - Suscripciones",Suscripciones
+"Club Cupon - Transacciones",Transacciones
+"Club Cupon - Usuarios",Usuarios
+"Club Cupon - Ventas",Ventas
+Confronte,confronte
+"Confronte - Descuentos","Confronte - Descuentos"
+"Confronte/Shop1 - Reportes de verificacion de datos","Reportes de verificacion de datos"
+"MO - Gestión de Cobranzas","MO - Gestión de Cobranzas"
+"MO - Estadisticas Log","Reportes referidos a logeos de acciones de MO"
+"MO - LOG","Reportes referidos a logs"
+"MO - Diario","MO - Reportes Diarios Croneados"
+"MO - Mensual","Reportes Mensual"
+"MO - Quincenal","Reportes de MO para correr los dias 1 y 16 de cada mes"
+"MO - Semanal","Reportes para correr Todos los Lunes"
+"Migrados de NAP5","Migrados de NAP5"
+"MO - Monitoreo Diario SW","Monitoreo Diario SW"
+"MG - MundoGaturro",MundoGaturro
+ClickAvisos,ClickAvisos
+"ClickAvisos - atencion al usuario","Reportes de atencion al usuario"
+Mublet,mublet
+VXV,vxv
+"Show de goles","Show de goles"
+Todapasion,Todapasion
+iAvisos,iAvisos
+"MO - rep_buscador","MO - Buscador"
+"MO - rep_comercial_mo",rep_comercial_mo
+"MO - rep_consistencia_ctacte_mo",rep_consistencia_ctacte_mo
+"MO - rep_consistencia_mo_presea",rep_consistencia_mo_presea
+"MO - rep_consultas",rep_consultas
+"MO - rep_control_sitio",rep_control_sitio
+"MO - rep_creacion",rep_creacion
+"MO - rep_cuenta_corriente",rep_cuenta_corriente
+"MO - rep_estadistica_diaria_mo","Estadistica diaria MO"
+"MO - rep_herramientas_automatizacion",rep_herramientas_automatizacion
+"MO - rep_mo_primera_compra",rep_mo_primera_compra
+"MO - rep_mo_suspensiones",rep_mo_suspensiones
+"MO - rep_moderacion",rep_moderacion
+"MO - rep_monitoreo_backend_mo",rep_monitoreo_backend_mo
+"MO - rep_pago_seguro",rep_pago_seguro
+Shop1,shop1
+soportecmd,soportecmd
+"Backend - Auditoria","Backend - Auditoria"
+"Backend - Clientes","Backend - Clientes"
+"Backend - Configuraciones","Backend - Configuraciones"
+"Backend - Controles de consistencia","Backend - Controles de consistencia"
+"Backend - Cuenta Corriente","Backend - Cuenta Corriente (Cargos,Pagos,etc)"
+"Backend - Devengamiento",Devengamiento
+"Backend - Envío de mails diarios","Envío de mails diarios"
+"Backend - Log","Backend - Log"
+"Backend - Pines","Backend - Pines"
+"Backend - Productos","Backend - Productos"
+"Backend - Usuarios de intranet","Backend - Usuarios de intranet"
+"ciudad - tebusco","ciudad - tebusco - grupo para omar robles"
+"Club Cupon - Pruebas Gonzalo ","Club Cupon - Pruebas Gonzalo "

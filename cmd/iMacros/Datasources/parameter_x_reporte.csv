@@ -1,0 +1,239 @@
+name,parameter_id,"case rpm.required when 1 then 'YES' else 'NO'end",sort_order,step
+"BAC - Productos - Lista de precios",24,NO,1,1
+"BAC - Controles - Pagos enviados que no figuran en ERP_MOVIMIENTO",66,YES,0,0
+"BAC - Pines - Ventas por día (administración)",66,YES,0,0
+"BAC - Cuenta Corriente - Listado de Ventas por producto",66,YES,0,0
+"BAC - Cuenta Corriente - Resumen de Pagos",66,YES,4,0
+"BAC - Log - Errores en el quemado de pines",66,YES,0,0
+"BAC - Log - Business Exceptions",66,YES,0,0
+"BAC - Log - Procesos",66,YES,0,0
+"BAC - Cuenta Corriente - Listado de cargos",66,YES,6,0
+"BAC - Controles - Cargos enviados que no figuran en ERP_MOVIMIENTO",66,YES,0,0
+"BAC - Controles - Usuarios con mas de 1 pago en el dia",66,YES,0,0
+"BAC - Cuenta Corriente - Listado de pagos con mas parametros ",66,YES,6,0
+"BAC - Cuenta Corriente - Resumen de Pagos",20,NO,2,0
+"BAC - Controles - Usuarios con mas de 1 pago en el dia",20,NO,0,0
+"BAC - Controles - Pagos enviados que no figuran en ERP_MOVIMIENTO",67,YES,0,0
+"BAC - Pines - Ventas por día (administración)",67,YES,0,0
+"BAC - Cuenta Corriente - Listado de Ventas por producto",67,YES,0,0
+"BAC - Cuenta Corriente - Resumen de Pagos",67,YES,5,0
+"BAC - Log - Errores en el quemado de pines",67,YES,0,0
+"BAC - Log - Business Exceptions",67,YES,0,0
+"BAC - Cuenta Corriente - Listado de cargos",67,YES,7,0
+"BAC - Controles - Cargos enviados que no figuran en ERP_MOVIMIENTO",67,YES,0,0
+"BAC - Controles - Usuarios con mas de 1 pago en el dia",67,YES,0,0
+"BAC - Cuenta Corriente - Listado de pagos con mas parametros ",67,YES,7,0
+"BAC - Cuenta Corriente - Resumen de Pagos",4,NO,3,0
+"BAC - Controles - Pagos enviados que no figuran en ERP_MOVIMIENTO",5,YES,0,0
+"BAC - Controles - Pagos sin respuesta de Presea",5,YES,0,0
+"BAC - Controles - Cargos enviados que no figuran en ERP_MOVIMIENTO",5,YES,0,0
+"BAC - Cuenta Corriente - Listado de pagos con mas parametros ",18,YES,5,0
+"BLOGS DE LA GENTE - Blogs creados por dia",74,YES,0,0
+"BLOGS DE LA GENTE - Comentarios creados por dia",74,YES,0,0
+"BLOGS DE LA GENTE - Lista de usuarios y mails",74,YES,0,0
+"BLOGS DE LA GENTE - Posts creados por dia",74,YES,0,0
+"BLOGS DE LA GENTE - Usuarios creados por dia",74,YES,0,0
+"BLOGS DE LA GENTE - Blogs creados por dia",81,YES,0,0
+"BLOGS DE LA GENTE - Comentarios creados por dia",81,YES,0,0
+"BLOGS DE LA GENTE - Lista de usuarios y mails",81,YES,0,0
+"BLOGS DE LA GENTE - Posts creados por dia",81,YES,0,0
+"BLOGS DE LA GENTE - Usuarios creados por dia",81,YES,0,0
+"BAC - Pines - Listado de pines",70,NO,0,0
+"BAC - Clientes - Listado de clientes",70,NO,4,0
+"BAC - Cuenta Corriente - Listado de cargos",70,NO,3,0
+"BAC - Cuenta Corriente - Listado de cargos",11,YES,5,0
+"BAC - Clientes - Listado de clientes",68,YES,5,0
+"BAC - Cuenta Corriente - Listado de cargos",68,YES,2,0
+"BAC - Cuenta Corriente - Listado de pagos con mas parametros ",68,YES,2,0
+"Club Cupon - Usuarios",99,YES,0,0
+"Club Cupon - Pagos",31,YES,0,0
+"Club Cupon - Usuarios",103,YES,0,0
+"Club Cupon - Cantidad de suscriptos y cupones acumulados y por periodo",26,YES,0,0
+"Club Cupon - Pareto de cupones comprados por usuarios",26,YES,0,0
+"Club Cupon - Perfiles de usuarios",26,YES,0,0
+"Club Cupon - Perfiles de usuarios agrupado",26,YES,0,0
+"Club Cupon - Perfiles por año de nacimiento y genero",26,YES,0,0
+"Club Cupon - Subscripciones",26,YES,3,0
+"Club Cupon - Subscripciones diarias",26,YES,3,0
+"Club Cupon - Subscripciones diarias voluntarias",26,YES,0,0
+"Club Cupon - Subscripciones por origen",26,YES,0,0
+"Club Cupon - Suscripciones por origen a xx fecha (a día cerrado)",26,YES,0,0
+"Club Cupon - Usuarios por origen",26,YES,0,0
+"Club Cupon - Cantidad de cupones vendidos por origen de suscripcion",26,YES,0,0
+"Club Cupon - Cupones vendidos",108,YES,0,0
+"Club Cupon - Cupones vendidos por fecha",108,NO,0,0
+"Club Cupon - Cantidad de cupones vendidos por origen de suscripcion y oferta",29,YES,0,0
+"Club Cupon - Consistencia - Pagos acreditados con montos inconsistentes",29,YES,0,0
+"Club Cupon - Cupones generados por día de un deal determinado",29,YES,0,0
+"Club Cupon - Cupones vendidos",29,YES,1,0
+"Club Cupon - Pagos por deal",29,YES,0,0
+"Club Cupon - Perfiles de compradores (por oferta)",29,YES,0,0
+"Club Cupon - Cupones anulados",29,YES,0,0
+"Club Cupon - Consulta de pagos por id",106,NO,0,0
+"Club Cupon - Apertura de pagos pendientes por oferta",27,NO,0,0
+"Club Cupon - Ofertas",30,YES,0,0
+"Club Cupon - Usuarios",97,YES,0,0
+"ClubCupon - Recomendaciones",111,YES,0,0
+"ClubCupon - Recomendaciones",110,YES,0,0
+"Club Cupon - Pagos por deal",109,NO,0,0
+"Club Cupon - Cantidad de cupones vendidos por deal",85,YES,0,0
+"Club Cupon - Comercios",85,YES,0,0
+"Club Cupon - Consistencia - Pagos acreditados vs cupones",85,YES,0,0
+"Club Cupon - Cupones anulados por fecha",85,YES,0,0
+"Club Cupon - Cupones por medio de pago",85,YES,0,0
+"Club Cupon - Cupones vendidos por fecha",85,YES,0,0
+"Club Cupon - Pagos por fecha de deal",85,YES,0,0
+"Club Cupon - Reporte Vendedores - Julieta",85,YES,0,0
+"Club Cupon - Reporte diario Administracion",85,YES,0,0
+"Club Cupon - Reporte diario Administracion sin medios de pago",85,YES,0,0
+"Club Cupon - Subscripciones",85,YES,1,0
+"Club Cupon - Subscripciones diarias",85,YES,1,0
+"Club Cupon - Subscripciones diarias voluntarias - Gonzalo",85,YES,0,0
+"Club Cupon - Transacciones por día y hora",85,YES,0,0
+"Club Cupon - Perfiles completados entre fechas",85,YES,0,0
+"Club Cupon - Utilizacion de monedero",85,YES,0,0
+"Club Cupon - Cantidad de cupones vendidos por deal",86,YES,0,0
+"Club Cupon - Comercios",86,YES,0,0
+"Club Cupon - Consistencia - Pagos acreditados vs cupones",86,YES,0,0
+"Club Cupon - Cupones anulados por fecha",86,YES,0,0
+"Club Cupon - Cupones por medio de pago",86,YES,0,0
+"Club Cupon - Cupones vendidos por fecha",86,YES,0,0
+"Club Cupon - Pagos por fecha de deal",86,YES,0,0
+"Club Cupon - Reporte Vendedores - Julieta",86,YES,0,0
+"Club Cupon - Reporte diario Administracion",86,YES,0,0
+"Club Cupon - Reporte diario Administracion sin medios de pago",86,YES,0,0
+"Club Cupon - Subscripciones",86,YES,2,0
+"Club Cupon - Subscripciones diarias",86,YES,2,0
+"Club Cupon - Subscripciones diarias voluntarias - Gonzalo",86,YES,0,0
+"Club Cupon - Transacciones por día y hora",86,YES,0,0
+"Club Cupon - Perfiles completados entre fechas",86,YES,1,0
+"Club Cupon - Utilizacion de monedero",86,YES,1,0
+"Club Cupon - Subscripciones",87,YES,4,0
+"Club Cupon - Usuarios",101,YES,0,0
+"Club Cupon - Perfiles de usuarios (por atributo)",25,YES,0,0
+"Club Cupon - Perfiles de usuarios agrupado",25,YES,0,0
+"Club Cupon - Usuarios",102,YES,0,0
+"Club Cupon - Transacciones",32,NO,0,0
+"Club Cupon - Reporte diario Administracion",28,NO,2,0
+"Club Cupon - Reporte diario Administracion sin medios de pago",28,NO,2,0
+"Club Cupon - Cupones vendidos",116,YES,2,0
+"Club Cupon - Reporte Vendedores - Julieta",96,YES,0,0
+"Club Cupon - Transacciones (Referidos)",96,YES,0,0
+"Club Cupon - Usuarios",96,YES,0,0
+"Club Cupon - Cupones vendidos",117,YES,3,0
+"Club Cupon - Usuarios",98,YES,0,0
+"BAC - Devengamiento - Detalle",21,NO,0,0
+"BAC - Devengamiento - Resumen",21,NO,0,1
+"BAC - Clientes - Listado de clientes",8,NO,6,0
+"BAC - Cuenta Corriente - Listado de pagos con mas parametros ",19,NO,4,0
+"BAC - Log - Procesos",13,YES,0,0
+"BAC - Log - Procesos",14,YES,0,0
+"BAC - Log - Procesos",12,YES,0,0
+"BAC - Devengamiento - Detalle",22,NO,0,0
+"BAC - Devengamiento - Resumen",22,NO,1,1
+"BAC - Cuenta Corriente - Resumen de Pagos",71,YES,1,0
+"BAC - Controles - Usuarios enviados a Presea que nunca volvieron con OK",3,YES,0,0
+"BAC - Devengamiento - Resumen",3,YES,0,0
+"BAC - Cuenta Corriente - Listado de Ventas por producto",3,YES,0,0
+"BAC - Cuenta Corriente - Resumen de Pagos",3,YES,0,0
+"BAC - Pines - Listado de retailes",3,YES,0,0
+"BAC - Productos - Lista de precios",3,YES,0,0
+"BAC - Controles - Cargos sin respuesta de Presea",3,YES,0,0
+"BAC - Clientes - Listado de clientes",3,YES,1,0
+"BAC - Cuenta Corriente - Listado de cargos",3,YES,1,0
+"BAC - Controles - Usuarios con mas de 1 pago en el dia",3,YES,0,0
+"BAC - Cuenta Corriente - Listado de pagos con mas parametros ",3,YES,1,0
+"BAC - Devengamiento - Detalle",15,YES,0,0
+"BAC - Devengamiento - Resumen",23,YES,2,1
+"BAC - Productos - Lista de precios",23,YES,0,1
+"BAC - Clientes - Listado de clientes",7,YES,3,0
+"BAC - Pines - Listado de paquetes por retailer",9,YES,0,0
+"BAC - Pines - Listado de pines",9,YES,0,0
+"BAC - Cuenta Corriente - Listado de cargos",16,YES,4,0
+"BAC - Cuenta Corriente - Listado de pagos con mas parametros ",17,YES,3,0
+"BAC - Clientes - Listado de clientes",6,YES,2,0
+"BAC - Pines - Listado de paquetes por retailer",10,YES,2,0
+"Confronte - Facturación  - Consulta cambios presupuesto ",35,YES,0,0
+"Confronte - Consulta Clementina categoría sin confirmar por tienda",36,YES,0,0
+"Confronte - Consulta bind job categoría",36,YES,0,0
+"Confronte - Listado de ofertas sin bindear (filtro por categoria)",36,YES,0,0
+"Confronte - Reporte control de precios",36,YES,0,0
+"Confronte - Búsquedas sin resultados",34,YES,0,0
+"Confronte - Facturación  - Consulta cambios presupuesto ",34,YES,0,0
+"Confronte - Status Crawlers ",34,YES,0,0
+"Confronte - Reporte control de precios",37,YES,0,0
+"Confronte - Busquedas de palabras determinadas",104,YES,0,0
+"MO - Administracion Datos Facturación",42,NO,0,0
+"MO - Verificacion Replicador HTML y Resize de Imagenes",39,NO,0,0
+"MO - LOTES_ENVIADOS_A_FACTURAR",112,YES,0,0
+"Shop1 MG - Ventas / Intentos de pago",112,YES,0,0
+"MO - LOTES_ENVIADOS_A_FACTURAR",113,NO,0,0
+"Shop1 MG - Ventas / Intentos de pago",113,NO,1,0
+"MO - Cargos - Resumen",48,NO,0,0
+"DESA MO - Cargos - Resumen - BACK",59,YES,0,0
+"MO - Mails Enviados - Resumen",60,NO,0,0
+"MO - Mails Enviados - Detalle",60,NO,0,0
+"MO - Cargos - Resumen",50,NO,0,0
+"MO - Facturacion - Detalle",61,NO,0,0
+"MO - Cargos - Detalle",61,NO,0,0
+"MO - Facturacion - Resumen",61,NO,0,0
+"MO - Mails Enviados - Detalle",61,NO,0,0
+"MO - Cargos - Detalle",62,NO,0,0
+"DESA MO - Cargos - Resumen - BACK",62,NO,0,0
+"MO - Facturacion - Resumen",62,NO,0,0
+"MO - Cargos - Resumen",49,NO,0,0
+"Promociones Comprador",46,YES,0,0
+"Promociones Comprador",53,YES,0,0
+"Promociones Comprador",56,NO,0,0
+"MO - Pago Seguro - Mediaciones ",92,NO,0,0
+"MO - Pago Seguro - Mediaciones ",93,NO,0,0
+"MO - Reporting - Movimientos de un aviso",105,NO,0,0
+"MO - Pago Seguro - Mediaciones ",90,NO,0,0
+"MO - Reporting - Reporte de cargos",47,YES,0,0
+"MO - Gestion - Usuarios en condiciones de ser inhabilitados",63,YES,0,0
+"MO - Reporting - Clientes en limite de credito",63,YES,0,0
+"MO - Pago Seguro - Operaciones - Detalle de operaciones de PS filtradas por estado y rango de fecha",57,YES,2,0
+"MO - Reporting - Mails enviados por fecha y hora",54,YES,0,0
+"MO - Reporting - Reporte de cobros por fecha",54,YES,0,0
+"MO - Usuarios con avisos que se inactivaron ayer",54,YES,0,0
+"MO - Estadistica - Destaques por hora",54,YES,0,0
+"MO - Estadistica - Comisiones por hora",54,YES,0,0
+"MO - Estadistica - Publicaciones por hora",54,YES,0,0
+"MO - Estadistica - Registros por hora",54,YES,0,0
+"MO - Pago Seguro - Operaciones - Cantidad de operaciones en cada estado en un rango de fechas",88,YES,0,0
+"MO - Pago Seguro - Operaciones - Detalle de operaciones de PS filtradas por estado y rango de fecha",88,YES,0,0
+"MO - Pago Seguro - Mediacion - Cantidad de compradores que solicitaron mediacion y el vendedor no respondio",88,YES,0,0
+"MO - Pago Seguro - Mediacion - Detalle de operaciones de compradores que solicitaron mediacion y el vendedor no respondio",88,YES,0,0
+"MO - Pago Seguro - Solicitudes - Cantidad de pedidos pendientes de pago seguro",88,YES,0,0
+"MO - Pago Seguro - Solicitudes - Detalle de pedidos pendientes de pago seguro",88,YES,0,0
+"MO - Pago Seguro - Solicitudes - Cantidad de pedidos aceptados de pago seguro",88,YES,0,0
+"MO - Pago Seguro - Solicitudes - Detalle de pedidos aceptados de pago seguro",88,YES,0,0
+"MO - Pago Seguro - Operaciones - Cantidad de operaciones en cada estado en un rango de fechas",89,YES,0,0
+"MO - Pago Seguro - Operaciones - Detalle de operaciones de PS filtradas por estado y rango de fecha",89,YES,1,0
+"MO - Pago Seguro - Mediacion - Cantidad de compradores que solicitaron mediacion y el vendedor no respondio",89,YES,1,0
+"MO - Pago Seguro - Mediacion - Detalle de operaciones de compradores que solicitaron mediacion y el vendedor no respondio",89,YES,1,0
+"MO - Pago Seguro - Solicitudes - Cantidad de pedidos pendientes de pago seguro",89,YES,0,0
+"MO - Pago Seguro - Solicitudes - Detalle de pedidos pendientes de pago seguro",89,YES,0,0
+"MO - Pago Seguro - Solicitudes - Cantidad de pedidos aceptados de pago seguro",89,YES,0,0
+"MO - Pago Seguro - Solicitudes - Detalle de pedidos aceptados de pago seguro",89,YES,0,0
+"MO - Pago Seguro - Mediaciones ",95,NO,0,0
+"MO - Facturacion - Perfiles de usuarios y rubros detalle",64,YES,0,0
+"MO - Reporting - Control de cargos generados",64,YES,0,0
+"MO - Reporting - Clientes en limite de credito",64,YES,0,0
+"MO - Reporting - Reporte de cargos",58,NO,0,0
+"MO - Reporting - Control de cargos generados",58,NO,0,0
+"MO - Percepciones Recibidas",45,NO,0,0
+"MO - Percepciones Recibidas",52,NO,0,0
+"MO - Percepciones Recibidas",55,YES,0,0
+"MO - Percepciones Recibidas",43,NO,0,0
+"MO - Percepciones Recibidas",44,NO,0,0
+"MO - Percepciones Recibidas",51,NO,0,0
+"BAC - Pines - Exportacion de pines",73,YES,0,0
+"BAC - Pines - Historia de un paquete",73,YES,0,0
+"BAC - Pines - Listado de paquetes por retailer",73,YES,1,0
+"BAC - Pines - Listado de pines",73,YES,0,0
+"BAC - Pines - Historia de un pin",72,YES,0,0
+"BAC - Pines - Listado de pines",72,YES,0,0
+"Shop1 MG - Historia de una orden de compra",114,NO,0,0
+"Shop1 MG - Ventas / Intentos de pago",115,YES,2,0
+"VXV - videos-de-un-usuario-micrositios",65,NO,0,0

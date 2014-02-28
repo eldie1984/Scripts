@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Super hiper tablero re POWER</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+	        <script src="{{ static_url('scripts/test.js') }}" type="application/javascript"></script>
+                  </head>
+                        <body>
+        <table style="width: 98%; border: 1px solid #808080;" border="0" cellspacing="0" cellpadding="1">
+        <tbody>
+        <tr align="center" valign="middle">
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Interfaz</strong>
+		</td>
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Error</strong>
+		</td>
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Portal</strong>
+		</td>
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Cantidad</strong>
+                </td>
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Monto</strong>
+                </td>
+		</td>
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Accion</strong>				             
+		</td>
+	</tr>
+	{% for dato in datos %}
+	<tr>
+	<td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">{{ dato.interfaz }}
+	</td>
+	<td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;"> 
+		{{ dato.error }}
+	</td>
+	<td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">
+		{{ dato.portal }}
+	</td>
+        <td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">
+                {{ dato.cantidad }}
+        </td>
+        <td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">
+                {{ dato.monto }}
+        </td>
+
+	<td style=" border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">
+		<button onclick="reset('{{ dato.interfaz }}','{{ dato.error }}')">Resetear</button>
+	</td>
+	</tr>
+	{% end %}
+	</tbody>
+		</table>
+			<p> </p>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+		<table style="width: 50%;border: 1px solid #808080;" border="0" cellspacing="0" cellpadding="1" align="center">
+        <tbody>
+        <tr align="center" valign="middle">
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Interfaz</strong>
+		</td>
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Portal</strong>
+		</td>
+		<td style="border: 1px solid #808080; font-family: Arial; font-size: 14px; text-align: left;  color: #B45F04;"><strong>Cantidad</strong>
+		</td>
+	</tr>
+	{% for resultado in resultados %}
+	<tr>
+	<td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">{{ resultado.interfaz }}
+	</td>
+	<td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;">{{ resultado.portal }}
+	</td>
+	<td style="border: 1px solid #808080; font-family: Arial; font-size: 13px; text-align: left;"> 
+		{{ resultado.cantidad }}
+	</td>
+	</tr>
+	{% end %}
+	</tbody>
+		</table>
+
+                </td>
+		<input type="submit" value="reload" id="reload-button" /><br/>
+                        </body>
+              </html>

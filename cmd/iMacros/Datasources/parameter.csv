@@ -1,0 +1,139 @@
+name,type,classname,data,datasource_id,description,"case required when 1 then 'YES' else 'NO'end","case multi_select when 1 then 'YES' else 'NO'end",default_value
+Copy_bac_portal,Query,java.lang.Integer,"select 0, 'TODOS' from dual  UNION  select id_portal, nombre  from bac_portal bp   order by 1",4,Portal,YES,NO,0
+bac_medio_pago_todos,Query,java.lang.Integer,"select 0, 'TODOS' from dual  UNION  select id_medio_pago, nombre  from bac_medio_pago  order by 1",4,"Medios de pago",NO,NO,
+bac_portal_fac,Query,java.lang.Integer,"select 0, 'TODOS' from dual  UNION  select id_portal, nombre  from bac_portal bp  where bp.notifica_facturador = 'Y'  order by 1",4,Portal,YES,NO,
+Copy_cce_tipo_cliente,Query,java.lang.Integer,"select 0, 'TODOS' from dual
+UNION
+select id_tipo_USUARIO, nombre
+from cce_tipo_usuario
+",4,"Tipo Cliente",YES,NO,
+Copy_bac_provincia,Query,java.lang.Integer,"select 0, 'TODOS' from dual  UNION  select id_provincia, nombre  from bac_provincia order by 1",4,Provincia,YES,NO,NULL
+Copy_bac_estado_cuenta,Query,java.lang.String,"select 'TODOS'
+from dual
+union
+select estado
+from cce_cliente
+group by estado
+",4,"Estado cuenta",NO,NO,TODOS
+Copy_bac_retailer,Query,java.lang.Integer,"select 0, 'TODOS' from dual  union  select id_USUARIO, login  from cce_usuario  where id_tipo_USUARIO = 2 order by 1  ",4,Retailer,YES,NO,NULL
+Copy_sdp_paquete_estado,Query,java.lang.String,"select 0, 'TODOS' from dual  UNION  select id_paquete_estado, nombre   from sdp_paquete_estado",4,Estado,YES,NO,TODOS
+cce_tipo_producto,Query,java.lang.String,"select 0, 'Todos' from dual  UNION  select id_producto, concat(portal.nombre,' - ',prod.nombre)  from bac_producto prod, bac_portal portal  where prod.id_portal = portal.id_portal",4,"tipo producto",YES,YES,
+Copy_bac_gnr_log_proceso,Query,java.lang.String,"select 'TODOS' from dual  UNION  select PROCESO  from bac_gnr_log  group by PROCESO",4,Proceso,YES,NO,TODOS
+Copy_bac_gnr_log_nivel,Query,java.lang.String,"select 'TODOS' from dual  UNION  select NIVEL  from bac_gnr_log   group by NIVEL  ",4,Nivel,YES,NO,ERROR
+Copy_bac_gnr_log_objeto_tipo,Query,java.lang.String,"select 'TODOS' from dual  UNION  select OBJETO_TIPO  from bac_gnr_log  group by OBJETO_TIPO",4,"Objeto Tipo",YES,NO,TODOS
+Copy_bac_producto,Query,java.lang.Integer,"select 0, 'Todos' from dual
+UNION
+select id_producto, concat(portal.nombre,' - ',prod.nombre)
+from bac_producto prod, bac_portal portal
+where prod.id_portal = portal.id_portal",4,Producto,YES,NO,NULL
+Copy_cce_estado_cargo,Query,java.lang.String,"SELECT   estado      FROM cce_cargo  GROUP BY estado  UNION  SELECT 'TODOS' AS estado    FROM DUAL",4,"Estado cargo",YES,NO,TODOS
+Copy_cce_estado_pago,Query,java.lang.String,"select estado from cce_pago group by 1",4,"Estado pago",YES,YES,
+bac_tipo_fecha,Query,java.lang.Integer,"select 1, 'Fecha Conciliacion'   UNION  select 2, 'Fecha Generacion'   UNION  select 3, 'Fecha Actualizacion'",4,"Tipo Fecha",YES,NO,0
+Copy_bac_gateway,Query,java.lang.Integer,"select 0, 'TODOS' from dual  UNION  select id_gateway, descripcion  from bac_gateway  order by 1",4,Gateway,NO,NO,
+bac_gateway_todos,Query,java.lang.Integer,"select 0, 'TODOS' from dual  UNION  select id_gateway, descripcion  from bac_gateway  order by 1",4,Gateway,NO,NO,NULL
+Copy_bac_año,Query,java.lang.String,"SELECT '0', 'Indistinto'  FROM dual  UNION  SELECT DISTINCT(CONVERT(devengamiento_anio,CHAR)), CONVERT(devengamiento_anio,CHAR)  FROM cce_devengamiento",4,Año,NO,NO,Indistinto
+Copy_bac_mes2,Query,java.lang.String,"SELECT '0', 'Indistinto'  FROM dual  UNION  SELECT DISTINCT(CONVERT(devengamiento_mes,CHAR)), CONVERT(devengamiento_mes,CHAR)  FROM cce_devengamiento",4,Mes,NO,NO,Indistinto
+Copy_bac_producto_dependiente_portal,Query,java.lang.Integer,"select 0, 'Todos' from dual  UNION  select id_producto, concat(portal.nombre,' - ',prod.nombre)  from bac_producto prod, bac_portal portal  where prod.id_portal = portal.id_portal  and (portal.id_portal = $P{Copy_bac_portal} or $P{Copy_bac_portal} = 0 )  ",4,Producto,YES,NO,0
+bac_descripcion,Text,java.lang.String,,4,Descripcion,YES,NO,
+CC_questions,Query,java.lang.String,"select id, name  from questions",1,Atributo,YES,NO,NULL
+CC_City,Query,java.lang.Integer,"select id, name  from cities  where is_approved = 1  union  select '-1', 'Todas las ciudades'  union  select '-2', 'Más de 1 ciudad'  ;  ",1,Ciudad,YES,NO,NULL
+CC_Deal_Pending,Query,java.lang.String,"select d.id, substr(cast(concat(date_format(d.start_date, '%Y/%m/%d'),                            ' - ',                            c.name,                            ' - ',                            d.name) AS char),                1,                60) company  from deals d, companies c  where d.company_id = c.id  and exists (    select 1    from deal_externals de    where d.id = de.deal_id    and de.external_status in ('W','P')  )  order by d.start_date",1,Oferta,NO,NO,NULL
+CC_turismo,Boolean,java.lang.Boolean,,1,is_tourism,NO,NO,NULL
+CC_Deal,Query,java.lang.Integer,"SELECT d.id,         substr(cast(concat(date_format(d.start_date, '%Y/%m/%d'),                            ' - ',                            c.name,                            ' - ',                            d.name) AS char),                1,                60)    FROM deals d, companies c   WHERE d.company_id = c.id  ORDER BY start_date DESC;",1,Deal,YES,NO,NULL
+CC_deal_status,Query,java.lang.Integer,"SELECT 0, 'Todos'  UNION  SELECT id, name  FROM deal_statuses d    ",1,"Estado del deal",YES,NO,0
+CC_buy_ip,Text,java.lang.String,,1,"IP de compra",YES,NO,%
+CC_transaction_type,Query,java.lang.String,"select -1, 'TODAS'  union  select id, name  from transaction_types  where id in (1,2,3,6,11)",1,"Transaction Type",NO,NO,-1
+CC_company,Query,java.lang.Integer,"SELECT c.id,         substr(cast(c.name AS char), 1, 60)    FROM companies c  ORDER BY c.name ASC;",1,Company,YES,NO,NULL
+CO_country,Query,java.lang.String,"select id, name  from country  order by name;",3,Pais,YES,NO,NULL
+CO_biz_country,Query,java.lang.String,"select id, name  from biz  where country = $P{CO_country}  order by name;",3,"Tiendas por pais",YES,NO,NULL
+CO_categoria,Query,java.lang.String,"select id, name from category",3,"Categoria Id",YES,NO,1
+CO_precio,Text,java.lang.Double,,3,"Precio de oferta",YES,NO,NULL
+filtro_clave_propiedad,Text,java.lang.String,,2,"Clave de la Propiedad",NO,NO,NULL
+filtro_fecha,Date,java.lang.String,,2,Fecha,NO,NO,NULL
+filtro_tipo_usuario,Query,java.lang.Integer,"select *  from sacar.sac_tipo_usuario",2,"Tipo de usuario",NO,NO,NULL
+filtro_apodo,Text,java.lang.String,,2,Apodo,NO,NO,NULL
+DF_filtro_estado,Query,java.lang.String,"SELECT 'Todos los Ultimos' AS DESCRIPCION    FROM DUAL  UNION  SELECT DESCRIPCION      FROM SACAR.CCE_ESTADO_DATOS_FACTURACION",2,Estado:,NO,NO,"Todos los Ultimos"
+percep_filtro_iva,Query,java.lang.String,"select 'Seleccione Condicion IVA', 'Seleccione Condicion IVA' from dual  union  select id, condicion  from sacar.CCE_CONDICION_IVA ",2,"Tipo Responsable:",NO,NO,"Seleccione Condicion IVA"
+percep_filtro_tipo_usu,Query,java.lang.String,Indistinto|Web|Broker,2,"Tipo Usuario:",NO,NO,"Seleccione Tipo Usuario"
+percep_filtro_alicIIBB,Text,java.lang.Double,,2,"Alicuota IIBB:",NO,NO,0
+MO_promo_comprador_filter_estado_cargo,Query,java.lang.String,"SELECT   estado      FROM cce_cargo  GROUP BY estado  UNION  SELECT 'TODOS' AS estado    FROM DUAL",2,"Estado Cargo",YES,YES,NULL
+MO_reporting_filtro_estado_cargo,Query,java.lang.String,"SELECT   estado      FROM cce_cargo  GROUP BY estado  UNION  SELECT 'TODOS' AS estado    FROM DUAL",2,"Estado Cargo",YES,YES,NULL
+GC_filtro_estado_cargo_combo_PROD,Query,java.lang.String,"SELECT   estado      FROM cce_cargo  GROUP BY estado  UNION  SELECT 'TODOS' AS estado    FROM DUAL",2,"Estado Cargo",NO,NO,TODOS
+GC_filtro_tipo_cargo_value_PROD,Query,java.lang.String,"select 'Indistinto' as descr from dual  union  select deuda_motivo from cce_tipo_cargo",2,"Tipo cargo:",NO,NO,Indistinto
+GC_filtro_origen_values_PROD,Query,java.lang.String,"SELECT 'Indistinto' as name from dual  union  SELECT 'WEB' as name from dual  union  SELECT 'INTRANET' as name from dual  UNION  SELECT 'SMS' as name from dual",2,Origen:,NO,NO,Indistinto
+percep_filtro_usuario,Text,java.lang.String,,2,"Id Usuario:",NO,NO,"Ingrese Usuario"
+percep_filtro_apodo,Text,java.lang.String,,2,Apodo:,NO,NO,"Ingrese Apodo"
+MO_promo_comprador_filter_estado_promo,Query,java.lang.String,"select 'N' from dual  union  select 'Y' from dual  union  select 'TODAS' from dual    ",2,"Estado Promocion",YES,NO,TODAS
+MO_reporting_filtro_fecha_DATE,Date,java.sql.Date,,2,Fecha,YES,NO,NULL
+percep_filtro_fecha,Date,java.lang.String,,2,"Fecha factura:",YES,NO,NULL
+MO_promo_comprador_filter_tipo_promo,Query,java.lang.String,"select 'P' from dual  union  select 'C' from dual",2,"tipo de promocion comprador | pines",NO,NO,P
+MO_reporting_filtro_estado_operacion_ps,Query,java.lang.String,"select minimo  from sacar.cta_dominio  where nombre = 'PGS_OPERACION.ESTADO'  group by minimo",2,"Estado Operacion",YES,NO,NULL
+MO_reporting_filtro_tipo_cargo,Query,java.lang.String,"select -1 as id, 'Indistinto' as descr from dual  union  select id, deuda_motivo from sacar.cce_tipo_cargo",2,"Tipo Cargo",NO,NO,Indistinto
+GC_filtro_estado_cargo_PROD,Query,java.lang.String,"select estado from SACAR.cce_cargo  group by estado",2,"Estado Cargo:",YES,YES,NULL
+GC_filtro_mail_template_id_PROD,Query,java.lang.String,"select distinct(significado)   from SACAR.cta_dominio  where nombre like 'CCE_MAIL_GESTION_COBRANZA_MAIL_TEMPLATE_ID'  order by significado",2,Template:,NO,YES,Indistinto
+GC_filtro_suspendido_PROD,Query,java.lang.String,"select 'Indistinto' as a1,  'Indistinto' as a2   from dual  union  select 'S' as a1,  'Si' as a2   from dual  union  select 'N' as a1,  'No' as a2   from dual ",2,"Suspendido: ",NO,NO,Indistinto
+GC_filtro_tipo_cargo_PROD,Query,java.lang.String,"select 'Indistinto' as descr from dual  union  select deuda_motivo from cce_tipo_cargo",2,"Tipo Cargo:",NO,NO,Indistinto
+MO_reporting_filtro_estado_cuenta,Query,java.lang.String,"select minimo  from sacar.cta_dominio  where nombre = 'CCE_CUENTA.ESTADO'",2,"Estado Cuenta",YES,NO,HABILITADA
+MO_reporting_filtro_rubro_cliente,List,java.lang.String,"Indistinto|BROKER|PARTICULAR|CERTIFICADO|FIDEDIGNO  ",2,"Rubro Cliente",YES,NO,Indistinto
+VXV-usuarios-micrositios,Query,java.lang.String,"select id_user, nickname 
+from users
+where (microsite_status = 1 OR nickname='vxvnews')
+order by nickname",6,VXV-usuarios-micrositios,NO,NO,id_user
+bac_desde,Date,java.util.Date,,NULL,Desde,YES,NO,
+bac_hasta,Date,java.util.Date,,NULL,Hasta,YES,NO,
+cce_usuario_portal,Text,java.lang.Integer,,NULL,"Usuario Portal",YES,NO,0
+cce_cliente,Text,java.lang.Integer,,4,Cliente,NO,NO,0
+Copy_bac_pais,Query,java.lang.Integer,"select 0, 'TODOS' from dual
+UNION
+select id_pais, nombre
+from bac_pais ORDER BY 1",4,Pais,YES,NO,
+sdp_pin,Text,java.lang.String,,4,Pin,YES,NO,NULL
+sdp_paquete,Text,java.lang.String,,NULL,Paquete,YES,NO,0
+blogsdelagente_es_spam,Boolean,java.lang.Boolean,,NULL,"Si muestra o no los que son spam",YES,NO,
+blogsdelagente_fecha_fin,Date,java.util.Date,,NULL,"Fecha de finalizacion del reporte",NO,NO,
+blogsdelagente_fecha_inicio,Date,java.util.Date,,NULL,"Fecha de inicio del reporte",NO,NO,
+"jaco - prueba",Query,java.lang.String,"select codigo
+from sacar.cce_limite_cuenta",2,"jaco - prueba",NO,NO,
+GC_filtro_estado_cargo_combo,Query,java.lang.String,"SELECT   estado
+    FROM sacar.cce_cargo
+GROUP BY estado
+UNION
+SELECT 'TODOS' AS estado
+  FROM DUAL",2,"Estado Cargo",NO,NO,TODOS
+eltrece_usuarios_inicio,Date,java.lang.String,,11,"Fecha de inicio",YES,YES,
+CC_fecha_desde,Date,java.util.Date,,NULL,"Fecha desde",YES,NO,
+CC_fecha_hasta,Date,java.sql.Date,,NULL,"Fecha hasta",YES,NO,
+CC_Is_Subscribed,List,java.lang.String,Todos|NO|SI,NULL,Suscripto?,YES,NO,
+MO_reporting_filtro_fecha_desde_DATE,Date,java.sql.Date,,NULL,"Fecha Desde:",YES,NO,
+MO_reporting_filtro_fecha_hasta_DATE,Date,java.sql.Date,,NULL,"Fecha Hasta:",YES,NO,
+MO_reporting_filtro_cargo_id,Text,java.lang.Long,,NULL,"Cargo Id",NO,NO,0
+MO_reporting_filtro_apodo_comprador,Text,java.lang.String,,NULL,"Apodo comprador",NO,NO,"Apodo Comprador"
+MO_reporting_filtro_apodo_vendedor,Text,java.lang.String,,NULL,"Apodo vendedor",NO,NO,"Apodo Vendedor"
+MO_reporting_filtro_operacion_id,Text,java.lang.Long,,NULL,"Operacion Id",NO,NO,0
+CC_username_like,Text,java.lang.String,,NULL,Username,YES,NO,%
+CC_email_like,Text,java.lang.String,,NULL,Email,YES,NO,%
+CC_user_id,Text,java.lang.String,,NULL,"Id Usuario",NO,NO,%
+CC_bac_user_id,Text,java.lang.String,,NULL,"Id Usuario Bac",NO,NO,%
+CC_last_login_ip,Text,java.lang.String,,NULL,"Ip de último login",YES,NO,%
+CC_signup_ip,Text,java.lang.String,,NULL,"Ip de registración",YES,NO,%
+CC_cantidad,Text,java.lang.String,,NULL,Cantidad,YES,NO,1
+CO_word,Text,java.lang.String,,NULL,Palabra,YES,NO,
+MO_reporting_filtro_aviso_id,Text,java.lang.Long,,NULL,"Aviso Id",NO,NO,0
+CC_Deal_External_Id,Text,java.lang.String,,NULL,"Id Pago",NO,NO,
+"Club Cupon - Cupones vendidos por fecha",Text,java.lang.String,,NULL,Company,YES,NO,Todas
+CC_company_like,Text,java.lang.String,,NULL,Company,YES,NO,Todas
+CC_Estado_Pago,Text,java.lang.String,"Todos|
+Acreditado|
+Cancelado|
+Pendiente",NULL,"Estado pago",NO,NO,Todos
+CC_email_recomendado_like,Text,java.lang.String,,NULL,"Email recomendado",YES,NO,%
+CC_email_recomendador_like,Text,java.lang.String,,NULL,"Email recomendador",YES,NO,%
+filtro_fecha_desde_LF,Date,java.util.Date,,NULL,"Fecha desde",YES,NO,
+filtro_fecha_hasta_LF,Date,java.util.Date,,NULL,"Fecha hasta",NO,NO,
+SH1_MG_filtro_orden,Text,java.lang.String,,NULL,"Orden de compra nro",NO,NO,
+SH1_MG_filtro_status,List,java.lang.String,"TODOS|
+processing_paid|
+canceled|
+pending",NULL,Status,YES,NO,TODOS
+CC_username,Text,java.lang.String,,NULL,Username,YES,NO,Todos
+CC_user_email,Text,java.lang.String,,NULL,Mail,YES,NO,Todos
