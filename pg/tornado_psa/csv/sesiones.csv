@@ -1,0 +1,638 @@
+SYZ7C,Reception - ACIT - FU SOCIETE  
+SYZ6VD,       
+SYZSR,Emission Reporting Mensuel - ACHR   
+SYZSP,Reception - APAT - FU EM ORPHELINS 
+SYZSQ,Reception - APAT - FU EM ORPHELINS 
+SYZST,Reception - APNL - SITEL VRM  
+SYZSZ,Reception - APNL - SITEL CLI  
+SYZRIAL,MISE EN ETAT MOUNT DE LA BASE 
+SYZRIAL2,MISE EN ETAT MOUNT DE LA BASE 
+SYZSC,Reception - ACNL - SITEL CLI  
+SYZSG,Emission Reporting Journalier - ACSE   
+SYZSD,Reception - ACNL - SB/CS   
+SYZSJ,Reception - APAT - NEOLANE   
+SYZSK,Emission Neolane Journalier - APAT   
+SYZSH,Emission Reporting Journalier - ACDK   
+SYZSI,Emission Reporting Journalier - ACNO   
+SYZSN,Reception - APAT - FU EM ORPHELINS 
+SYZSL,Emission - APAT - Neolane Mensuel  
+SYZSM,Reception - APAT - FU EM ORPHELINS 
+SYZS0,Reception - ACSK - FU VEHICULE  
+SYZS1,Reception - APNL - SB/CS   
+SYZS6,Emission Reporting Journalier - ACGB   
+SYZS4,Emission Reporting Journalier - ACHU   
+SYZS5,Emission Reporting Journalier - ACCZ   
+SYZSYD,DEBUT BATCH FONCTIONNEL CONVERGENCE    
+SYZS8,Emission Reporting Journalier - APAT   
+SYZS9,Emission - APAT - Reporting Mensuel  
+UVS05,Surveillance       
+SYZAH,Reception - ACSE - AAA   
+SYZAK,Reception - ACSE - FICHS. INTRANET  
+SYZAL,Reception - ACSE - SAGAI   
+SYZAO,Reception - APPT - FU EM ORPHELINS 
+SYZAA,Reception - ACSE - DIALOG   
+SYZAB,Reception - ACSE - ARCAD   
+SYZAC,Reception - ACSE - AO   
+SYZAD,Reception - ACSE - CPP   
+SYZAE,Reception - ACSE - AI   
+SYZAG,Emission Neolane Journalier - ACES   
+SYZ3B,Alimentation ARCAD      
+SYZ3C,Alimentation AO      
+SYZAZ,Reception - ACDK - AO   
+AUD00,Reporte periodico solicitado por Espania   
+SYZ3F,Alimentation NEOLANE      
+SYZ3G,Alimentation FU      
+ORAAL,Monitoreo del alert de la base oracle. 
+SYZ3E,Alimentation AI      
+SYZAQ,Reception - ACSE - SITEL CLI  
+SYZ3H,Alimentation REPRISE      
+SYZ3I,Alimentation AAA      
+SYZAU,Reception - ACSE - NEOLANE   
+SYZAV,Emission Reporting Journalier - APIT   
+SYZAW,Reception - ACSE - FU EM ORPHELINS 
+SYZFY,Reception - ACBE - AI   
+SYZFX,Reception - ACBE - CPP   
+SYZFZ,Reception - ACBE - ARCAD V2  
+SYZFU,Reception - ACBE - DIALOG   
+SYZFT,Reception - ACGB - CPP   
+SYZFW,Reception - ACBE - AO   
+SYZFV,Reception - ACBE - ARCAD   
+SYZFP,Reception - RECEPTION - ACES - GDO 
+SYZFS,Reception - ACGB - CPP   
+SYZFR,Reception - ACGB - CPP   
+SYZFL,Reception - ACES - SITEL CLI  
+SYZHPR,Reception - ACFR - Repris - Véhicules 
+SYZCE3,Emission CUSCO Mensuel - ACES   
+SYZCE4,Emission CUSCO Mensuel - ACIT   
+SYZFH,Reception - ACES - SAGAI   
+SYZCE6,Emission CUSCO Mensuel - ACIT   
+SYZFJ,Reception - ACES - CUSCO   
+SYZFE,Reception - ACES - OPV   
+SYZFD,Emission Reporting Mensuel - ACBE   
+SYZFG,Reception - ACES - FICHS. INTRANET  
+SYZFF,Reception - ACES - SITEL VRM  
+SYZFA,Reception - ACES - AI   
+SYZFC,Emission Reporting Journalier - ACBE   
+SYZFB,Reception - ACES - ARCAD V2  
+SYZZ9,Reception - ACCZ - FU EM ORPHELINS 
+SYZZ8,Reception - ACHU - FU VEHICULE  
+SYZF5,Reception - ACBE - FICHS. INTRANET  
+SYZF4,Reception - ACBE - SITEL VRM  
+SYZF7,Reception - ACBE - NSID   
+SYZF6,Reception - ACBE - SAGAI   
+SYZF1,Reception - ACBE - NEOLANE   
+SYZF3,Reception - ACBE - OPV   
+SYZF2,Reception - ACPL - NEOLANE   
+UVS03,Sauvegarde       
+ORAHR,Monitoreo de undo y sort.   
+SYZXC,Reception - ACTR - SITEL VRM  
+SYZXA,Reception - ACPL - FU VEHICULE  
+SYZXN,Reception - ACPL - FU PARTICULIER  
+SYZXM,Reception - ACPL - FU EM ORPHELINS 
+SYZHP,Reception - ACFR - Reprise - Véhicules 
+SYZXJ,Reception - ACTR - SB/CS   
+SYZXI,Reception - ACTR - SITEL CLI  
+SYZA8,Reception - ACDK - FICHS. INTRANET  
+SYZA9,Reception - ACDK - SAGAI   
+SYZXU,Reception - ACAT - FU EM ORPHELINS 
+SYZXT,Reception - ACAT - FU EM ORPHELINS 
+SYZXS,Emission - ACAT - Neolane Mensuel  
+SYZXR,Emission Neolane Journalier - ACAT   
+SYZXQ,Reception - ACAT - NEOLANE   
+SYZXP,Reception - ACPL - FU SOCIETE  
+SYZA0,Emission Reporting Mensuel - ACSK   
+SYZA1,Reception - ACDK - CPP   
+SYZA2,Reception - ACDK - AI   
+SYZA4,Emission - ACES - Neolane Mensuel  
+SYZA5,Emission Reporting Mensuel - APIT   
+SYZA7,Reception - ACDK - SITEL VRM  
+SYZHZ,Emission SAGAI Journalier - ACNO   
+SYZSB,Reception - CSSB     
+SYZU4R,Reception - ACFR - Reprise - Contacts 
+SYZN8,Reception - ACHU - FU SOCIETE  
+SYZHD,Reception - APGB - OPV   
+SYZHC,Emission SAGAI Journalier - ACDK   
+SYZ8P,Traitement purge d'evenements     
+SYZ8X,DB Information      
+SYZHH,Reception - APGB - NSID   
+SYZM5,Reception - ACPT - ARCAD V2  
+SYZT2,Emission Neolane Mensuel - ACHR   
+SYZT4,Reception - APCH - SITEL VRM  
+UVSKG,kill des process graphique    
+RMN_F,RMAN FULL TEMPORAL     
+RMN_I,RMAN INC TEMPORAL     
+SYZM3,Reception - ACPT - CPP   
+SYZSYF,FIN BATCH FONCTIONNEL CONVERGENCE    
+SYZTK,Batch Token      
+SYZTH,Reception - SITEL     
+SYZTN,Reception - ACCH - SB/CS   
+SYZTM,Reception - ACCH - SITEL CLI  
+SYZTC,Reception - APBE - FU EM ORPHELINS 
+SYZTB,Reception - APBE - FU EM ORPHELINS 
+SYZTA,Reception - APBE - FU EM ORPHELINS 
+SYZTG,Reception - ACCH - SITEL VRM  
+SYZTE,Reception - ACHR - FU EM ORPHELINS 
+SYZTD,Reception - APBE - FU EM ORPHELINS 
+SYZTX,Reception - APCH - PPP   
+SYZTS,Reception - ACFR - FU PARTICULIER  
+SYZTR,Reception - ACFR - FU EM ORPHELINS 
+SYZTT,Reception - ACFR - FU SOCIETE  
+SYZLNSA,Lanzador Sabado      
+SYZK8,Emission SAGAI Journalier - ACES   
+SYZK4,Reception - APCZ - PPP   
+SYZB1,Reception - ACNO - SITEL CLI  
+SYZB2,Reception - ACNO - SB/CS   
+SYZB5,Reception - ACNO - NEOLANE   
+SYZB7,Reception - ACNO - FU PARTICULIER  
+SYZB6,Emission Neolane Journalier - ACBE   
+SYZB9,Reception - ACHU - ARCAD   
+SYZB8,Reception - ACHU - DIALOG   
+SYZ4K,Post Trait- 13     
+SYZBC,Batch control before begin batch FUNC  
+SYZ4H,Extraccion CUSCO      
+SYZ4O,Suivi Base Week-End     
+SYZ4N,Suivi Base Semanal     
+SYZ4M,Post Tr FUSION     
+SYZ4L,Coherence tabl Identification     
+SYZ4C,Extraction Reporting Journalier     
+SYZ4B,Extraction Neolane Journalier     
+SYZ4A,Post Traitement      
+SYZBJ,Reception - ACDK - FU PARTICULIER  
+SYZ4G,Calcul des Compteurs     
+SYZ4F,Calcul d' Etat     
+SYZ4E,Extraction Reporting Mensuel     
+SYZ4D,Extraction Neolane Mensuel     
+SYZBP,Reception - ACNO - AI   
+SYZBS,Emission Neolane Mensuel - ACBE   
+SYZBR,Emission Reporting Journalier - ACES   
+SYZBU,Reception - ACNO - SITEL VRM  
+SYZBW,Reception - ACNO - SAGAI   
+SYZBV,Reception - ACNO - FICHS. INTRANET  
+SYZBX,Reception - ACNO - NSID   
+SYZ4W,Gestion des WARNINGS     
+SYZU2R,Reception - ACFR - Reprise - Soc. 
+SYZKK,Emission SAGAI Journalier - ACPL   
+SYZKH,Reception - APBE - AI   
+SYZKI,Reception - APBE - ARCAD V2  
+SYZKL,Reception - APBE - OPV   
+SYZKM,Reception - APBE - SITEL VRM  
+SYZKB,Emission Neolane Mensuel - ACDK   
+SYZKC,Emission Neolane Mensuel - ACNO   
+SYZKA,Emission Neolane Mensuel - ACSE   
+SYZKF,Reception - APBE - AO   
+SYZKG,Reception - APBE - PPP   
+SYZKD,Reception - APBE - DIALOG   
+SYZKE,Reception - APBE - ARCAD   
+SYZKZ,Emission Neolane Mensuel - ACGB   
+SYZKX,Emission Neolane Mensuel - ACHU   
+SYZKY,Emission Neolane Mensuel - ACCZ   
+SYZKP,Reception - APBE - SAGAI   
+SYZKQ,Reception - APBE - NSID   
+SYZKT,Reception - APBE - SITEL CLI  
+SYZKU,Reception - APBE - SB/CS   
+SYZP8,Reception - APDE - SITEL VRM  
+SYZP6,Reception - ACHR - FU VEHICULE  
+SYZP2,Reception - APDE - PPP   
+SYZYG,Reception - ACSI - CPP   
+SYZYI,Emission Reporting Journalier - ACAT   
+SYZYJ,Emission - ACAT - Reporting Mensuel  
+SYZYK,Reception - ACIT - UNRAE   
+SYZCICLA,CICLADOS Tratamiento diario     
+SYZYM,Reception - ACSI - SITEL VRM  
+SYZYT,Reception - ACSI - SITEL CLI  
+SYZYU,Reception - ACSI - SB/CS   
+SYZ6D,DB Reports      
+SYZYX,Reception - ACHU - FU EM ORPHELINS 
+SYZYY,Reception - ACCZ - FU EM ORPHELINS 
+SYZYZ,Reception - ACGB - FU EM ORPHELINS 
+ORADY,Monitoreo de espacio y objs. inval.  
+SYZLA,Reception - APCZ - SITEL VRM  
+SYZD22,Emission MATRICS - APIT    
+SYZY1,Reception - ACSE - FU EM ORPHELINS 
+SYZY2,Reception - ACDK - FU EM ORPHELINS 
+SYZD21,Emission MATRICS - APIT    
+SYZY4,Reception - ACHR - CPP   
+SYZY5,Reception - ACHR - AI   
+SYZY6,Reception - ACHR - ARCAD V2  
+SYZY8,Reception - ACDE - FU EM ORPHELINS 
+SYZ6B,RAPPORT MATINAL      
+SYZPX,Reception - ACES - FU EM VEHICULE 
+SYZPW,Reception - ACES - FU EM SOCIETE 
+SYZPV,Reception - ACES - FU PARTICULIER  
+SYZPT,Reception - RECEPTION - ACDE - GDO 
+SYZPS,Reception - ACDE - SB/CS   
+SYZPR,Reception - ACDE - SITEL CLI  
+SYZXX,Reception - APIT - UNRAE   
+SYZPO,Reception - ACDE - CUSCO   
+SYZPN,Reception - ACDE - NSID   
+SYZPM,Reception - ACDE - SAGAI   
+SYZPL,Reception - ACDE - FICHS. INTRANET  
+SYZPK,Reception - ACDE - SITEL VRM  
+SYZPJ,Reception - ACDE - OPV   
+SYZPI,Reception - ACHR - FU SOCIETE  
+SYZPG,Reception - ACDE - ARCAD V2  
+SYZPF,Reception - ACDE - AI   
+SYZPE,Reception - ACDE - CPP   
+SYZPD,Reception - ACDE - AO   
+SYZPC,Reception - ACDE - ARCAD   
+SYZPB,Reception - ACDE - DIALOG   
+SYZPA,Reception - ACES - FU EM ORPHELINS 
+SYZ6X,ENVOI CFTxFTP      
+SYZG8,Reception - APGB - PPP   
+SYZG9,Reception - APGB - AI   
+SYZG6,Reception - APGB - ARCAD   
+SYZG7,Reception - APGB - AO   
+SYZG5,Reception - APGB - DIALOG   
+SYZLL,Reception - APPT - ROSIL   
+SYZ6LAB,lancements après le batch    
+SYZLG,Reception - APCZ - SITEL CLI  
+SYZLK,Emission Neolane Journalier - ACSK   
+SYZLH,Reception - APCZ - SB/CS   
+SYZLO,Emission Reporting Journalier - ACSK   
+SYZLN,Reception - ACSK - DIALOG   
+SYZLM,Emission Neolane Mensuel - ACSK   
+SYZ00,Reception - FILI - DIALOG   
+SYZLS,Reception - ACSK - AI   
+SYZLR,Reception - ACSK - CPP   
+SYZLQ,Reception - ACSK - AO   
+SYZLP,Reception - ACSK - ARCAD   
+SYZLV,Emission SAGAI Journalier - ACFR   
+SYZLT,Reception - ACSK - ARCAD V2  
+SYZLZ,Reception - ACSK - SAGAI   
+SYZLY,Reception - ACSK - FICHS. INTRANET  
+SYZLX,Reception - ACSK - SITEL VRM  
+SYZWV,Reception - APRU - SITEL CLI  
+SYZL1,Reception - ACSK - NSID   
+SYZL0,Reception - ACSK - NEOLANE   
+SYZL6,Reception - RECEPTION - ACSK - GDO 
+SYZL5,Reception - ACSI - SB/CS   
+SYZL4,Reception - ACSK - SITEL CLI  
+SYZL9,Emission Neolane Journalier - APPT   
+SYZL8,Emission Neolane Mensuel - APPT   
+SYZAX,Reception - ACDK - DIALOG   
+SYZGX,Reception - APFR - SITEL CLI  
+SYZGY,Reception - APFR - SB/CS   
+SYZGR,Reception - APFR - SITEL VRM  
+SYZGP,Emission SAGAI Journalier - ACSE   
+SYZGK,Reception - APFR - PPP   
+SYZME,Reception - APSK - PPP   
+UVSSA,Prise en compte securite    
+SYZ99,HOLD pour tous session du DIALOG - 
+SYZGB,Reception - ACBE - SB/CS   
+SYZGC,Reception - RECEPTION - ACBE - GDO 
+SYZGA,Reception - ACBE - SITEL CLI  
+SYZ3D,Alimentation CPP      
+SYZAR,Reception - ACSE - SB/CS   
+SYZUP,Emission Neolane Journalier - ACHR   
+SYZUR,Reception - APES - SITEL VRM  
+SYZUX,Reception - APES - SITEL CLI  
+SYZUY,Reception - APES - SB/CS   
+SYZUE,Reception - ACFR - FU VEHICULE  
+SYZUF,Reception - APIT - FU EM ORPHELINS 
+SYZUG,Reception - APIT - FU PARTUCULIER  
+SYZUA,Reception - APCH - SITEL CLI  
+SYZUB,Reception - APCH - SB/CS   
+SYZSYFT,       
+SYZUK,Reception - APUK - PPP   
+SYZU4,Reception - ACFR - Reprise - Contacts 
+SYZU5,Reception - APBE - NEOLANE   
+SYZU6,Emission Neolane Journalier - APBE   
+SYZU7,Emission - APBE - Neolane Mensuel  
+SYZU2,Reception - ACFR - Reprise - Societe 
+SYZU3,Reception - ACFR - Reprise - Contacts 
+SYZU8,Emission Reporting Journalier - APBE   
+SYZU9,Emission - APBE - Reporting Mensuel  
+SYZY3,Reception - ACNO - FU EM ORPHELINS 
+SYZCB,Reception - ACHU - CPP   
+SYZCC,Reception - ACHU - AI   
+SYZCA,Reception - ACHU - AO   
+SYZCE,CREATION DE EVENEMENTS     
+SYZCJ,Reception - ACHU - SAGAI   
+SYZCK,Reception - ACHU - NSID   
+SYZCH,Reception - ACHU - SITEL VRM  
+SYZCI,Reception - ACHU - FICHS. INTRANET  
+SYZCN,Reception - ACHU - SITEL CLI  
+SYZCR,Reception Implicite CPP     
+SYZCS,Reception - ACHU - NEOLANE   
+SYZCP,Reception - ACHU - SB/CS   
+SYZCQ,Reception - RECEPTION - ACHU - GDO 
+SYZCV,Reception - ACCZ - DIALOG   
+SYZCW,Reception - ACCZ - ARCAD   
+SYZCT,Emission Reporting Mensuel - APPT   
+SYZCU,Reception - ACHU - FU PARTICULIER  
+SYZCZ,Reception - ACCZ - AI   
+SYZCX,Reception - ACCZ - AO   
+SYZCY,Reception - ACCZ - CPP   
+SYZHW,Reception - ACIT - AI   
+SYZHV,Reception - ACIT - CPP   
+SYZHU,Reception - ACIT - AO   
+SYZHT,Reception - ACIT - ARCAD   
+SYZHS,Reception - ACIT - DIALOG   
+SYZHR,Reception - ACFR - Reprise - Véhicules 
+SYZHQ,Emission Reporting Journalier - ACFR   
+SYZCE1,Emission CUSCO Mensuel - ACES   
+SYZZ5,Reception - APHR - SB/CS   
+SYZCE2,Emission CUSCO Mensuel - ACES   
+SYZHY,Reception - ACIT - ARCAD V2  
+SYZHG,Reception - APGB - SAGAI   
+SYZHE,Reception - APUK - SITEL VRM  
+SYZFN,Reception - ACES - SB/CS   
+SYZHRR,Reception - ACFR - Reprise - Véhicules 
+SYZHA,Reception - APGB - ARCAD V2  
+SYZFI,Reception - ACES - NSID   
+SYZHL,Reception - APGB - SB/CS   
+SYZHK,Reception - APUK - SITEL CLI  
+SYZCE5,Emission CUSCO Mensuel - ACIT   
+SYZH6,Reception - ACIT - CUSCO   
+SYZH5,Reception - ACIT - NSID   
+SYZH4,Reception - ACIT - SAGAI   
+SYZH3,Reception - ACIT - FICHS. INTRANET  
+SYZH2,Reception - ACIT - SITEL VRM  
+SYZH1,Reception - ACIT - OPV   
+SYZZR,Reception - APHR - PPP   
+SYZH9,Reception - ACIT - SB/CS   
+SYZH8,Reception - ACIT - SITEL CLI  
+SYZZI,Reception - RECEPTION - ACHR - GDO 
+SYZZH,Reception - ACHR - SB/CS   
+SYZZK,Reception - ACSE - FU EM ORPHELINS 
+SYZZM,Reception - ACNO - FU VEHICULE  
+SYZZL,Reception - ACDK - FU VEHICULE  
+SYZZA,Reception - ACHR - SITEL VRM  
+SYZZC,Reception - ACHR - SAGAI   
+SYZZB,Reception - ACHR - FICHS. INTRANET  
+SYZZD,Reception - ACHR - NSID   
+SYZZG,Reception - ACHR - SITEL CLI  
+SYZC2,Emission - ACES - Reporting Mensuel  
+SYZC3,Emission Reporting Journalier - ACPL   
+SYZC6,Reception - ACCZ - FICHS. INTRANET  
+SYZC7,Reception - ACCZ - SAGAI   
+SYZC5,Reception - ACCZ - SITEL VRM  
+SYZC8,Reception - ACCZ - NSID   
+SYZRI1,BACKUP RMAN INC0+ARC DE LA BASE  
+SYZRI0,BACKUP RMAN INC0+ARC DE LA BASE  
+SYZQX,Reception - ACFR - SAGAI   
+SYZQY,Reception - ACFR - NSID   
+SYZQZ,Reception - ACFR - CUSCO   
+SYZQP,Reception - ACFR - CPP   
+SYZQQ,Reception - ACFR - AI   
+SYZQR,Reception - ACFR - ARCAD V2  
+SYZQS,Reception - ACFR - Reprise - Particulier 
+SYZQT,Reception - ACHR - FU EM ORPHELINS 
+SYZQU,Reception - ACFR - OPV   
+SYZQV,Reception - ACFR - SITEL VRM  
+SYZQW,Reception - ACFR - FICHS. INTRANET  
+SYZQL,Reception - ACFR - DIALOG   
+SYZQM,Reception - ACFR - ARCAD   
+SYZQN,Reception - ACFR - AO   
+SYZQC,Reception - APFR - CUSCO   
+SYZQE,Reception - APDE - SITEL CLI  
+SYZQF,Reception - APDE - SB/CS   
+SYZQ8,Emission Neolane Mensuel - ACFR   
+SYZQ2,Reception - ACFR - SITEL CLI  
+SYZQ3,Reception - ACFR - SB/CS   
+SYZQ4,Reception - RECEPTION - ACFR - GDO 
+SYZQ6,Reception - ACFR - NEOLANE   
+SYZQ7,Emission Neolane Journalier - ACFR   
+SYZSGO,DEBUT BATCH SYSAME CONVERGENCE    
+SYZ1X,Emission Neolane Mensuel - ACIT   
+SYZ1V,Reception - ACIT - NEOLANE   
+SYZ1W,Emission Neolane Journalier - ACIT   
+SYZ1I,Reception - ACDE - FU EM ORPHELINS 
+SYZ1L,Emission Neolane Journalier - ACCZ   
+SYZV8,Reception - ACRU - SITEL CLI  
+SYZ1A,Libére la ressource     
+PRUEBA,borrame       
+SYZDZ,Reception - ACPL - SB/CS   
+SYZDY,Reception - ACPL - SITEL CLI  
+SYZDS,Reception - ACPL - SITEL VRM  
+SYZDQ,Emission Neolane Journalier - ACPL   
+SYZDP,Emission Neolane Mensuel - ACPL   
+SYZDV,Reception - ACPL - NSID   
+SYZDU,Reception - ACPL - SAGAI   
+SYZDT,Reception - ACPL - FICHS. INTRANET  
+SYZDK,Reception - ACPL - AO   
+SYZDJ,Reception - ACPL - ARCAD   
+SYZDI,Reception - ACPL - DIALOG   
+SYZDH,Reception - ACCZ - FU EM ORPHELINS 
+SYZDN,Reception - ACPL - ARCAD V2  
+SYZDM,Reception - ACPL - AI   
+SYZDL,Reception - ACPL - CPP   
+SYZDC,Reception - ACCZ - SB/CS   
+SYZDB,Reception - ACCZ - SITEL CLI  
+SYZDF,Reception - ACCZ - NEOLANE   
+SYZDD,Reception - RECEPTION - ACCZ - GDO 
+SYZD9,Emission SAGAI Journalier - ACSK   
+SYZD8,Emission SAGAI Journalier - ACHR   
+SYZD3,Emission - ACDE - Neolane Mensuel  
+SYZD2,Emission Neolane Journalier - ACDE   
+SYZD1,Reception - ACDE - NEOLANE   
+SYZD7,Emission SAGAI Journalier - ACGB   
+SYZD6,Emission SAGAI Journalier - ACDE   
+SYZD5,Emission - ACDE - Reporting Mensuel  
+SYZD4,Emission Reporting Journalier - ACDE   
+SYZFTP,Init Sauvegarde SYZ - Mount DB  
+SYZCCR,compte-rendu       
+SYZ6VF,       
+SYZ7A,Reception - ACIT - FU EM ORPHELINS 
+SYZVL,Reception - APSI - SB/CS   
+SYZVK,Reception - APSI - SITEL CLI  
+SYZVE,Reception - APSI - SITEL VRM  
+UVS07,Traiter les vérifications     
+SYZVA,Emission Reporting Journalier - APGB   
+SYZVC,Reception - ACHR - NEOLANE   
+SYZVB,Emission - APGB - Reporting Mensuel  
+SYZSYDT,       
+SYZVZ,Reception - ACDE - FU EM ORPHELINS 
+SYZVV,Reception - ACRU - CPP   
+SYZVQ,Emission Reporting Mensuel - ACFR   
+SYZVP,Reception - APIT - FU SOCIETE  
+SYZVR,Reception - APIT - FU VEHICULE  
+SYZBA,Reception - ACDK - NSID   
+SYZ4I,Extraccion MATRICS      
+SYZR0,Reception - ACSK - FU SOCIETE  
+SYZM9,Reception - ACPT - SITEL VRM  
+SYZBE,Reception - ACSK - SB/CS   
+SYZM7,Emission SAGAI Journalier - ACBE   
+SYZM0,Reception - ACSK - FU EM ORPHELINS 
+SYZM1,Reception - ACPT - ARCAD   
+SYZM2,Reception - ACPT - AO   
+SYZBD,Reception - ACDK - SITEL CLI  
+SYZXW,Reception - ACAT - FU EM ORPHELINS 
+SYZXV,Reception - ACAT - FU EM ORPHELINS 
+UVS01,Gestion des logs     
+SYZBI,Reception - APPT - NEOLANE   
+SYZBH,Reception - ACDK - NEOLANE   
+SYZBK,Reception - ACNO - DIALOG   
+SYZ6M,Verificacion Batch Objetos Faltantes    
+SYZ6L,Evide check      
+SYZ6N,Reorg: Database      
+SYZ6I,Monitoreo de espacio y objs. inval.  
+SYZ6H,Sauvegarde HIRECEPT & HIENVOI    
+SYZ6K,RAPPORT MATINAL AMOA     
+SYZ6J,Backup dollar U     
+SYZ6E,Monitoreo UNXENVOI      
+SYZBM,Reception - ACNO - AO   
+SYZ6G,Estadistica de TODA la base.   
+SYZ6A,Monitoreo del alert de la base oracle. 
+SYZ6C,Rapport Matinal Fin Batch    
+SYZBL,Reception - ACNO - ARCAD   
+SYZ6Y,EJECUTOR S00      
+SYZBO,Reception - APPT - FU PARTICULIER  
+SYZ6U,Monitoreo de undo y sort.   
+SYZBN,Reception - ACNO - CPP   
+SYZ6Q,       
+SYZ6P,purge des logs     
+SYZ6S,Sauvegarde environnement indus     
+SYZ6R,Reorg: Database      
+SYZMI,Emission SAGAI Journalier - ACIT   
+SYZMK,Reception - APSK - SITEL VRM  
+SYZLNDO,Lanzador Domingo      
+SYZX7,Reception - APTR - SB/CS   
+SYZMA,Reception - ACBE - FU EM ORPHELINS 
+SYZXZ,Reception - APTR - SITEL VRM  
+SYZMX,Reception - ACBE - FU SOCIETE  
+SYZMY,Reception - ACBE - FU VEHICULE  
+SYZMZ,Reception - ACPT - DIALOG   
+SYZMT,Reception - APSI - SB/CS   
+SYZMW,Reception - ACBE - FU PARTICULIER  
+SYZMS,Reception - APSK - SITEL CLI  
+SYZ1AS,Libˆére la ressource sa    
+SYZR4,Emission Reporting Journalier - ACHR   
+SYZ1AT,Libère la ressource we    
+SYZR6,Reception - ACNL - SITEL VRM  
+SYZX6,Reception - APTR - SITEL CLI  
+SYZ1AD,Libˆére la ressource do    
+SYZZ4,Reception - ACSE - SITEL VRM  
+SYZRQ,Reception - ACGB - SB/CS   
+SYZRP,Reception - ACGB - SITEL CLI  
+SYZRU,Reception - ACGB - FU SOCIETE  
+SYZRT,Reception - ACGB - FU PARTICULIER  
+SYZRV,Reception - ACGB - FU VEHICULE  
+SYZRZ,Reception - ACNL - CPP   
+SYZRA,Reception - ACGB - ARCAD   
+SYZRC,Reception - ACGB - CPP   
+SYZRB,Reception - ACGB - AO   
+SYZRD,Reception - ACGB - AI   
+SYZRG,Reception - ACGB - NEOLANE   
+SYZRF,Reception - ACGB - CPP   
+SYZRI,Reception - ACGB - SITEL VRM  
+SYZV9,Reception - ACRU - SB/CS   
+SYZRK,Reception - ACGB - SAGAI   
+SYZRJ,Reception - ACGB - FICHS. INTRANET  
+SYZRL,Reception - ACGB - NSID   
+SYZRO,RMAN DATABASE OPEN     
+SYZI2,Emission SAGAI Journalier - ACHU   
+SYZI3,Reception - ACAT - DIALOG   
+SYZI4,Reception - ACAT - ARCAD   
+SYZI5,Reception - ACAT - AO   
+SYZI6,Reception - ACAT - CPP   
+SYZI7,Reception - ACAT - AI   
+SYZI8,Reception - ACAT - ARCAD V2  
+SYZI9,Emission SAGAI Journalier - ACAT   
+SYZNG,Reception - ACPT - SB/CS   
+SYZNF,Reception - ACPT - SITEL CLI  
+SYZNB,Reception - ACPT - SAGAI   
+SYZNM,Reception - APPT - DIALOG   
+SYZNL,Reception - ACNO - FU SOCIETE  
+SYZNK,Reception - ACDK - FU SOCIETE  
+SYZNJ,Reception - ACSE - FU EM ORPHELINS 
+SYZNT,Reception - APPT - ARCAD V2  
+SYZNV,Emission SAGAI Journalier - APPT   
+SYZNQ,Reception - APPT - AO   
+SYZNP,Reception - APPT - ARCAD   
+SYZNS,Reception - APPT - AI   
+SYZNR,Reception - APPT - PPP   
+SYZV2,Reception - ACRU - SITEL VRM  
+SYZNY,Reception - APPT - FICHS. INTRANET  
+SYZNX,Reception - APPT - SITEL VRM  
+SYZNZ,Reception - APPT - SAGAI   
+SYZN5,Reception - APPT - SB/CS   
+SYZN4,Reception - APPT - SITEL CLI  
+SYZN6,Reception - RECEPTION - APPT - GDO 
+SYZN1,Reception - APPT - NSID   
+SYZN0,Reception - ACSK - FU PARTICULIER  
+SYZN2,Reception - APPT - CUSCO   
+SYZ2I,Reception - APPT - FU EM ORPHELINS 
+SYZ2K,Emission Reporting Journalier - APPT   
+SYZ2J,Reception - APPT - FU EM ORPHELINS 
+SYZN9,Reception - ACCZ - FU EM ORPHELINS 
+SYZ2L,Reception - APPT - FU EM ORPHELINS 
+SYZIP,Reception - APIT - SITEL VRM  
+SYZIQ,Reception - APIT - FICHS. INTRANET  
+SYZIR,Reception - APIT - SAGAI   
+SYZIS,Reception - APIT - NSID   
+SYZIT,Reception - APIT - CUSCO   
+SYZIU,Reception - APIT - MATRICS   
+SYZIV,Reception - APIT - SITEL CLI  
+SYZIW,Reception - APIT - SB/CS   
+SYZIX,Reception - RECEPTION - APIT - GDO 
+SYZIZ,Reception - APIT - ARCAD V2  
+SYZIA,Reception - RECEPTION - ACIT - GDO 
+SYZIC,Emission Neolane Journalier - ACSE   
+SYZID,Emission Neolane Journalier - ACDK   
+SYZIE,Emission Neolane Journalier - ACNO   
+SYZIF,Reception - APIT - DIALOG   
+SYZIG,Reception - APIT - ARCAD   
+SYZIH,Reception - APIT - AO   
+SYZII,Reception - APIT - PPP   
+SYZIJ,Reception - APIT - AI   
+SYZIK,Emission Neolane Journalier - ACHU   
+SYZIL,Emission Neolane Journalier - ACCZ   
+SYZIM,Emission Neolane Journalier - ACGB   
+SYZWL,Reception - APGB - FU EM ORPHELINS 
+SYZWM,Reception - ACDE - FU EM ORPHELINS 
+SYZWJ,Reception - APGB - FU EM ORPHELINS 
+SYZWK,Reception - APGB - FU EM ORPHELINS 
+SYZWH,Emission - APGB - Neolane Mensuel  
+SYZWI,Reception - APGB - FU EM ORPHELINS 
+SYZWF,Reception - APGB - NEOLANE   
+SYZWG,Emission Neolane Journalier - APGB   
+SYZWD,Emission Reporting Mensuel - ACDK   
+SYZWE,Emission Reporting Mensuel - ACNO   
+SYZWC,Emission Reporting Mensuel - ACSE   
+SYZWZ,Emission Reporting Mensuel - ACHU   
+SYZQSR,Reception - ACFR - Reprise - Particulier 
+SYZWW,Reception - APRU - SB/CS   
+SYZWP,Reception - APRU - SITEL VRM  
+SYZW6,Reception - ACTR - CPP   
+SYZSTO,Init Sauvegarde SYZ     
+SYZSTM,Init Sauvegarde SYZ - Mount DB  
+UVS02,Reorganisation online      
+SYZ7F,Emission Reporting Mensuel - ACIT   
+SYZED,Emission CUSCO - ACDE    
+SYZEE,Emission CUSCO - ACES    
+SYZEA,Reception - ACES - NEOLANE   
+SYZAY,Reception - ACDK - ARCAD   
+SYZ7D,Reception - ACIT - FU VEHICULE  
+SYZ7E,Emission Reporting Journalier - ACIT   
+SYZ7B,Reception - ACIT - FU PARTICULIER  
+SYZEI,Emission CUSCO - ACIT    
+SYZEJ,Emission CUSCO - APIT    
+SYZEK,Emission CUSCO - APPT    
+SYZU3R,Reception - Reprise - ACFR - Contacts 
+SYZJI,Reception - ACAT - SITEL CLI  
+SYZJJ,Reception - ACAT - SB/CS   
+SYZJM,Reception - APIT - NEOLANE   
+SYZJN,Emission Neolane Journalier - APIT   
+SYZJA,Emission SAGAI Journalier - ACCZ   
+SYZJC,Reception - ACAT - SITEL VRM  
+SYZJB,Reception - ACAT - OPV   
+SYZJE,Reception - ACAT - SAGAI   
+SYZJF,Reception - ACAT - NSID   
+SYZJY,Reception - APAT - OPV   
+SYZJX,Emission SAGAI Journalier - APIT   
+SYZJZ,Reception - APAT - SITEL VRM  
+UVSCA,Extension du calendrier general    
+SYZJP,Emission Neolane Mensuel - APIT   
+SYZJ3,Reception - APAT - NSID   
+SYZJ2,Reception - APAT - SAGAI   
+SYZJ7,Reception - APAT - SB/CS   
+SYZJ6,Reception - APAT - SITEL CLI  
+SYZE4,Reception - ACHR - ARCAD   
+SYZE5,Reception - ACHR - AO   
+SYZE6,Reception - ACES - DIALOG   
+SYZE7,Reception - ACES - ARCAD   
+SYZE1,Reception - RECEPTION - ACPL - GDO 
+SYZE3,Reception - ACHR - DIALOG   
+SYZE8,Reception - ACES - AO   
+SYZE9,Reception - ACES - CPP   
