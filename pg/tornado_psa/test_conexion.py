@@ -10,7 +10,7 @@ FORMAT = '%(asctime)-15s %(levelname)s %(message)s'
 logging.basicConfig(format=FORMAT,level=logging.INFO)
 
 
-conn=conectarse('xxxxxx','xxxxxxxx','xxxxxx')
-conn.make_sudo('xxxxxx','Sam0la\'P','xxxxxx >')
+conn=conectarse('yvasa850','e449806','Ema84nue')
+conn.make_sudo('mwpsyz01','Sam0la\'P','mwpsyz01 >')
 print conn.get_now()
 

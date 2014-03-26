@@ -1,0 +1,1368 @@
+SYZ7CU09 ,"  uxlst upr upr=SYZ7CU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7CU09 ,"Poste de début - RECEPTION"
+SYZ7CHLD ,"  uxlst upr upr=SYZ7CHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7CHLD ,"hold ressource   "
+SYZ7CREB ,"  uxlst upr upr=SYZ7CREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7CREB ,"Rebond - RECEPTION - ACIT"
+SYZ7CT00 ,"  uxlst upr upr=SYZ7CT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7CT00 ,"Transfert - RECEPTION - ACIT"
+SYZ7CC00 ,"  uxlst upr upr=SYZ7CC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7CC00 ,"Collecte - RECEPTION - ACIT"
+SYZ7CM00 ,"  uxlst upr upr=SYZ7CM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7CM00 ,"Mise a dispo - RECEPTION"
+SYZ7CZ00 ,"  uxlst upr upr=SYZ7CZ00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7CZ00 ,"Desempaquetador - ACIT - FU-EM_ORPHELINS"
+SYZ7C010 ,"  uxlst upr upr=SYZ7C010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7C010 ,"Loader - RECEPTION - ACIT"
+SYZ7C020 ,"  uxlst upr upr=SYZ7C020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7C020 ,"Control & Normalisation - RECEPTION"
+SYZ7C025 ,"  uxlst upr upr=SYZ7C025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7C025 ,"Post - RECEPTION - ACIT"
+SYZ7C030 ,"  uxlst upr upr=SYZ7C030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7C030 ,"Correction Adresses - RECEPTION -"
+SYZ7C040 ,"  uxlst upr upr=SYZ7C040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7C040 ,"Alimentation - ACIT - FU_L_SOCIETE"
+SYZ7CRLS ,"  uxlst upr upr=SYZ7CRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7CRLS ,"Libére la ressource - RECEPTION"
+SYZ7CU89 ,"  uxlst upr upr=SYZ7CU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ7CU89 ,"Poste de fin - RECEPTION"
+SYZ6VDU09 ,"  uxlst upr upr=SYZ6VDU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ6VDU09 ,"Poste de début - DEBUT"
+SYZSTMU89 ,"  uxlst upr upr=SYZSTMU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSTMU89 ,"Poste de fin Rman MOUNT"
+SYZ6VDU89 ,"  uxlst upr upr=SYZ6VDU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ6VDU89 ,"Poste de fin - DEBUT"
+SYZSRU09 ,"  uxlst upr upr=SYZSRU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSRU09 ,"Poste de début - Emission"
+SYZSRC00 ,"  uxlst upr upr=SYZSRC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSRC00 ,"Collecte - Emission Reporting Mensuel"
+SYZSRM00 ,"  uxlst upr upr=SYZSRM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSRM00 ,"Mise a dispo - Emission"
+SYZSRE00 ,"  uxlst upr upr=SYZSRE00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSRE00 ,"Transfert - Emission Reporting Mensuel"
+SYZSRU89 ,"  uxlst upr upr=SYZSRU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSRU89 ,"Poste de fin - Emission"
+SYZSPU09 ,"  uxlst upr upr=SYZSPU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSPU09 ,"Poste de début - RECEPTION"
+SYZSPHLD ,"  uxlst upr upr=SYZSPHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSPHLD ,"hold ressource   "
+SYZSPREB ,"  uxlst upr upr=SYZSPREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSPREB ,"Rebond - RECEPTION - APAT"
+SYZSPT00 ,"  uxlst upr upr=SYZSPT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSPT00 ,"Transfert - RECEPTION - APAT"
+SYZSPC00 ,"  uxlst upr upr=SYZSPC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSPC00 ,"Collecte - RECEPTION - APAT"
+SYZSPM00 ,"  uxlst upr upr=SYZSPM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSPM00 ,"Mise a dispo - RECEPTION"
+SYZSPZ00 ,"  uxlst upr upr=SYZSPZ00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSPZ00 ,"Desempaquetador - APAT - FU-EM_L_SOCIETE"
+SYZSP010 ,"  uxlst upr upr=SYZSP010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSP010 ,"Loader - RECEPTION - APAT"
+SYZSP020 ,"  uxlst upr upr=SYZSP020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSP020 ,"Control & Normalisation - RECEPTION"
+SYZSP025 ,"  uxlst upr upr=SYZSP025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSP025 ,"Post - RECEPTION - APAT"
+SYZSP030 ,"  uxlst upr upr=SYZSP030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSP030 ,"Correction Adresses - RECEPTION -"
+SYZSP040 ,"  uxlst upr upr=SYZSP040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSP040 ,"Alimentation - APAT - FU_L_SOCIETE"
+SYZSPRLS ,"  uxlst upr upr=SYZSPRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSPRLS ,"Libére la ressource - RECEPTION"
+SYZSPU89 ,"  uxlst upr upr=SYZSPU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSPU89 ,"Poste de fin - RECEPTION"
+SYZSQU09 ,"  uxlst upr upr=SYZSQU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQU09 ,"Poste de début - RECEPTION"
+SYZSQHLD ,"  uxlst upr upr=SYZSQHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQHLD ,"hold ressource   "
+SYZSQREB ,"  uxlst upr upr=SYZSQREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQREB ,"Rebond - RECEPTION - APAT"
+SYZSQT00 ,"  uxlst upr upr=SYZSQT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQT00 ,"Transfert - RECEPTION - APAT"
+SYZSQC00 ,"  uxlst upr upr=SYZSQC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQC00 ,"Collecte - RECEPTION - APAT"
+SYZSQM00 ,"  uxlst upr upr=SYZSQM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQM00 ,"Mise a dispo - RECEPTION"
+SYZSQZ00 ,"  uxlst upr upr=SYZSQZ00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQZ00 ,"Desempaquetador - APAT - FU-EM_L_SOCIETE"
+SYZSQ010 ,"  uxlst upr upr=SYZSQ010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQ010 ,"Loader - RECEPTION - APAT"
+SYZSQ020 ,"  uxlst upr upr=SYZSQ020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQ020 ,"Control & Normalisation - RECEPTION"
+SYZSQ025 ,"  uxlst upr upr=SYZSQ025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQ025 ,"Post - RECEPTION - APAT"
+SYZSQ030 ,"  uxlst upr upr=SYZSQ030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQ030 ,"Correction Adresses - RECEPTION -"
+SYZSQ040 ,"  uxlst upr upr=SYZSQ040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQ040 ,"Alimentation - APAT - FU_L_VEHICULE"
+SYZSQRLS ,"  uxlst upr upr=SYZSQRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQRLS ,"Libére la ressource - RECEPTION"
+SYZSQU89 ,"  uxlst upr upr=SYZSQU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSQU89 ,"Poste de fin - RECEPTION"
+SYZSTU09 ,"  uxlst upr upr=SYZSTU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSTU09 ,"Poste de début - RECEPTION"
+SYZSTHLD ,"  uxlst upr upr=SYZSTHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSTHLD ,"hold ressource   "
+SYZST010 ,"  uxlst upr upr=SYZST010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZST010 ,"Loader - RECEPTION - APNL"
+SYZST020 ,"  uxlst upr upr=SYZST020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZST020 ,"Control & Normalisation - RECEPTION"
+SYZST025 ,"  uxlst upr upr=SYZST025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZST025 ,"Post - RECEPTION - APNL"
+SYZST030 ,"  uxlst upr upr=SYZST030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZST030 ,"Correction Adresses - RECEPTION -"
+SYZST040 ,"  uxlst upr upr=SYZST040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZST040 ,"Alimentation - RECEPTION - APNL"
+SYZSTRLS ,"  uxlst upr upr=SYZSTRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSTRLS ,"Libére la ressource - RECEPTION"
+SYZSTU89 ,"  uxlst upr upr=SYZSTU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSTU89 ,"Poste de fin - RECEPTION"
+SYZSZU09 ,"  uxlst upr upr=SYZSZU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSZU09 ,"Poste de début - RECEPTION"
+SYZSZHLD ,"  uxlst upr upr=SYZSZHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSZHLD ,"hold ressource   "
+SYZSZ010 ,"  uxlst upr upr=SYZSZ010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSZ010 ,"Loader - RECEPTION - APNL"
+SYZSZ020 ,"  uxlst upr upr=SYZSZ020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSZ020 ,"Control & Normalisation - RECEPTION"
+SYZSZ025 ,"  uxlst upr upr=SYZSZ025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSZ025 ,"Post - RECEPTION - APNL"
+SYZSZ030 ,"  uxlst upr upr=SYZSZ030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSZ030 ,"Correction Adresses - RECEPTION -"
+SYZSZ040 ,"  uxlst upr upr=SYZSZ040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSZ040 ,"Alimentation - RECEPTION - APNL"
+SYZSZRLS ,"  uxlst upr upr=SYZSZRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSZRLS ,"Libére la ressource - RECEPTION"
+SYZSZU89 ,"  uxlst upr upr=SYZSZU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSZU89 ,"Poste de fin - RECEPTION"
+SYZRIALU09 ,"  uxlst upr upr=SYZRIALU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZRIALU09 ,"Poste de début - RMAN"
+SYZRIAL00 ,"  uxlst upr upr=SYZRIAL00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZRIAL00 ,"RMAN - Purga Archive Log"
+SYZRIAL10 ,"  uxlst upr upr=SYZRIAL10  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZRIAL10 ,"RMAN - Purga Archive Log"
+SYZRIALU89 ,"  uxlst upr upr=SYZRIALU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZRIALU89 ,"Poste de fin - RMAN"
+SYZRIALU09 ,"  uxlst upr upr=SYZRIALU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZRIALU09 ,"Poste de début - RMAN"
+SYZRIAL00 ,"  uxlst upr upr=SYZRIAL00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZRIAL00 ,"RMAN - Purga Archive Log"
+SYZRIAL10 ,"  uxlst upr upr=SYZRIAL10  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZRIAL10 ,"RMAN - Purga Archive Log"
+SYZRIALU89 ,"  uxlst upr upr=SYZRIALU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZRIALU89 ,"Poste de fin - RMAN"
+SYZSCU09 ,"  uxlst upr upr=SYZSCU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSCU09 ,"Poste de début - RECEPTION"
+SYZSCHLD ,"  uxlst upr upr=SYZSCHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSCHLD ,"hold ressource   "
+SYZSC010 ,"  uxlst upr upr=SYZSC010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSC010 ,"Loader - RECEPTION - ACNL"
+SYZSC020 ,"  uxlst upr upr=SYZSC020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSC020 ,"Control & Normalisation - RECEPTION"
+SYZSC025 ,"  uxlst upr upr=SYZSC025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSC025 ,"Post - RECEPTION - ACNL"
+SYZSC030 ,"  uxlst upr upr=SYZSC030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSC030 ,"Correction Adresses - RECEPTION -"
+SYZSC040 ,"  uxlst upr upr=SYZSC040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSC040 ,"Alimentation - RECEPTION - ACNL"
+SYZSCRLS ,"  uxlst upr upr=SYZSCRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSCRLS ,"Libére la ressource - RECEPTION"
+SYZSCU89 ,"  uxlst upr upr=SYZSCU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSCU89 ,"Poste de fin - RECEPTION"
+SYZSGU09 ,"  uxlst upr upr=SYZSGU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSGU09 ,"Poste de début - Emission"
+SYZSGC00 ,"  uxlst upr upr=SYZSGC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSGC00 ,"Collecte - Emission Reporting Journalier"
+SYZSGM00 ,"  uxlst upr upr=SYZSGM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSGM00 ,"Mise a dispo - Emission"
+SYZSGE00 ,"  uxlst upr upr=SYZSGE00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSGE00 ,"Transfert - Emission Reporting Journalier"
+SYZSGU89 ,"  uxlst upr upr=SYZSGU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSGU89 ,"Poste de fin - Emission"
+SYZSDU09 ,"  uxlst upr upr=SYZSDU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSDU09 ,"Poste de début - RECEPTION"
+SYZSDHLD ,"  uxlst upr upr=SYZSDHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSDHLD ,"hold ressource   "
+SYZSDREB ,"  uxlst upr upr=SYZSDREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSDREB ,"Rebond - RECEPTION - ACNL"
+SYZSD010 ,"  uxlst upr upr=SYZSD010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSD010 ,"Loader - RECEPTION - ACNL"
+SYZSD020 ,"  uxlst upr upr=SYZSD020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSD020 ,"Control & Normalisation - RECEPTION"
+SYZSD025 ,"  uxlst upr upr=SYZSD025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSD025 ,"Post - RECEPTION - ACNL"
+SYZSD030 ,"  uxlst upr upr=SYZSD030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSD030 ,"Correction Adresses - RECEPTION -"
+SYZSD040 ,"  uxlst upr upr=SYZSD040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSD040 ,"Alimentation - RECEPTION - ACNL"
+SYZSDRLS ,"  uxlst upr upr=SYZSDRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSDRLS ,"Libére la ressource - RECEPTION"
+SYZSDU89 ,"  uxlst upr upr=SYZSDU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSDU89 ,"Poste de fin - RECEPTION"
+SYZSJU09 ,"  uxlst upr upr=SYZSJU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJU09 ,"Poste de début - RECEPTION"
+SYZSJHLD ,"  uxlst upr upr=SYZSJHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJHLD ,"hold ressource   "
+SYZSJREB ,"  uxlst upr upr=SYZSJREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJREB ,"Rebond - RECEPTION - APAT"
+SYZSJT00 ,"  uxlst upr upr=SYZSJT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJT00 ,"Transfert - RECEPTION - APAT"
+SYZSJC00 ,"  uxlst upr upr=SYZSJC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJC00 ,"Collecte - RECEPTION - APAT"
+SYZSJM00 ,"  uxlst upr upr=SYZSJM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJM00 ,"Mise a dispo - RECEPTION"
+SYZSJ010 ,"  uxlst upr upr=SYZSJ010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJ010 ,"Loader - RECEPTION - APAT"
+SYZSJ020 ,"  uxlst upr upr=SYZSJ020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJ020 ,"Control & Normalisation - RECEPTION"
+SYZSJ025 ,"  uxlst upr upr=SYZSJ025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJ025 ,"Post - RECEPTION - APAT"
+SYZSJ030 ,"  uxlst upr upr=SYZSJ030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJ030 ,"Correction Adresses - RECEPTION -"
+SYZSJ040 ,"  uxlst upr upr=SYZSJ040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJ040 ,"Alimentation - APAT - NEOLANE"
+SYZSJRLS ,"  uxlst upr upr=SYZSJRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJRLS ,"Libère la ressource - RECEPTION"
+SYZSJU89 ,"  uxlst upr upr=SYZSJU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSJU89 ,"Poste de fin - RECEPTION"
+SYZSKU09 ,"  uxlst upr upr=SYZSKU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSKU09 ,"Poste de début - Emission"
+SYZSKC00 ,"  uxlst upr upr=SYZSKC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSKC00 ,"Collecte - Emission Neolane Journalier"
+SYZSKM00 ,"  uxlst upr upr=SYZSKM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSKM00 ,"Mise a dispo - Emission"
+SYZSKE00 ,"  uxlst upr upr=SYZSKE00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSKE00 ,"Transfert - Emission Neolane Journalier"
+SYZSKU89 ,"  uxlst upr upr=SYZSKU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSKU89 ,"Poste de fin - Emission"
+SYZSHU09 ,"  uxlst upr upr=SYZSHU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSHU09 ,"Poste de début - Emission"
+SYZSHC00 ,"  uxlst upr upr=SYZSHC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSHC00 ,"Collecte - Emission Reporting Journalier"
+SYZSHM00 ,"  uxlst upr upr=SYZSHM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSHM00 ,"Mise a dispo - Emission"
+SYZSHE00 ,"  uxlst upr upr=SYZSHE00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSHE00 ,"Transfert - Emission Reporting Journalier"
+SYZSHU89 ,"  uxlst upr upr=SYZSHU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSHU89 ,"Poste de fin - Emission"
+SYZSIU09 ,"  uxlst upr upr=SYZSIU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSIU09 ,"Poste de début - Emission"
+SYZSIC00 ,"  uxlst upr upr=SYZSIC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSIC00 ,"Collecte - Emission Reporting Journalier"
+SYZSIM00 ,"  uxlst upr upr=SYZSIM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSIM00 ,"Mise a dispo - Emission"
+SYZSIE00 ,"  uxlst upr upr=SYZSIE00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSIE00 ,"Transfert - Emission Reporting Journalier"
+SYZSIU89 ,"  uxlst upr upr=SYZSIU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSIU89 ,"Poste de fin - Emission"
+SYZSNU09 ,"  uxlst upr upr=SYZSNU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSNU09 ,"Poste de début - RECEPTION"
+SYZSNHLD ,"  uxlst upr upr=SYZSNHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSNHLD ,"hold ressource   "
+SYZSNREB ,"  uxlst upr upr=SYZSNREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSNREB ,"Rebond - RECEPTION - APAT"
+SYZSNT00 ,"  uxlst upr upr=SYZSNT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSNT00 ,"Transfert - RECEPTION - APAT"
+SYZSNC00 ,"  uxlst upr upr=SYZSNC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSNC00 ,"Collecte - RECEPTION - APAT"
+SYZSNM00 ,"  uxlst upr upr=SYZSNM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSNM00 ,"Mise a dispo - RECEPTION"
+SYZSNZ00 ,"  uxlst upr upr=SYZSNZ00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSNZ00 ,"Desempaquetador - APAT - FU-EM_L_PARTICULIER"
+SYZSN010 ,"  uxlst upr upr=SYZSN010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSN010 ,"Loader - RECEPTION - APAT"
+SYZSN020 ,"  uxlst upr upr=SYZSN020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSN020 ,"Control & Normalisation - RECEPTION"
+SYZSN025 ,"  uxlst upr upr=SYZSN025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSN025 ,"Post - RECEPTION - APAT"
+SYZSN030 ,"  uxlst upr upr=SYZSN030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSN030 ,"Correction Adresses - RECEPTION -"
+SYZSN040 ,"  uxlst upr upr=SYZSN040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSN040 ,"Alimentation - APAT - FU_L_PARTICULIER"
+SYZSNRLS ,"  uxlst upr upr=SYZSNRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSNRLS ,"Libére la ressource - RECEPTION"
+SYZSNU89 ,"  uxlst upr upr=SYZSNU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSNU89 ,"Poste de fin - RECEPTION"
+SYZSLU09 ,"  uxlst upr upr=SYZSLU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSLU09 ,"Poste de début - Emission"
+SYZSLC00 ,"  uxlst upr upr=SYZSLC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSLC00 ,"Collecte - Emission Neolane Mensuel"
+SYZSLM00 ,"  uxlst upr upr=SYZSLM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSLM00 ,"Mise a dispo - Emission"
+SYZSLE00 ,"  uxlst upr upr=SYZSLE00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSLE00 ,"Transfert - Emission Neolane Mensuel"
+SYZSLU89 ,"  uxlst upr upr=SYZSLU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSLU89 ,"Poste de fin - Emission"
+SYZSMU09 ,"  uxlst upr upr=SYZSMU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSMU09 ,"Poste de début - RECEPTION"
+SYZSMHLD ,"  uxlst upr upr=SYZSMHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSMHLD ,"hold ressource   "
+SYZSMREB ,"  uxlst upr upr=SYZSMREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSMREB ,"Rebond - RECEPTION - APAT"
+SYZSMT00 ,"  uxlst upr upr=SYZSMT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSMT00 ,"Transfert - RECEPTION - APAT"
+SYZSMC00 ,"  uxlst upr upr=SYZSMC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSMC00 ,"Collecte - RECEPTION - APAT"
+SYZSMM00 ,"  uxlst upr upr=SYZSMM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSMM00 ,"Mise a dispo - RECEPTION"
+SYZSMZ00 ,"  uxlst upr upr=SYZSMZ00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSMZ00 ,"Desempaquetador - APAT - FU-EM_ORPHELINS"
+SYZSM010 ,"  uxlst upr upr=SYZSM010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSM010 ,"Loader - RECEPTION - APAT"
+SYZSM020 ,"  uxlst upr upr=SYZSM020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSM020 ,"Control & Normalisation - RECEPTION"
+SYZSM025 ,"  uxlst upr upr=SYZSM025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSM025 ,"Post - RECEPTION - APAT"
+SYZSM030 ,"  uxlst upr upr=SYZSM030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSM030 ,"Correction Adresses - RECEPTION -"
+SYZSM040 ,"  uxlst upr upr=SYZSM040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSM040 ,"Alimentation - APAT - FU_EM_ORPHELINS"
+SYZSMRLS ,"  uxlst upr upr=SYZSMRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSMRLS ,"Libére la ressource - RECEPTION"
+SYZSMU89 ,"  uxlst upr upr=SYZSMU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSMU89 ,"Poste de fin - RECEPTION"
+SYZS0U09 ,"  uxlst upr upr=SYZS0U09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0U09 ,"Poste de début - RECEPTION"
+SYZS0HLD ,"  uxlst upr upr=SYZS0HLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0HLD ,"hold ressource   "
+SYZS0REB ,"  uxlst upr upr=SYZS0REB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0REB ,"Rebond - RECEPTION - ACSK"
+SYZS0T00 ,"  uxlst upr upr=SYZS0T00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0T00 ,"Transfert - RECEPTION - ACSK"
+SYZS0C00 ,"  uxlst upr upr=SYZS0C00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0C00 ,"Collecte - RECEPTION - ACSK"
+SYZS0M00 ,"  uxlst upr upr=SYZS0M00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0M00 ,"Mise a dispo - RECEPTION"
+SYZS0Z00 ,"  uxlst upr upr=SYZS0Z00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0Z00 ,"Desempaquetador - ACSK - FU-EM_ORPHELINS"
+SYZS0010 ,"  uxlst upr upr=SYZS0010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0010 ,"Loader - RECEPTION - ACSK"
+SYZS0020 ,"  uxlst upr upr=SYZS0020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0020 ,"Control & Normalisation - RECEPTION"
+SYZS0025 ,"  uxlst upr upr=SYZS0025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0025 ,"Post - RECEPTION - ACSK"
+SYZS0030 ,"  uxlst upr upr=SYZS0030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0030 ,"Correction Adresses - RECEPTION -"
+SYZS0040 ,"  uxlst upr upr=SYZS0040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0040 ,"Alimentation - ACSI - FU_L_VEHICULE"
+SYZS0RLS ,"  uxlst upr upr=SYZS0RLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0RLS ,"Libére la ressource - RECEPTION"
+SYZS0U89 ,"  uxlst upr upr=SYZS0U89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS0U89 ,"Poste de fin - RECEPTION"
+SYZS1U09 ,"  uxlst upr upr=SYZS1U09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS1U09 ,"Poste de début - RECEPTION"
+SYZS1HLD ,"  uxlst upr upr=SYZS1HLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS1HLD ,"hold ressource   "
+SYZS1REB ,"  uxlst upr upr=SYZS1REB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS1REB ,"Rebond - RECEPTION - APNL"
+SYZS1010 ,"  uxlst upr upr=SYZS1010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS1010 ,"Loader - RECEPTION - APNL"
+SYZS1020 ,"  uxlst upr upr=SYZS1020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS1020 ,"Control & Normalisation - RECEPTION"
+SYZS1025 ,"  uxlst upr upr=SYZS1025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS1025 ,"Post - RECEPTION - APNL"
+SYZS1030 ,"  uxlst upr upr=SYZS1030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS1030 ,"Correction Adresses - RECEPTION -"
+SYZS1040 ,"  uxlst upr upr=SYZS1040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS1040 ,"Alimentation - RECEPTION - APNL"
+SYZS1RLS ,"  uxlst upr upr=SYZS1RLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS1RLS ,"Libére la ressource - RECEPTION"
+SYZS1U89 ,"  uxlst upr upr=SYZS1U89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS1U89 ,"Poste de fin - RECEPTION"
+SYZS6U09 ,"  uxlst upr upr=SYZS6U09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS6U09 ,"Poste de début - Emission"
+SYZS6C00 ,"  uxlst upr upr=SYZS6C00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS6C00 ,"Collecte - Emission Reporting Journalier"
+SYZS6M00 ,"  uxlst upr upr=SYZS6M00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS6M00 ,"Mise a dispo - Emission"
+SYZS6E00 ,"  uxlst upr upr=SYZS6E00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS6E00 ,"Transfert - Emission Reporting Journalier"
+SYZS6U89 ,"  uxlst upr upr=SYZS6U89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS6U89 ,"Poste de fin - Emission"
+SYZS4U09 ,"  uxlst upr upr=SYZS4U09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS4U09 ,"Poste de début - Emission"
+SYZS4C00 ,"  uxlst upr upr=SYZS4C00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS4C00 ,"Collecte - Emission Reporting Journalier"
+SYZS4M00 ,"  uxlst upr upr=SYZS4M00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS4M00 ,"Mise a dispo - Emission"
+SYZS4E00 ,"  uxlst upr upr=SYZS4E00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS4E00 ,"Transfert - Emission Reporting Journalier"
+SYZS4U89 ,"  uxlst upr upr=SYZS4U89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS4U89 ,"Poste de fin - Emission"
+SYZS5U09 ,"  uxlst upr upr=SYZS5U09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS5U09 ,"Poste de début - Emission"
+SYZS5C00 ,"  uxlst upr upr=SYZS5C00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS5C00 ,"Collecte - Emission Reporting Journalier"
+SYZS5M00 ,"  uxlst upr upr=SYZS5M00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS5M00 ,"Mise a dispo - Emission"
+SYZS5E00 ,"  uxlst upr upr=SYZS5E00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS5E00 ,"Transfert - Emission Reporting Journalier"
+SYZS5U89 ,"  uxlst upr upr=SYZS5U89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS5U89 ,"Poste de fin - Emission"
+SYZSYDU09 ,"  uxlst upr upr=SYZSYDU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSYDU09 ,"Poste de début - DEBUT"
+SYZSYDU89 ,"  uxlst upr upr=SYZSYDU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZSYDU89 ,"Poste de fin - DEBUT"
+SYZS8U09 ,"  uxlst upr upr=SYZS8U09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS8U09 ,"Poste de début - Emission"
+SYZS8C00 ,"  uxlst upr upr=SYZS8C00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS8C00 ,"Collecte - Emission Reporting Journalier"
+SYZS8M00 ,"  uxlst upr upr=SYZS8M00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS8M00 ,"Mise a dispo - Emission"
+SYZS8E00 ,"  uxlst upr upr=SYZS8E00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS8E00 ,"Transfert - Emission Reporting Journalier"
+SYZS8U89 ,"  uxlst upr upr=SYZS8U89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS8U89 ,"Poste de fin - Emission"
+SYZS9U09 ,"  uxlst upr upr=SYZS9U09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS9U09 ,"Poste de début - Emission"
+SYZS9C00 ,"  uxlst upr upr=SYZS9C00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS9C00 ,"Collecte - Emission Reporting Mensuel"
+SYZS9M00 ,"  uxlst upr upr=SYZS9M00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS9M00 ,"Mise a dispo - Emission"
+SYZS9E00 ,"  uxlst upr upr=SYZS9E00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS9E00 ,"Transfert - Emission Reporting Mensuel"
+SYZS9U89 ,"  uxlst upr upr=SYZS9U89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZS9U89 ,"Poste de fin - Emission"
+UVS05U09 ,"  uxlst upr upr=UVS05U09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+UVS05U09 ,"Uproc de debut de session"
+UVS05U89 ,"  uxlst upr upr=UVS05U89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+UVS05U89 ,"Uproc de fin de session"
+SYZAHU09 ,"  uxlst upr upr=SYZAHU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAHU09 ,"Poste de début - RECEPTION"
+SYZAHHLD ,"  uxlst upr upr=SYZAHHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAHHLD ,"hold ressource   "
+SYZAHREB ,"  uxlst upr upr=SYZAHREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAHREB ,"Rebond - RECEPTION - ACSE"
+SYZAHT00 ,"  uxlst upr upr=SYZAHT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAHT00 ,"Transfert - RECEPTION - ACSE"
+SYZAHC00 ,"  uxlst upr upr=SYZAHC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAHC00 ,"Collecte - RECEPTION - ACSE"
+SYZAHM00 ,"  uxlst upr upr=SYZAHM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAHM00 ,"Mise a dispo - RECEPTION"
+SYZAH010 ,"  uxlst upr upr=SYZAH010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAH010 ,"Loader - RECEPTION - ACSE"
+SYZAH020 ,"  uxlst upr upr=SYZAH020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAH020 ,"Control & Normalisation - RECEPTION"
+SYZAH025 ,"  uxlst upr upr=SYZAH025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAH025 ,"Post - RECEPTION - ACSE"
+SYZAH030 ,"  uxlst upr upr=SYZAH030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAH030 ,"Correction Adresses - RECEPTION -"
+SYZAH040 ,"  uxlst upr upr=SYZAH040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAH040 ,"Alimentation - ACSE - AAA"
+SYZAHRLS ,"  uxlst upr upr=SYZAHRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAHRLS ,"Libére la ressource - RECEPTION"
+SYZAHU89 ,"  uxlst upr upr=SYZAHU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAHU89 ,"Poste de fin - RECEPTION"
+SYZAKU09 ,"  uxlst upr upr=SYZAKU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAKU09 ,"Poste de début - RECEPTION"
+SYZAKHLD ,"  uxlst upr upr=SYZAKHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAKHLD ,"hold ressource   "
+SYZAKREB ,"  uxlst upr upr=SYZAKREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAKREB ,"Rebond - RECEPTION - ACSE"
+SYZAKT00 ,"  uxlst upr upr=SYZAKT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAKT00 ,"Transfert - RECEPTION - ACSE"
+SYZAKC00 ,"  uxlst upr upr=SYZAKC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAKC00 ,"Collecte - RECEPTION - ACSE"
+SYZAKM00 ,"  uxlst upr upr=SYZAKM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAKM00 ,"Mise a dispo - RECEPTION"
+SYZAKZ00 ,"  uxlst upr upr=SYZAKZ00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAKZ00 ,"Empaquetador - ACSE - FICHS."
+SYZAK010 ,"  uxlst upr upr=SYZAK010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAK010 ,"Loader - RECEPTION - ACSE"
+SYZAK020 ,"  uxlst upr upr=SYZAK020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAK020 ,"Control & Normalisation - RECEPTION"
+SYZAK030 ,"  uxlst upr upr=SYZAK030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAK030 ,"Correction Adresses - RECEPTION -"
+SYZAK040 ,"  uxlst upr upr=SYZAK040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAK040 ,"Alimentation - ACSE - FU_EM_ORPHELINS"
+SYZAKRLS ,"  uxlst upr upr=SYZAKRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAKRLS ,"Libére la ressource - RECEPTION"
+SYZAKU89 ,"  uxlst upr upr=SYZAKU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAKU89 ,"Poste de fin - RECEPTION"
+SYZALU09 ,"  uxlst upr upr=SYZALU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZALU09 ,"Poste de début - RECEPTION"
+SYZALHLD ,"  uxlst upr upr=SYZALHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZALHLD ,"hold ressource   "
+SYZALREB ,"  uxlst upr upr=SYZALREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZALREB ,"Rebond - RECEPTION - ACSE"
+SYZALT00 ,"  uxlst upr upr=SYZALT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZALT00 ,"Transfert - RECEPTION - ACSE"
+SYZALC00 ,"  uxlst upr upr=SYZALC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZALC00 ,"Collecte - RECEPTION - ACSE"
+SYZALM00 ,"  uxlst upr upr=SYZALM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZALM00 ,"Mise a dispo - RECEPTION"
+SYZAL010 ,"  uxlst upr upr=SYZAL010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAL010 ,"Loader - RECEPTION - ACSE"
+SYZAL020 ,"  uxlst upr upr=SYZAL020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAL020 ,"Control & Normalisation - RECEPTION"
+SYZAL025 ,"  uxlst upr upr=SYZAL025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAL025 ,"Post - RECEPTION - ACSE"
+SYZAL030 ,"  uxlst upr upr=SYZAL030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAL030 ,"Correction Adresses - RECEPTION -"
+SYZAL040 ,"  uxlst upr upr=SYZAL040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAL040 ,"Alimentation - RECEPTION - ACSE"
+SYZALRLS ,"  uxlst upr upr=SYZALRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZALRLS ,"Libére la ressource - RECEPTION"
+SYZALU89 ,"  uxlst upr upr=SYZALU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZALU89 ,"Poste de fin - RECEPTION"
+SYZAOU09 ,"  uxlst upr upr=SYZAOU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAOU09 ,"Poste de début - RECEPTION"
+SYZAOHLD ,"  uxlst upr upr=SYZAOHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAOHLD ,"hold ressource   "
+SYZAOREB ,"  uxlst upr upr=SYZAOREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAOREB ,"Rebond - RECEPTION - APPT"
+SYZAOT00 ,"  uxlst upr upr=SYZAOT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAOT00 ,"Transfert - RECEPTION - APPT"
+SYZAOC00 ,"  uxlst upr upr=SYZAOC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAOC00 ,"Collecte - RECEPTION - APPT"
+SYZAOM00 ,"  uxlst upr upr=SYZAOM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAOM00 ,"Mise a dispo - RECEPTION"
+SYZAOZ00 ,"  uxlst upr upr=SYZAOZ00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAOZ00 ,"Desempaquetador - APPT - FU-EM_ORPHELINS"
+SYZAO010 ,"  uxlst upr upr=SYZAO010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAO010 ,"Loader - RECEPTION - APPT"
+SYZAO020 ,"  uxlst upr upr=SYZAO020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAO020 ,"Control & Normalisation - RECEPTION"
+SYZAO025 ,"  uxlst upr upr=SYZAO025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAO025 ,"Post - RECEPTION - APPT"
+SYZAO030 ,"  uxlst upr upr=SYZAO030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAO030 ,"Correction Adresses - RECEPTION -"
+SYZAO040 ,"  uxlst upr upr=SYZAO040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAO040 ,"Alimentation - APPT - FU_EM_ORPHELINS"
+SYZAORLS ,"  uxlst upr upr=SYZAORLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAORLS ,"Libére la ressource - RECEPTION"
+SYZAOU89 ,"  uxlst upr upr=SYZAOU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAOU89 ,"Poste de fin - RECEPTION"
+SYZAAU09 ,"  uxlst upr upr=SYZAAU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAAU09 ,"Poste de début - RECEPTION"
+SYZAAHLD ,"  uxlst upr upr=SYZAAHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAAHLD ,"hold ressource   "
+SYZAAREB ,"  uxlst upr upr=SYZAAREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAAREB ,"Rebond - RECEPTION - ACSE"
+SYZAAT00 ,"  uxlst upr upr=SYZAAT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAAT00 ,"Transfert - RECEPTION - ACSE"
+SYZAAC00 ,"  uxlst upr upr=SYZAAC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAAC00 ,"Collecte - RECEPTION - ACSE"
+SYZAAM00 ,"  uxlst upr upr=SYZAAM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAAM00 ,"Mise a dispo - RECEPTION"
+SYZAA010 ,"  uxlst upr upr=SYZAA010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAA010 ,"Loader - RECEPTION - ACSE"
+SYZAA020 ,"  uxlst upr upr=SYZAA020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAA020 ,"Control & Normalisation - RECEPTION"
+SYZAA025 ,"  uxlst upr upr=SYZAA025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAA025 ,"Post - RECEPTION - ACSE"
+SYZAA030 ,"  uxlst upr upr=SYZAA030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAA030 ,"Correction Adresses - RECEPTION -"
+SYZAA040 ,"  uxlst upr upr=SYZAA040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAA040 ,"Alimentation - RECEPTION - ACSE"
+SYZAARLS ,"  uxlst upr upr=SYZAARLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAARLS ,"Libére la ressource - RECEPTION"
+SYZAAU89 ,"  uxlst upr upr=SYZAAU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAAU89 ,"Poste de fin - RECEPTION"
+SYZABU09 ,"  uxlst upr upr=SYZABU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZABU09 ,"Poste de début - RECEPTION"
+SYZABHLD ,"  uxlst upr upr=SYZABHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZABHLD ,"hold ressource   "
+SYZABREB ,"  uxlst upr upr=SYZABREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZABREB ,"Rebond - RECEPTION - ACSE"
+SYZABT00 ,"  uxlst upr upr=SYZABT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZABT00 ,"Transfert - RECEPTION - ACSE"
+SYZABC00 ,"  uxlst upr upr=SYZABC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZABC00 ,"Collecte - RECEPTION - ACSE"
+SYZABM00 ,"  uxlst upr upr=SYZABM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZABM00 ,"Mise a dispo - RECEPTION"
+SYZAB010 ,"  uxlst upr upr=SYZAB010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAB010 ,"Loader - RECEPTION - ACSE"
+SYZAB020 ,"  uxlst upr upr=SYZAB020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAB020 ,"Control & Normalisation - RECEPTION"
+SYZAB030 ,"  uxlst upr upr=SYZAB030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAB030 ,"Correction Adresses - RECEPTION -"
+SYZAB040 ,"  uxlst upr upr=SYZAB040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAB040 ,"Alimentation - RECEPTION - ACSE"
+SYZABRLS ,"  uxlst upr upr=SYZABRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZABRLS ,"Libére la ressource - RECEPTION"
+SYZABU89 ,"  uxlst upr upr=SYZABU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZABU89 ,"Poste de fin - RECEPTION"
+SYZACU09 ,"  uxlst upr upr=SYZACU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZACU09 ,"Poste de début - RECEPTION"
+SYZACHLD ,"  uxlst upr upr=SYZACHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZACHLD ,"hold ressource   "
+SYZACREB ,"  uxlst upr upr=SYZACREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZACREB ,"Rebond - RECEPTION - ACSE"
+SYZACT00 ,"  uxlst upr upr=SYZACT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZACT00 ,"Transfert - RECEPTION - ACSE"
+SYZACC00 ,"  uxlst upr upr=SYZACC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZACC00 ,"Collecte - RECEPTION - ACSE"
+SYZACM00 ,"  uxlst upr upr=SYZACM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZACM00 ,"Mise a dispo - RECEPTION"
+SYZAC010 ,"  uxlst upr upr=SYZAC010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAC010 ,"Loader - RECEPTION - ACSE"
+SYZAC020 ,"  uxlst upr upr=SYZAC020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAC020 ,"Control & Normalisation - RECEPTION"
+SYZAC030 ,"  uxlst upr upr=SYZAC030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAC030 ,"Correction Adresses - RECEPTION -"
+SYZAC040 ,"  uxlst upr upr=SYZAC040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAC040 ,"Alimentation - RECEPTION - ACSE"
+SYZACRLS ,"  uxlst upr upr=SYZACRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZACRLS ,"Libére la ressource - RECEPTION"
+SYZACU89 ,"  uxlst upr upr=SYZACU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZACU89 ,"Poste de fin - RECEPTION"
+SYZADU09 ,"  uxlst upr upr=SYZADU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZADU09 ,"Poste de début - RECEPTION"
+SYZADHLD ,"  uxlst upr upr=SYZADHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZADHLD ,"hold ressource   "
+SYZADREB ,"  uxlst upr upr=SYZADREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZADREB ,"Rebond - RECEPTION - ACSE"
+SYZADT00 ,"  uxlst upr upr=SYZADT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZADT00 ,"Transfert - RECEPTION - ACSE"
+SYZADC00 ,"  uxlst upr upr=SYZADC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZADC00 ,"Collecte - RECEPTION - ACSE"
+SYZADM00 ,"  uxlst upr upr=SYZADM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZADM00 ,"Mise a dispo - RECEPTION"
+SYZAD010 ,"  uxlst upr upr=SYZAD010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAD010 ,"Loader - RECEPTION - ACSE"
+SYZAD020 ,"  uxlst upr upr=SYZAD020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAD020 ,"Control & Normalisation - RECEPTION"
+SYZAD025 ,"  uxlst upr upr=SYZAD025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAD025 ,"Post - RECEPTION - ACSE"
+SYZAD030 ,"  uxlst upr upr=SYZAD030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAD030 ,"Correction Adresses - RECEPTION -"
+SYZAD040 ,"  uxlst upr upr=SYZAD040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAD040 ,"Alimentation - RECEPTION - ACSE"
+SYZADRLS ,"  uxlst upr upr=SYZADRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZADRLS ,"Libére la ressource - RECEPTION"
+SYZADU89 ,"  uxlst upr upr=SYZADU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZADU89 ,"Poste de fin - RECEPTION"
+SYZAEU09 ,"  uxlst upr upr=SYZAEU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAEU09 ,"Poste de début - RECEPTION"
+SYZAEHLD ,"  uxlst upr upr=SYZAEHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAEHLD ,"hold ressource   "
+SYZAE010 ,"  uxlst upr upr=SYZAE010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAE010 ,"Loader - RECEPTION - ACSE"
+SYZAE020 ,"  uxlst upr upr=SYZAE020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAE020 ,"Control & Normalisation - RECEPTION"
+SYZAE025 ,"  uxlst upr upr=SYZAE025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAE025 ,"Post - RECEPTION - ACSE"
+SYZAE030 ,"  uxlst upr upr=SYZAE030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAE030 ,"Correction Adresses - RECEPTION -"
+SYZAE040 ,"  uxlst upr upr=SYZAE040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAE040 ,"Alimentation - RECEPTION - ACSE"
+SYZAERLS ,"  uxlst upr upr=SYZAERLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAERLS ,"Libére la ressource - RECEPTION"
+SYZAEU89 ,"  uxlst upr upr=SYZAEU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAEU89 ,"Poste de fin - RECEPTION"
+SYZAGU09 ,"  uxlst upr upr=SYZAGU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAGU09 ,"Poste de début - Emission"
+SYZAGC00 ,"  uxlst upr upr=SYZAGC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAGC00 ,"Collecte - Emission Neolane Journalier"
+SYZAGM00 ,"  uxlst upr upr=SYZAGM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAGM00 ,"Mise a dispo - Emission"
+SYZAGE00 ,"  uxlst upr upr=SYZAGE00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAGE00 ,"Transfert - Emission Neolane Journalier"
+SYZAGU89 ,"  uxlst upr upr=SYZAGU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAGU89 ,"Poste de fin - Emission"
+SYZ3BU09 ,"  uxlst upr upr=SYZ3BU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3BU09 ,"Poste de début - Alimentation"
+SYZ3B010 ,"  uxlst upr upr=SYZ3B010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B010 ,"Alimentation - ACSE - ARCAD"
+SYZ3B020 ,"  uxlst upr upr=SYZ3B020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B020 ,"Alimentation - ACDK - ARCAD"
+SYZ3B030 ,"  uxlst upr upr=SYZ3B030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B030 ,"Alimentation - ACNO - ARCAD"
+SYZ3B040 ,"  uxlst upr upr=SYZ3B040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B040 ,"Alimentation - ACHU - ARCAD"
+SYZ3B050 ,"  uxlst upr upr=SYZ3B050  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B050 ,"Alimentation - ACCZ - ARCAD"
+SYZ3B060 ,"  uxlst upr upr=SYZ3B060  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B060 ,"Alimentation - ACGB - ARCAD"
+SYZ3B070 ,"  uxlst upr upr=SYZ3B070  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B070 ,"Alimentation - ACES - ARCAD"
+SYZ3B080 ,"  uxlst upr upr=SYZ3B080  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B080 ,"Alimentation - ACBE - ARCAD"
+SYZ3B090 ,"  uxlst upr upr=SYZ3B090  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B090 ,"Alimentation - APIT - ARCAD"
+SYZ3B100 ,"  uxlst upr upr=SYZ3B100  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B100 ,"Alimentation - ACFR - ARCAD"
+SYZ3B110 ,"  uxlst upr upr=SYZ3B110  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B110 ,"Alimentation - ACIT - ARCAD"
+SYZ3B120 ,"  uxlst upr upr=SYZ3B120  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B120 ,"Alimentation - APPT - ARCAD"
+SYZ3B130 ,"  uxlst upr upr=SYZ3B130  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B130 ,"Alimentation - ACDE - ARCAD"
+SYZ3B140 ,"  uxlst upr upr=SYZ3B140  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B140 ,"Alimentation - ACPT - ARCAD"
+SYZ3B150 ,"  uxlst upr upr=SYZ3B150  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B150 ,"Alimentation - APUK - ARCAD"
+SYZ3B160 ,"  uxlst upr upr=SYZ3B160  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B160 ,"Alimentation - APES - ARCAD"
+SYZ3B170 ,"  uxlst upr upr=SYZ3B170  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B170 ,"Alimentation - APDE - ARCAD"
+SYZ3B180 ,"  uxlst upr upr=SYZ3B180  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B180 ,"Alimentation - ACDE - ARCAD"
+SYZ3B190 ,"  uxlst upr upr=SYZ3B190  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B190 ,"Alimentation - APNL - ARCAD"
+SYZ3B200 ,"  uxlst upr upr=SYZ3B200  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B200 ,"Alimentation - ACNL - ARCAD"
+SYZ3B210 ,"  uxlst upr upr=SYZ3B210  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B210 ,"Alimentation - APBE - ARCAD"
+SYZ3B220 ,"  uxlst upr upr=SYZ3B220  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B220 ,"Alimentation - APCH - ARCAD"
+SYZ3B230 ,"  uxlst upr upr=SYZ3B230  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B230 ,"Alimentation - ACCH - ARCAD"
+SYZ3B240 ,"  uxlst upr upr=SYZ3B240  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B240 ,"Alimentation - APAT - ARCAD"
+SYZ3B250 ,"  uxlst upr upr=SYZ3B250  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B250 ,"Alimentation - ACAT - ARCAD"
+SYZ3B260 ,"  uxlst upr upr=SYZ3B260  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B260 ,"Alimentation - APHU - ARCAD"
+SYZ3B270 ,"  uxlst upr upr=SYZ3B270  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B270 ,"Alimentation - APHR - ARCAD"
+SYZ3B280 ,"  uxlst upr upr=SYZ3B280  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B280 ,"Alimentation - ACHR - ARCAD"
+SYZ3B290 ,"  uxlst upr upr=SYZ3B290  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B290 ,"Alimentation - APCZ - ARCAD"
+SYZ3B300 ,"  uxlst upr upr=SYZ3B300  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B300 ,"Alimentation - APSK - ARCAD"
+SYZ3B310 ,"  uxlst upr upr=SYZ3B310  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B310 ,"Alimentation - ACSK - ARCAD"
+SYZ3B320 ,"  uxlst upr upr=SYZ3B320  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B320 ,"Alimentation - APSI - ARCAD"
+SYZ3B330 ,"  uxlst upr upr=SYZ3B330  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B330 ,"Alimentation - ACSI - ARCAD"
+SYZ3B340 ,"  uxlst upr upr=SYZ3B340  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B340 ,"Alimentation - APPL - ARCAD"
+SYZ3B350 ,"  uxlst upr upr=SYZ3B350  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B350 ,"Alimentation - ACPL - ARCAD"
+SYZ3B360 ,"  uxlst upr upr=SYZ3B360  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B360 ,"Alimentation - ACRU - ARCAD"
+SYZ3B370 ,"  uxlst upr upr=SYZ3B370  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B370 ,"Alimentation - APTR - ARCAD"
+SYZ3B380 ,"  uxlst upr upr=SYZ3B380  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B380 ,"Alimentation - ACTR - ARCAD"
+SYZ3B390 ,"  uxlst upr upr=SYZ3B390  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B390 ,"Alimentation - APFR - ARCAD"
+SYZ3B400 ,"  uxlst upr upr=SYZ3B400  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3B400 ,"Alimentation - ACTR - ARCAD"
+SYZ3BU89 ,"  uxlst upr upr=SYZ3BU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3BU89 ,"Poste de fin - Alimentation"
+SYZ3CU09 ,"  uxlst upr upr=SYZ3CU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3CU09 ,"Poste de début - Alimentation"
+SYZ3C010 ,"  uxlst upr upr=SYZ3C010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C010 ,"Alimentation - ACSE - AO"
+SYZ3C020 ,"  uxlst upr upr=SYZ3C020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C020 ,"Alimentation - ACDK - AO"
+SYZ3C030 ,"  uxlst upr upr=SYZ3C030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C030 ,"Alimentation - ACNO - AO"
+SYZ3C040 ,"  uxlst upr upr=SYZ3C040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C040 ,"Alimentation - ACHU - AO"
+SYZ3C050 ,"  uxlst upr upr=SYZ3C050  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C050 ,"Alimentation - ACCZ - AO"
+SYZ3C060 ,"  uxlst upr upr=SYZ3C060  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C060 ,"Alimentation - ACGB - AO"
+SYZ3C070 ,"  uxlst upr upr=SYZ3C070  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C070 ,"Alimentation - ACES - AO"
+SYZ3C080 ,"  uxlst upr upr=SYZ3C080  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C080 ,"Alimentation - ACES - AO"
+SYZ3C090 ,"  uxlst upr upr=SYZ3C090  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C090 ,"Alimentation - APIT - AO"
+SYZ3C100 ,"  uxlst upr upr=SYZ3C100  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C100 ,"Alimentation - ACFR - AO"
+SYZ3C110 ,"  uxlst upr upr=SYZ3C110  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C110 ,"Alimentation - ACIT - AO"
+SYZ3C120 ,"  uxlst upr upr=SYZ3C120  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C120 ,"Alimentation - APPT - AO"
+SYZ3C130 ,"  uxlst upr upr=SYZ3C130  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C130 ,"Alimentation - ACDE - AO"
+SYZ3C140 ,"  uxlst upr upr=SYZ3C140  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C140 ,"Alimentation - ACPT - AO"
+SYZ3C150 ,"  uxlst upr upr=SYZ3C150  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C150 ,"Alimentation - APUK - AO"
+SYZ3C160 ,"  uxlst upr upr=SYZ3C160  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C160 ,"Alimentation - APES - AO"
+SYZ3C170 ,"  uxlst upr upr=SYZ3C170  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C170 ,"Alimentation - APDE - AO"
+SYZ3C180 ,"  uxlst upr upr=SYZ3C180  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C180 ,"Alimentation - ACDE - AO"
+SYZ3C190 ,"  uxlst upr upr=SYZ3C190  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C190 ,"Alimentation - APNL - AO"
+SYZ3C200 ,"  uxlst upr upr=SYZ3C200  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C200 ,"Alimentation - ACNL - AO"
+SYZ3C210 ,"  uxlst upr upr=SYZ3C210  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C210 ,"Alimentation - APBE - AO"
+SYZ3C220 ,"  uxlst upr upr=SYZ3C220  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C220 ,"Alimentation - APCH - AO"
+SYZ3C230 ,"  uxlst upr upr=SYZ3C230  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C230 ,"Alimentation - ACCH - AO"
+SYZ3C240 ,"  uxlst upr upr=SYZ3C240  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C240 ,"Alimentation - APAT - AO"
+SYZ3C250 ,"  uxlst upr upr=SYZ3C250  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C250 ,"Alimentation - ACAT - AO"
+SYZ3C260 ,"  uxlst upr upr=SYZ3C260  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C260 ,"Alimentation - APHU - AO"
+SYZ3C270 ,"  uxlst upr upr=SYZ3C270  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C270 ,"Alimentation - APHR - AO"
+SYZ3C280 ,"  uxlst upr upr=SYZ3C280  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C280 ,"Alimentation - ACHR - AO"
+SYZ3C290 ,"  uxlst upr upr=SYZ3C290  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C290 ,"Alimentation - APCZ - AO"
+SYZ3C300 ,"  uxlst upr upr=SYZ3C300  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C300 ,"Alimentation - APSK - AO"
+SYZ3C310 ,"  uxlst upr upr=SYZ3C310  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C310 ,"Alimentation - ACSK - AO"
+SYZ3C320 ,"  uxlst upr upr=SYZ3C320  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C320 ,"Alimentation - APSI - AO"
+SYZ3C330 ,"  uxlst upr upr=SYZ3C330  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C330 ,"Alimentation - ACSI - AO"
+SYZ3C340 ,"  uxlst upr upr=SYZ3C340  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C340 ,"Alimentation - APPL - AO"
+SYZ3C350 ,"  uxlst upr upr=SYZ3C350  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C350 ,"Alimentation - ACPL - AO"
+SYZ3C360 ,"  uxlst upr upr=SYZ3C360  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C360 ,"Alimentation - ACRU - AO"
+SYZ3C370 ,"  uxlst upr upr=SYZ3C370  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C370 ,"Alimentation - APTR - AO"
+SYZ3C380 ,"  uxlst upr upr=SYZ3C380  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C380 ,"Alimentation - ACTR - AO"
+SYZ3C390 ,"  uxlst upr upr=SYZ3C390  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C390 ,"Alimentation - APFR - AO"
+SYZ3C400 ,"  uxlst upr upr=SYZ3C400  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3C400 ,"Alimentation - ACTR - AO"
+SYZ3CU89 ,"  uxlst upr upr=SYZ3CU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3CU89 ,"Poste de fin - Alimentation"
+SYZAZU09 ,"  uxlst upr upr=SYZAZU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZU09 ,"Poste de début - RECEPTION"
+SYZAZHLD ,"  uxlst upr upr=SYZAZHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZHLD ,"hold ressource   "
+SYZAZREB ,"  uxlst upr upr=SYZAZREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZREB ,"Rebond - RECEPTION - ACDK"
+SYZAZT00 ,"  uxlst upr upr=SYZAZT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZT00 ,"Transfert - RECEPTION - ACDK"
+SYZAZC00 ,"  uxlst upr upr=SYZAZC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZC00 ,"Collecte - RECEPTION - ACDK"
+SYZAZM00 ,"  uxlst upr upr=SYZAZM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZM00 ,"Mise a dispo - RECEPTION"
+SYZAZ010 ,"  uxlst upr upr=SYZAZ010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZ010 ,"Loader - RECEPTION - ACDK"
+SYZAZ020 ,"  uxlst upr upr=SYZAZ020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZ020 ,"Control & Normalisation - RECEPTION"
+SYZAZ030 ,"  uxlst upr upr=SYZAZ030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZ030 ,"Correction Adresses - RECEPTION -"
+SYZAZ040 ,"  uxlst upr upr=SYZAZ040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZ040 ,"Alimentation - RECEPTION - ACDK"
+SYZAZRLS ,"  uxlst upr upr=SYZAZRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZRLS ,"Libére la ressource - RECEPTION"
+SYZAZU89 ,"  uxlst upr upr=SYZAZU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAZU89 ,"Poste de fin - RECEPTION"
+AUD00RPT ,"  uxlst upr upr=AUD00RPT  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+AUD00RPT ,"Reporte periodico solicitado por la"
+SYZ3FU09 ,"  uxlst upr upr=SYZ3FU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3FU09 ,"Poste de début - Alimentation"
+SYZ3F010 ,"  uxlst upr upr=SYZ3F010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F010 ,"Alimentation - ACSE - NEOLANE"
+SYZ3F020 ,"  uxlst upr upr=SYZ3F020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F020 ,"Alimentation - ACDK - NEOLANE"
+SYZ3F030 ,"  uxlst upr upr=SYZ3F030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F030 ,"Alimentation - ACNO - NEOLANE"
+SYZ3F040 ,"  uxlst upr upr=SYZ3F040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F040 ,"Alimentation - ACHU - NEOLANE"
+SYZ3F050 ,"  uxlst upr upr=SYZ3F050  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F050 ,"Alimentation - ACCZ - NEOLANE"
+SYZ3F060 ,"  uxlst upr upr=SYZ3F060  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F060 ,"Alimentation - ACGB - NEOLANE"
+SYZ3F070 ,"  uxlst upr upr=SYZ3F070  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F070 ,"Alimentation - ACES - NEOLANE"
+SYZ3F080 ,"  uxlst upr upr=SYZ3F080  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F080 ,"Alimentation - ACBE - NEOLANE"
+SYZ3F090 ,"  uxlst upr upr=SYZ3F090  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F090 ,"Alimentation - APIT - NEOLANE"
+SYZ3F100 ,"  uxlst upr upr=SYZ3F100  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F100 ,"Alimentation - ACFR - NEOLANE"
+SYZ3F110 ,"  uxlst upr upr=SYZ3F110  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F110 ,"Alimentation - ACIT - NEOLANE"
+SYZ3F120 ,"  uxlst upr upr=SYZ3F120  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F120 ,"Alimentation - APPT - NEOLANE"
+SYZ3F130 ,"  uxlst upr upr=SYZ3F130  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F130 ,"Alimentation - ACDE - NEOLANE"
+SYZ3F140 ,"  uxlst upr upr=SYZ3F140  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F140 ,"Alimentation - ACPT - NEOLANE"
+SYZ3F150 ,"  uxlst upr upr=SYZ3F150  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F150 ,"Alimentation - APUK - NEOLANE"
+SYZ3F160 ,"  uxlst upr upr=SYZ3F160  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F160 ,"Alimentation - APES - NEOLANE"
+SYZ3F170 ,"  uxlst upr upr=SYZ3F170  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F170 ,"Alimentation - APDE - NEOLANE"
+SYZ3F180 ,"  uxlst upr upr=SYZ3F180  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F180 ,"Alimentation - ACDE - NEOLANE"
+SYZ3F190 ,"  uxlst upr upr=SYZ3F190  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F190 ,"Alimentation - APNL - NEOLANE"
+SYZ3F200 ,"  uxlst upr upr=SYZ3F200  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F200 ,"Alimentation - ACNL - NEOLANE"
+SYZ3F210 ,"  uxlst upr upr=SYZ3F210  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F210 ,"Alimentation - APBE - NEOLANE"
+SYZ3F220 ,"  uxlst upr upr=SYZ3F220  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F220 ,"Alimentation - APCH - NEOLANE"
+SYZ3F230 ,"  uxlst upr upr=SYZ3F230  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F230 ,"Alimentation - ACCH - NEOLANE"
+SYZ3F240 ,"  uxlst upr upr=SYZ3F240  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F240 ,"Alimentation - APAT - NEOLANE"
+SYZ3F250 ,"  uxlst upr upr=SYZ3F250  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F250 ,"Alimentation - ACAT - NEOLANE"
+SYZ3F260 ,"  uxlst upr upr=SYZ3F260  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F260 ,"Alimentation - APHU - NEOLANE"
+SYZ3F270 ,"  uxlst upr upr=SYZ3F270  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F270 ,"Alimentation - APHR - NEOLANE"
+SYZ3F280 ,"  uxlst upr upr=SYZ3F280  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F280 ,"Alimentation - ACHR - NEOLANE"
+SYZ3F290 ,"  uxlst upr upr=SYZ3F290  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F290 ,"Alimentation - APCZ - NEOLANE"
+SYZ3F300 ,"  uxlst upr upr=SYZ3F300  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F300 ,"Alimentation - APSK - NEOLANE"
+SYZ3F310 ,"  uxlst upr upr=SYZ3F310  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F310 ,"Alimentation - ACSK - NEOLANE"
+SYZ3F320 ,"  uxlst upr upr=SYZ3F320  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F320 ,"Alimentation - APSI - NEOLANE"
+SYZ3F330 ,"  uxlst upr upr=SYZ3F330  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F330 ,"Alimentation - ACSI - NEOLANE"
+SYZ3F340 ,"  uxlst upr upr=SYZ3F340  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F340 ,"Alimentation - APPL - NEOLANE"
+SYZ3F350 ,"  uxlst upr upr=SYZ3F350  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F350 ,"Alimentation - ACPL - NEOLANE"
+SYZ3F360 ,"  uxlst upr upr=SYZ3F360  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F360 ,"Alimentation - ACRU - NEOLANE"
+SYZ3F370 ,"  uxlst upr upr=SYZ3F370  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F370 ,"Alimentation - APTR - NEOLANE"
+SYZ3F380 ,"  uxlst upr upr=SYZ3F380  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F380 ,"Alimentation - ACTR - NEOLANE"
+SYZ3F390 ,"  uxlst upr upr=SYZ3F390  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F390 ,"Alimentation - APFR - NEOLANE"
+SYZ3F400 ,"  uxlst upr upr=SYZ3F400  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3F400 ,"Alimentation - ACTR - NEOLANE"
+SYZ3FU89 ,"  uxlst upr upr=SYZ3FU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3FU89 ,"Poste de fin - Alimentation"
+SYZ3GU09 ,"  uxlst upr upr=SYZ3GU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3GU09 ,"Poste de début - Alimentation"
+SYZ3G010 ,"  uxlst upr upr=SYZ3G010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G010 ,"Alimentation - ACSE - FU"
+SYZ3G020 ,"  uxlst upr upr=SYZ3G020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G020 ,"Alimentation - ACDK - FU"
+SYZ3G030 ,"  uxlst upr upr=SYZ3G030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G030 ,"Alimentation - ACNO - FU"
+SYZ3G040 ,"  uxlst upr upr=SYZ3G040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G040 ,"Alimentation - ACHU - FU"
+SYZ3G050 ,"  uxlst upr upr=SYZ3G050  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G050 ,"Alimentation - ACCZ - FU"
+SYZ3G060 ,"  uxlst upr upr=SYZ3G060  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G060 ,"Alimentation - ACGB - FU"
+SYZ3G070 ,"  uxlst upr upr=SYZ3G070  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G070 ,"Alimentation - ACES - FU"
+SYZ3G080 ,"  uxlst upr upr=SYZ3G080  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G080 ,"Alimentation - ACBE - FU"
+SYZ3G090 ,"  uxlst upr upr=SYZ3G090  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G090 ,"Alimentation - APIT - FU"
+SYZ3G100 ,"  uxlst upr upr=SYZ3G100  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G100 ,"Alimentation - ACFR - FU"
+SYZ3G110 ,"  uxlst upr upr=SYZ3G110  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G110 ,"Alimentation - ACIT - FU"
+SYZ3G120 ,"  uxlst upr upr=SYZ3G120  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G120 ,"Alimentation - APPT - FU"
+SYZ3G130 ,"  uxlst upr upr=SYZ3G130  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G130 ,"Alimentation - ACDE - FU"
+SYZ3G140 ,"  uxlst upr upr=SYZ3G140  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G140 ,"Alimentation - ACPT - FU"
+SYZ3G150 ,"  uxlst upr upr=SYZ3G150  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G150 ,"Alimentation - APUK - FU"
+SYZ3G160 ,"  uxlst upr upr=SYZ3G160  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G160 ,"Alimentation - APES - FU"
+SYZ3G170 ,"  uxlst upr upr=SYZ3G170  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G170 ,"Alimentation - APDE - FU"
+SYZ3G180 ,"  uxlst upr upr=SYZ3G180  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G180 ,"Alimentation - ACDE - FU"
+SYZ3G190 ,"  uxlst upr upr=SYZ3G190  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G190 ,"Alimentation - APNL - FU"
+SYZ3G200 ,"  uxlst upr upr=SYZ3G200  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G200 ,"Alimentation - ACNL - FU"
+SYZ3G210 ,"  uxlst upr upr=SYZ3G210  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G210 ,"Alimentation - APBE - FU"
+SYZ3G220 ,"  uxlst upr upr=SYZ3G220  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G220 ,"Alimentation - APCH - FU"
+SYZ3G230 ,"  uxlst upr upr=SYZ3G230  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G230 ,"Alimentation - ACCH - FU"
+SYZ3G240 ,"  uxlst upr upr=SYZ3G240  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G240 ,"Alimentation - APAT - FU"
+SYZ3G250 ,"  uxlst upr upr=SYZ3G250  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G250 ,"Alimentation - ACAT - FU"
+SYZ3G260 ,"  uxlst upr upr=SYZ3G260  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G260 ,"Alimentation - APHU - FU"
+SYZ3G270 ,"  uxlst upr upr=SYZ3G270  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G270 ,"Alimentation - APHR - FU"
+SYZ3G280 ,"  uxlst upr upr=SYZ3G280  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G280 ,"Alimentation - ACHR - FU"
+SYZ3G290 ,"  uxlst upr upr=SYZ3G290  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G290 ,"Alimentation - APCZ - FU"
+SYZ3G300 ,"  uxlst upr upr=SYZ3G300  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G300 ,"Alimentation - APSK - FU"
+SYZ3G310 ,"  uxlst upr upr=SYZ3G310  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G310 ,"Alimentation - ACSK - FU"
+SYZ3G320 ,"  uxlst upr upr=SYZ3G320  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G320 ,"Alimentation - APSI - FU"
+SYZ3G330 ,"  uxlst upr upr=SYZ3G330  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G330 ,"Alimentation - ACSI - FU"
+SYZ3G340 ,"  uxlst upr upr=SYZ3G340  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G340 ,"Alimentation - APPL - FU"
+SYZ3G350 ,"  uxlst upr upr=SYZ3G350  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G350 ,"Alimentation - ACPL - FU"
+SYZ3G360 ,"  uxlst upr upr=SYZ3G360  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G360 ,"Alimentation - ACRU - FU"
+SYZ3G370 ,"  uxlst upr upr=SYZ3G370  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G370 ,"Alimentation - APTR - FU"
+SYZ3G380 ,"  uxlst upr upr=SYZ3G380  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G380 ,"Alimentation - ACTR - FU"
+SYZ3G390 ,"  uxlst upr upr=SYZ3G390  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G390 ,"Alimentation - APFR - FU"
+SYZ3G400 ,"  uxlst upr upr=SYZ3G400  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3G400 ,"Alimentation - ACTR - FU"
+SYZ3GU89 ,"  uxlst upr upr=SYZ3GU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3GU89 ,"Poste de fin - Alimentation"
+ORAAL010 ,"  uxlst upr upr=ORAAL010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+ORAAL010 ,"Monitoreo del alert de la"
+SYZ3EU09 ,"  uxlst upr upr=SYZ3EU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3EU09 ,"Poste de début - Alimentation"
+SYZ3E010 ,"  uxlst upr upr=SYZ3E010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E010 ,"Alimentation - ACSE - AI"
+SYZ3E020 ,"  uxlst upr upr=SYZ3E020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E020 ,"Alimentation - ACDK - AI"
+SYZ3E030 ,"  uxlst upr upr=SYZ3E030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E030 ,"Alimentation - ACNO - AI"
+SYZ3E040 ,"  uxlst upr upr=SYZ3E040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E040 ,"Alimentation - ACHU - AI"
+SYZ3E050 ,"  uxlst upr upr=SYZ3E050  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E050 ,"Alimentation - ACCZ - AI"
+SYZ3E060 ,"  uxlst upr upr=SYZ3E060  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E060 ,"Alimentation - ACGB - AI"
+SYZ3E070 ,"  uxlst upr upr=SYZ3E070  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E070 ,"Alimentation - ACES - AI"
+SYZ3E080 ,"  uxlst upr upr=SYZ3E080  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E080 ,"Alimentation - ACBE - AI"
+SYZ3E090 ,"  uxlst upr upr=SYZ3E090  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E090 ,"Alimentation - APIT - AI"
+SYZ3E100 ,"  uxlst upr upr=SYZ3E100  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E100 ,"Alimentation - ACFR - AI"
+SYZ3E110 ,"  uxlst upr upr=SYZ3E110  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E110 ,"Alimentation - ACIT - AI"
+SYZ3E120 ,"  uxlst upr upr=SYZ3E120  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E120 ,"Alimentation - APPT - AI"
+SYZ3E130 ,"  uxlst upr upr=SYZ3E130  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E130 ,"Alimentation - ACDE - AI"
+SYZ3E140 ,"  uxlst upr upr=SYZ3E140  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E140 ,"Alimentation - ACPT - AI"
+SYZ3E150 ,"  uxlst upr upr=SYZ3E150  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E150 ,"Alimentation - APUK - AI"
+SYZ3E160 ,"  uxlst upr upr=SYZ3E160  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E160 ,"Alimentation - APES - AI"
+SYZ3E170 ,"  uxlst upr upr=SYZ3E170  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E170 ,"Alimentation - APDE - AI"
+SYZ3E180 ,"  uxlst upr upr=SYZ3E180  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E180 ,"Alimentation - ACDE - AI"
+SYZ3E190 ,"  uxlst upr upr=SYZ3E190  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E190 ,"Alimentation - APNL - AI"
+SYZ3E200 ,"  uxlst upr upr=SYZ3E200  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E200 ,"Alimentation - ACNL - AI"
+SYZ3E210 ,"  uxlst upr upr=SYZ3E210  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E210 ,"Alimentation - APBE - AI"
+SYZ3E220 ,"  uxlst upr upr=SYZ3E220  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E220 ,"Alimentation - APCH - AI"
+SYZ3E230 ,"  uxlst upr upr=SYZ3E230  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E230 ,"Alimentation - ACCH - AI"
+SYZ3E240 ,"  uxlst upr upr=SYZ3E240  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E240 ,"Alimentation - APAT - AI"
+SYZ3E250 ,"  uxlst upr upr=SYZ3E250  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E250 ,"Alimentation - ACAT - AI"
+SYZ3E260 ,"  uxlst upr upr=SYZ3E260  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E260 ,"Alimentation - APHU - AI"
+SYZ3E270 ,"  uxlst upr upr=SYZ3E270  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E270 ,"Alimentation - APHR - AI"
+SYZ3E280 ,"  uxlst upr upr=SYZ3E280  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E280 ,"Alimentation - ACHR - AI"
+SYZ3E290 ,"  uxlst upr upr=SYZ3E290  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E290 ,"Alimentation - APCZ - AI"
+SYZ3E300 ,"  uxlst upr upr=SYZ3E300  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E300 ,"Alimentation - APSK - AI"
+SYZ3E310 ,"  uxlst upr upr=SYZ3E310  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E310 ,"Alimentation - ACSK - AI"
+SYZ3E320 ,"  uxlst upr upr=SYZ3E320  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E320 ,"Alimentation - APSI - AI"
+SYZ3E330 ,"  uxlst upr upr=SYZ3E330  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E330 ,"Alimentation - ACSI - AI"
+SYZ3E340 ,"  uxlst upr upr=SYZ3E340  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E340 ,"Alimentation - APPL - AI"
+SYZ3E350 ,"  uxlst upr upr=SYZ3E350  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E350 ,"Alimentation - ACPL - AI"
+SYZ3E360 ,"  uxlst upr upr=SYZ3E360  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E360 ,"Alimentation - ACRU - AI"
+SYZ3E370 ,"  uxlst upr upr=SYZ3E370  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E370 ,"Alimentation - APTR - AI"
+SYZ3E380 ,"  uxlst upr upr=SYZ3E380  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E380 ,"Alimentation - ACTR - AI"
+SYZ3E390 ,"  uxlst upr upr=SYZ3E390  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E390 ,"Alimentation - APFR - AI"
+SYZ3E400 ,"  uxlst upr upr=SYZ3E400  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3E400 ,"Alimentation - ACTR - AI"
+SYZ3EU89 ,"  uxlst upr upr=SYZ3EU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3EU89 ,"Poste de fin - Alimentation"
+SYZAQU09 ,"  uxlst upr upr=SYZAQU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAQU09 ,"Poste de début - RECEPTION"
+SYZAQHLD ,"  uxlst upr upr=SYZAQHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAQHLD ,"hold ressource   "
+SYZAQ010 ,"  uxlst upr upr=SYZAQ010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAQ010 ,"Loader - RECEPTION - ACSE"
+SYZAQ020 ,"  uxlst upr upr=SYZAQ020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAQ020 ,"Control & Normalisation - RECEPTION"
+SYZAQ025 ,"  uxlst upr upr=SYZAQ025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAQ025 ,"Post - RECEPTION - ACSE"
+SYZAQ030 ,"  uxlst upr upr=SYZAQ030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAQ030 ,"Correction Adresses - RECEPTION -"
+SYZAQ040 ,"  uxlst upr upr=SYZAQ040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAQ040 ,"Alimentation - RECEPTION - ACSE"
+SYZAQRLS ,"  uxlst upr upr=SYZAQRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAQRLS ,"Libére la ressource - RECEPTION"
+SYZAQU89 ,"  uxlst upr upr=SYZAQU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAQU89 ,"Poste de fin - RECEPTION"
+SYZ3HU09 ,"  uxlst upr upr=SYZ3HU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3HU09 ,"Poste de début - Alimentation"
+SYZ3H060 ,"  uxlst upr upr=SYZ3H060  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3H060 ,"Alimentation - ACGB - REPRISE"
+SYZ3H100 ,"  uxlst upr upr=SYZ3H100  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3H100 ,"Alimentation - ACFR - REPRISE"
+SYZ3HU89 ,"  uxlst upr upr=SYZ3HU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3HU89 ,"Poste de fin - Alimentation"
+SYZ3IU09 ,"  uxlst upr upr=SYZ3IU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3IU09 ,"Poste de début - Alimentation"
+SYZ3I040 ,"  uxlst upr upr=SYZ3I040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3I040 ,"Alimentation - ACSE - AAA"
+SYZ3IU89 ,"  uxlst upr upr=SYZ3IU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZ3IU89 ,"Poste de fin - Alimentation"
+SYZAUU09 ,"  uxlst upr upr=SYZAUU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAUU09 ,"Poste de début - RECEPTION"
+SYZAUHLD ,"  uxlst upr upr=SYZAUHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAUHLD ,"hold ressource   "
+SYZAUREB ,"  uxlst upr upr=SYZAUREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAUREB ,"Rebond - RECEPTION - ACSE"
+SYZAUT00 ,"  uxlst upr upr=SYZAUT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAUT00 ,"Transfert - RECEPTION - ACSE"
+SYZAUC00 ,"  uxlst upr upr=SYZAUC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAUC00 ,"Collecte - RECEPTION - ACSE"
+SYZAUM00 ,"  uxlst upr upr=SYZAUM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAUM00 ,"Mise a dispo - RECEPTION"
+SYZAU010 ,"  uxlst upr upr=SYZAU010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAU010 ,"Loader - RECEPTION - ACSE"
+SYZAU020 ,"  uxlst upr upr=SYZAU020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAU020 ,"Control & Normalisation - RECEPTION"
+SYZAU025 ,"  uxlst upr upr=SYZAU025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAU025 ,"Post - RECEPTION - ACSE"
+SYZAU030 ,"  uxlst upr upr=SYZAU030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAU030 ,"Correction Adresses - RECEPTION -"
+SYZAU040 ,"  uxlst upr upr=SYZAU040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAU040 ,"Alimentation - ACSE - NEOLANE"
+SYZAURLS ,"  uxlst upr upr=SYZAURLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAURLS ,"Libère la ressource - RECEPTION"
+SYZAUU89 ,"  uxlst upr upr=SYZAUU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAUU89 ,"Poste de fin - RECEPTION"
+SYZAVU09 ,"  uxlst upr upr=SYZAVU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAVU09 ,"Poste de début - Emission"
+SYZAVC00 ,"  uxlst upr upr=SYZAVC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAVC00 ,"Collecte - Emission Reporting Journalier"
+SYZAVM00 ,"  uxlst upr upr=SYZAVM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAVM00 ,"Mise a dispo - Emission"
+SYZAVE00 ,"  uxlst upr upr=SYZAVE00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAVE00 ,"Transfert - Emission Reporting Journalier"
+SYZAVU89 ,"  uxlst upr upr=SYZAVU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAVU89 ,"Poste de fin - Emission"
+SYZAWU09 ,"  uxlst upr upr=SYZAWU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAWU09 ,"Poste de début - RECEPTION"
+SYZAWHLD ,"  uxlst upr upr=SYZAWHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAWHLD ,"hold ressource   "
+SYZAWREB ,"  uxlst upr upr=SYZAWREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAWREB ,"Rebond - RECEPTION - ACSE"
+SYZAWT00 ,"  uxlst upr upr=SYZAWT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAWT00 ,"Transfert - RECEPTION - ACSE"
+SYZAWC00 ,"  uxlst upr upr=SYZAWC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAWC00 ,"Collecte - RECEPTION - ACSE"
+SYZAWM00 ,"  uxlst upr upr=SYZAWM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAWM00 ,"Mise a dispo - RECEPTION"
+SYZAWZ00 ,"  uxlst upr upr=SYZAWZ00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAWZ00 ,"Desempaquetador - ACSE - FU-EM_ORPHELINS"
+SYZAW010 ,"  uxlst upr upr=SYZAW010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAW010 ,"Loader - RECEPTION - ACSE"
+SYZAW020 ,"  uxlst upr upr=SYZAW020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAW020 ,"Control & Normalisation - RECEPTION"
+SYZAW025 ,"  uxlst upr upr=SYZAW025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAW025 ,"Post - RECEPTION - ACSE"
+SYZAW030 ,"  uxlst upr upr=SYZAW030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAW030 ,"Correction Adresses - RECEPTION -"
+SYZAW040 ,"  uxlst upr upr=SYZAW040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAW040 ,"Alimentation - ACSE - FU_L_PARTICULIER"
+SYZAWRLS ,"  uxlst upr upr=SYZAWRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAWRLS ,"Libére la ressource - RECEPTION"
+SYZAWU89 ,"  uxlst upr upr=SYZAWU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZAWU89 ,"Poste de fin - RECEPTION"
+SYZFYU09 ,"  uxlst upr upr=SYZFYU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFYU09 ,"Poste de début - RECEPTION"
+SYZFYHLD ,"  uxlst upr upr=SYZFYHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFYHLD ,"hold ressource   "
+SYZFY010 ,"  uxlst upr upr=SYZFY010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFY010 ,"Loader - RECEPTION - ACBE"
+SYZFY020 ,"  uxlst upr upr=SYZFY020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFY020 ,"Control & Normalisation - RECEPTION"
+SYZFY025 ,"  uxlst upr upr=SYZFY025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFY025 ,"Post - RECEPTION - ACBE"
+SYZFY030 ,"  uxlst upr upr=SYZFY030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFY030 ,"Correction Adresses - RECEPTION -"
+SYZFY040 ,"  uxlst upr upr=SYZFY040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFY040 ,"Alimentation - RECEPTION - ACBE"
+SYZFYRLS ,"  uxlst upr upr=SYZFYRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFYRLS ,"Libére la ressource - RECEPTION"
+SYZFYU89 ,"  uxlst upr upr=SYZFYU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFYU89 ,"Poste de fin - RECEPTION"
+SYZFXU09 ,"  uxlst upr upr=SYZFXU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFXU09 ,"Poste de début - RECEPTION"
+SYZFXHLD ,"  uxlst upr upr=SYZFXHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFXHLD ,"hold ressource   "
+SYZFXREB ,"  uxlst upr upr=SYZFXREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFXREB ,"Mise a dispo - RECEPTION"
+SYZFXT00 ,"  uxlst upr upr=SYZFXT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFXT00 ,"Transfert - RECEPTION - ACBE"
+SYZFXC00 ,"  uxlst upr upr=SYZFXC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFXC00 ,"Collecte - RECEPTION - ACBE"
+SYZFXM00 ,"  uxlst upr upr=SYZFXM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFXM00 ,"Mise a dispo - RECEPTION"
+SYZFX010 ,"  uxlst upr upr=SYZFX010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFX010 ,"Loader - RECEPTION - ACBE"
+SYZFX020 ,"  uxlst upr upr=SYZFX020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFX020 ,"Control & Normalisation - RECEPTION"
+SYZFX025 ,"  uxlst upr upr=SYZFX025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFX025 ,"Post - RECEPTION - ACBE"
+SYZFX030 ,"  uxlst upr upr=SYZFX030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFX030 ,"Correction Adresses - RECEPTION -"
+SYZFX040 ,"  uxlst upr upr=SYZFX040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFX040 ,"Alimentation - RECEPTION - ACBE"
+SYZFXRLS ,"  uxlst upr upr=SYZFXRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFXRLS ,"Libére la ressource - RECEPTION"
+SYZFXU89 ,"  uxlst upr upr=SYZFXU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFXU89 ,"Poste de fin - RECEPTION"
+SYZFZU09 ,"  uxlst upr upr=SYZFZU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZU09 ,"Poste de début - RECEPTION"
+SYZFZHLD ,"  uxlst upr upr=SYZFZHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZHLD ,"hold ressource   "
+SYZFZREB ,"  uxlst upr upr=SYZFZREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZREB ,"Rebond - RECEPTION - ACBE"
+SYZFZT00 ,"  uxlst upr upr=SYZFZT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZT00 ,"Transfert - RECEPTION - ACBE"
+SYZFZC00 ,"  uxlst upr upr=SYZFZC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZC00 ,"Collecte - RECEPTION - ACBE"
+SYZFZM00 ,"  uxlst upr upr=SYZFZM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZM00 ,"Mise a dispo - RECEPTION"
+SYZFZ010 ,"  uxlst upr upr=SYZFZ010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZ010 ,"Loader - RECEPTION - ACBE"
+SYZFZ020 ,"  uxlst upr upr=SYZFZ020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZ020 ,"Control & Normalisation - RECEPTION"
+SYZFZ030 ,"  uxlst upr upr=SYZFZ030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZ030 ,"Correction Adresses - RECEPTION -"
+SYZFZ040 ,"  uxlst upr upr=SYZFZ040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZ040 ,"Alimentation - RECEPTION - ACBE"
+SYZFZRLS ,"  uxlst upr upr=SYZFZRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZRLS ,"Libére la ressource - RECEPTION"
+SYZFZU89 ,"  uxlst upr upr=SYZFZU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFZU89 ,"Poste de fin - RECEPTION"
+SYZFUU09 ,"  uxlst upr upr=SYZFUU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFUU09 ,"Poste de début - RECEPTION"
+SYZFUHLD ,"  uxlst upr upr=SYZFUHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFUHLD ,"hold ressource   "
+SYZFUREB ,"  uxlst upr upr=SYZFUREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFUREB ,"Rebond - RECEPTION - ACBE"
+SYZFUT00 ,"  uxlst upr upr=SYZFUT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFUT00 ,"Transfert - RECEPTION - ACBE"
+SYZFUC00 ,"  uxlst upr upr=SYZFUC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFUC00 ,"Collecte - RECEPTION - ACBE"
+SYZFUM00 ,"  uxlst upr upr=SYZFUM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFUM00 ,"Mise a dispo - RECEPTION"
+SYZFU010 ,"  uxlst upr upr=SYZFU010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFU010 ,"Loader - RECEPTION - ACBE"
+SYZFU020 ,"  uxlst upr upr=SYZFU020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFU020 ,"Control & Normalisation - RECEPTION"
+SYZFU025 ,"  uxlst upr upr=SYZFU025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFU025 ,"Post - RECEPTION - ACBE"
+SYZFU030 ,"  uxlst upr upr=SYZFU030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFU030 ,"Correction Adresses - RECEPTION -"
+SYZFU040 ,"  uxlst upr upr=SYZFU040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFU040 ,"Alimentation - RECEPTION - ACBE"
+SYZFURLS ,"  uxlst upr upr=SYZFURLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFURLS ,"Libére la ressource - RECEPTION"
+SYZFUU89 ,"  uxlst upr upr=SYZFUU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFUU89 ,"Poste de fin - RECEPTION"
+SYZFTU09 ,"  uxlst upr upr=SYZFTU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFTU09 ,"Poste de début - RECEPTION"
+SYZFTHLD ,"  uxlst upr upr=SYZFTHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFTHLD ,"hold ressource   "
+SYZFTREB ,"  uxlst upr upr=SYZFTREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFTREB ,"Rebond - RECEPTION - ACGB"
+SYZFTT00 ,"  uxlst upr upr=SYZFTT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFTT00 ,"Transfert - RECEPTION - ACGB"
+SYZFTC00 ,"  uxlst upr upr=SYZFTC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFTC00 ,"Collecte - RECEPTION - ACGB"
+SYZFTM00 ,"  uxlst upr upr=SYZFTM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFTM00 ,"Mise a dispo - RECEPTION"
+SYZFT010 ,"  uxlst upr upr=SYZFT010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFT010 ,"Loader - RECEPTION - ACGB"
+SYZFT020 ,"  uxlst upr upr=SYZFT020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFT020 ,"Control & Normalisation - RECEPTION"
+SYZFT025 ,"  uxlst upr upr=SYZFT025  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFT025 ,"Post - RECEPTION - ACGB"
+SYZFT030 ,"  uxlst upr upr=SYZFT030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFT030 ,"Correction Adresses - RECEPTION -"
+SYZFT040 ,"  uxlst upr upr=SYZFT040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFT040 ,"Alimentation - RECEPTION - ACGB"
+SYZFTRLS ,"  uxlst upr upr=SYZFTRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFTRLS ,"Libére la ressource - RECEPTION"
+SYZFTU89 ,"  uxlst upr upr=SYZFTU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFTU89 ,"Poste de fin - RECEPTION"
+SYZFWU09 ,"  uxlst upr upr=SYZFWU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFWU09 ,"Poste de début - RECEPTION"
+SYZFWHLD ,"  uxlst upr upr=SYZFWHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFWHLD ,"hold ressource   "
+SYZFWREB ,"  uxlst upr upr=SYZFWREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFWREB ,"Rebond - RECEPTION - ACBE"
+SYZFWT00 ,"  uxlst upr upr=SYZFWT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFWT00 ,"Transfert - RECEPTION - ACBE"
+SYZFWC00 ,"  uxlst upr upr=SYZFWC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFWC00 ,"Collecte - RECEPTION - ACBE"
+SYZFWM00 ,"  uxlst upr upr=SYZFWM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFWM00 ,"Mise a dispo - RECEPTION"
+SYZFW010 ,"  uxlst upr upr=SYZFW010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFW010 ,"Loader - RECEPTION - ACBE"
+SYZFW020 ,"  uxlst upr upr=SYZFW020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFW020 ,"Control & Normalisation - RECEPTION"
+SYZFW030 ,"  uxlst upr upr=SYZFW030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFW030 ,"Correction Adresses - RECEPTION -"
+SYZFW040 ,"  uxlst upr upr=SYZFW040  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFW040 ,"Alimentation - RECEPTION - ACBE"
+SYZFWRLS ,"  uxlst upr upr=SYZFWRLS  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFWRLS ,"Libére la ressource - RECEPTION"
+SYZFWU89 ,"  uxlst upr upr=SYZFWU89  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFWU89 ,"Poste de fin - RECEPTION"
+SYZFVU09 ,"  uxlst upr upr=SYZFVU09  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFVU09 ,"Poste de début - RECEPTION"
+SYZFVHLD ,"  uxlst upr upr=SYZFVHLD  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFVHLD ,"hold ressource   "
+SYZFVREB ,"  uxlst upr upr=SYZFVREB  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFVREB ,"Rebond - RECEPTION - ACBE"
+SYZFVT00 ,"  uxlst upr upr=SYZFVT00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFVT00 ,"Transfert - RECEPTION - ACBE"
+SYZFVC00 ,"  uxlst upr upr=SYZFVC00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFVC00 ,"Collecte - RECEPTION - ACBE"
+SYZFVM00 ,"  uxlst upr upr=SYZFVM00  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFVM00 ,"Mise a dispo - RECEPTION"
+SYZFV010 ,"  uxlst upr upr=SYZFV010  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFV010 ,"Loader - RECEPTION - ACBE"
+SYZFV020 ,"  uxlst upr upr=SYZFV020  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFV020 ,"Control & Normalisation - RECEPTION"
+SYZFV030 ,"  uxlst upr upr=SYZFV030  | sed 1d | sed 1d | sed 1d| sed 1d | awk '{print $3,$4,$5,$6,$7}'"
+SYZFV030 ,"Correction Adresses - RECEPTION -"
