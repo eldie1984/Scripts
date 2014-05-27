@@ -1,0 +1,47 @@
+table thead {
+			background:#FF9;
+			color:#000;
+			font-weight:bold;
+			text-transform:uppercase;			
+			font-family:"Myriad Pro", Verdana, Arial;
+			font-size:15px;
+			letter-spacing:-1px;
+			text-align:left;
+			}	
+#content {
+	width: 900px;
+	margin: 50px auto;
+	padding: 20px;
+	background: #FFF;
+	border: 1px solid #CCC;
+	color: #000;
+}
+#content2 {
+	width: 200px;
+	margin: 50px auto;
+	padding: 20px;
+	background: #FFF;	
+	border: 1px solid #CCC;
+}
+#cusco_central{
+	
+	color:#800000;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#texto{
+	font-family:"Times New Roman", Times, serif;
+	font-size:18px;
+	
+}
+body {
+	background-color: #E8E8E8;
+}
+a:link   
+{
+	text-decoration:none;
+	color: #0d233a;
+} 
+.noventa {
+	color: #F00;
+}

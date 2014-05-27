@@ -1,0 +1,88 @@
+for data in $(ls syzfiql1.dat.*)
+ do
+ if [[ i -lt 10 ]]
+ then
+  mv $data syzfiql1.dat.00$i
+ else
+ mv $data syzfiql1.dat.0$i
+ fi
+ i=`expr $i + 1`
+ done
+
+
+
+hacer migracion de la base de ejecuciones a una tabla de historicos
+
+
+
+
+$UNXEXSCRIPT/syzqlt00.sh && $UNXEXSCRIPT/syzqlc00.sh && $UNXEXSCRIPT/syzqlm00.sh && $UNXEXSCRIPT/syzql010.sh && $UNXEXSCRIPT/syzql020.sh && $UNXEXSCRIPT/syzql025.sh && $UNXEXSCRIPT/syzql030.sh && $UNXEXSCRIPT/syzql040.sh
+
+
+http.internetpsa.inetpsa.com:80
+
+export http_proxy=http://e449806:Die1984g@internetpsa.inetpsa.com:80/
+export ftp_proxy=http://e449806:Die1984g@internetpsa.inetpsa.com:80/
+
+
+
+<?php
+class DbTest extends CTestCase
+{
+public function testConnection()
+{
+$this->assertTrue(true);
+}
+}
+
+
+$this->assertNotNull(Yii::app()->db->connectionString)
+
+
+$connection=new CDbConnection($dsn,$username,$password);
+
+
+
+CREATE OR REPLACE TRIGGER tr_insertar_ejecucion
+BEFORE INSERT ON ejecuciones FOR EACH row 
+DECLARE   
+ cnt NUMBER;   
+ PRAGMA AUTONOMOUS_TRANSACTION;
+BEGIN
+ SELECT COUNT(*)
+   INTO cnt
+    FROM ejecuciones
+  WHERE host = :new.host
+  and inicio=:new.inicio
+  and UPROC=:new.UPROC;
+  IF( cnt = 0 ) THEN
+INSERT
+INTO EJECUCIONES
+  VALUES
+  (:new.SESION, :new.UPROC, :new.MU, :new.ESTADO, :new.INICIO, :new.FIN, :new.HOST  );
+ ELSE
+ update EJECUCIONES
+ set ESTADO=:new.ESTADO,
+ FIN=:new.FIN
+ WHERE host = :new.host
+  and inicio=:new.inicio
+  and UPROC=:new.UPROC;
+  END IF;
+END;
+
+
+
+
+create or replace
+trigger trg_ses_id
+before insert on sesiones
+for each row
+ begin
+select ses_id_seq.nextval
+into :new.ses_id
+from dual;
+end;
+
+
+to_number( to_char(to_date('1','J') +  (max(fin) - min(inicio)), 'J') - 1)  days,  to_char(to_date('00:00:00','HH24:MI:SS') +  (max(fin) - min(inicio)), HH24:MI:SS') time
+

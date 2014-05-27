@@ -25,7 +25,6 @@ SYZS5,Emission Reporting Journalier - ACCZ
 SYZSYD,DEBUT BATCH FONCTIONNEL CONVERGENCE    
 SYZS8,Emission Reporting Journalier - APAT   
 SYZS9,Emission - APAT - Reporting Mensuel  
-UVS05,Surveillance       
 SYZAH,Reception - ACSE - AAA   
 SYZAK,Reception - ACSE - FICHS. INTRANET  
 SYZAL,Reception - ACSE - SAGAI   
@@ -39,10 +38,9 @@ SYZAG,Emission Neolane Journalier - ACES
 SYZ3B,Alimentation ARCAD      
 SYZ3C,Alimentation AO      
 SYZAZ,Reception - ACDK - AO   
-AUD00,Reporte periodico solicitado por Espania   
 SYZ3F,Alimentation NEOLANE      
 SYZ3G,Alimentation FU      
-ORAAL,Monitoreo del alert de la base oracle. 
+SYZ3D,Alimentation CPP      
 SYZ3E,Alimentation AI      
 SYZAQ,Reception - ACSE - SITEL CLI  
 SYZ3H,Alimentation REPRISE      
@@ -83,8 +81,6 @@ SYZF6,Reception - ACBE - SAGAI
 SYZF1,Reception - ACBE - NEOLANE   
 SYZF3,Reception - ACBE - OPV   
 SYZF2,Reception - ACPL - NEOLANE   
-UVS03,Sauvegarde       
-ORAHR,Monitoreo de undo y sort.   
 SYZXC,Reception - ACTR - SITEL VRM  
 SYZXA,Reception - ACPL - FU VEHICULE  
 SYZXN,Reception - ACPL - FU PARTICULIER  
@@ -113,14 +109,11 @@ SYZN8,Reception - ACHU - FU SOCIETE
 SYZHD,Reception - APGB - OPV   
 SYZHC,Emission SAGAI Journalier - ACDK   
 SYZ8P,Traitement purge d'evenements     
-SYZ8X,DB Information      
+SYZ8X,Statics       
 SYZHH,Reception - APGB - NSID   
 SYZM5,Reception - ACPT - ARCAD V2  
 SYZT2,Emission Neolane Mensuel - ACHR   
 SYZT4,Reception - APCH - SITEL VRM  
-UVSKG,kill des process graphique    
-RMN_F,RMAN FULL TEMPORAL     
-RMN_I,RMAN INC TEMPORAL     
 SYZM3,Reception - ACPT - CPP   
 SYZSYF,FIN BATCH FONCTIONNEL CONVERGENCE    
 SYZTK,Batch Token      
@@ -205,7 +198,6 @@ SYZ6D,DB Reports
 SYZYX,Reception - ACHU - FU EM ORPHELINS 
 SYZYY,Reception - ACCZ - FU EM ORPHELINS 
 SYZYZ,Reception - ACGB - FU EM ORPHELINS 
-ORADY,Monitoreo de espacio y objs. inval.  
 SYZLA,Reception - APCZ - SITEL VRM  
 SYZD22,Emission MATRICS - APIT    
 SYZY1,Reception - ACSE - FU EM ORPHELINS 
@@ -276,12 +268,10 @@ SYZGR,Reception - APFR - SITEL VRM
 SYZGP,Emission SAGAI Journalier - ACSE   
 SYZGK,Reception - APFR - PPP   
 SYZME,Reception - APSK - PPP   
-UVSSA,Prise en compte securite    
 SYZ99,HOLD pour tous session du DIALOG - 
 SYZGB,Reception - ACBE - SB/CS   
 SYZGC,Reception - RECEPTION - ACBE - GDO 
 SYZGA,Reception - ACBE - SITEL CLI  
-SYZ3D,Alimentation CPP      
 SYZAR,Reception - ACSE - SB/CS   
 SYZUP,Emission Neolane Journalier - ACHR   
 SYZUR,Reception - APES - SITEL VRM  
@@ -401,7 +391,7 @@ SYZ1I,Reception - ACDE - FU EM ORPHELINS
 SYZ1L,Emission Neolane Journalier - ACCZ   
 SYZV8,Reception - ACRU - SITEL CLI  
 SYZ1A,Libére la ressource     
-PRUEBA,borrame       
+SYZV2,Reception - ACRU - SITEL VRM  
 SYZDZ,Reception - ACPL - SB/CS   
 SYZDY,Reception - ACPL - SITEL CLI  
 SYZDS,Reception - ACPL - SITEL VRM  
@@ -437,7 +427,6 @@ SYZ7A,Reception - ACIT - FU EM ORPHELINS
 SYZVL,Reception - APSI - SB/CS   
 SYZVK,Reception - APSI - SITEL CLI  
 SYZVE,Reception - APSI - SITEL VRM  
-UVS07,Traiter les vérifications     
 SYZVA,Emission Reporting Journalier - APGB   
 SYZVC,Reception - ACHR - NEOLANE   
 SYZVB,Emission - APGB - Reporting Mensuel  
@@ -459,7 +448,6 @@ SYZM2,Reception - ACPT - AO
 SYZBD,Reception - ACDK - SITEL CLI  
 SYZXW,Reception - ACAT - FU EM ORPHELINS 
 SYZXV,Reception - ACAT - FU EM ORPHELINS 
-UVS01,Gestion des logs     
 SYZBI,Reception - APPT - NEOLANE   
 SYZBH,Reception - ACDK - NEOLANE   
 SYZBK,Reception - ACNO - DIALOG   
@@ -542,7 +530,6 @@ SYZNQ,Reception - APPT - AO
 SYZNP,Reception - APPT - ARCAD   
 SYZNS,Reception - APPT - AI   
 SYZNR,Reception - APPT - PPP   
-SYZV2,Reception - ACRU - SITEL VRM  
 SYZNY,Reception - APPT - FICHS. INTRANET  
 SYZNX,Reception - APPT - SITEL VRM  
 SYZNZ,Reception - APPT - SAGAI   
@@ -597,7 +584,6 @@ SYZWP,Reception - APRU - SITEL VRM
 SYZW6,Reception - ACTR - CPP   
 SYZSTO,Init Sauvegarde SYZ     
 SYZSTM,Init Sauvegarde SYZ - Mount DB  
-UVS02,Reorganisation online      
 SYZ7F,Emission Reporting Mensuel - ACIT   
 SYZED,Emission CUSCO - ACDE    
 SYZEE,Emission CUSCO - ACES    
@@ -622,7 +608,6 @@ SYZJF,Reception - ACAT - NSID
 SYZJY,Reception - APAT - OPV   
 SYZJX,Emission SAGAI Journalier - APIT   
 SYZJZ,Reception - APAT - SITEL VRM  
-UVSCA,Extension du calendrier general    
 SYZJP,Emission Neolane Mensuel - APIT   
 SYZJ3,Reception - APAT - NSID   
 SYZJ2,Reception - APAT - SAGAI   

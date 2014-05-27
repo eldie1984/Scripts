@@ -1,0 +1,28 @@
+yval6930:12680/SM/7/IncidentManagement.wsdl
+
+hacer que los scripts de paramiko utilicen todos las mismas librerias 
+
+agregar la opcion main
+
+sacar del while con un if el prompt
+
+si es posible obtener el prompt del env
+
+
+Without any arguments, lstrip(), rstrip(), and strip() are methods that remove
+leading, trailing, and both leading and trailing whitespace, respectively. Examples of
+whitespace include tabs, space characters, carriage returns, and line feeds. Using
+lstrip() without arguments removes any whitespace that appears at the beginning of
+a string and then returns a new string. Using rstrip() without arguments removes any
+whitespace that appears at the end of a string and then returns a new string. Using
+strip() without arguments removes all whitespace at the beginning or end of a string
+and then returns a new string. See Example 3-9.
+
+
+Cambiar remocion de \r por strip
+
+
+
+
+FORMAT = '%(asctime)-15s %(levelname)s %(message)s'
+logging.basicConfig(format=FORMAT,level=logging.INFO)

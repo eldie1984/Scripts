@@ -1,0 +1,10 @@
+0
+0
+0
+0
+0
+0
+Traceback (most recent call last):
+  File "no_send_bac.py", line 142, in <module>
+    time.sleep(5)
+KeyboardInterrupt

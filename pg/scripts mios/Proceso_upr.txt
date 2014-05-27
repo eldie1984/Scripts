@@ -1,0 +1,127 @@
+uxlst ctl status=a,w,o,e since=`date '+%d/%m/%Y'`,2000 full upr=* ses=* mu=* before=31/12/9999,2359 execinfo=* execsev=* | mail diego.gasch@ext.mpsa.com
+
+buscar las task
+yvasa850:SYSAME:/users7/syz00/exploit/indus/EJECUCIONES/diego > uxshw tsk ses=UVSKG upr=* mu=*
+ Commande : uxshw tsk ses=UVSKG upr=* mu=* vupr=000 nomodel partage
+
+ TYPE  | tsk
+
+ ITEMS | ses          : UVSKG
+       | vses         : 000
+       | upr          : UVSKGU09
+       | vupr         : 000
+       | mu           : YVASA850
+       | nomodel
+       | type         : s
+       | printer      : NOHD
+       | queue        : SYS_BATCH
+       | prty         : 100
+       | user         : root
+       | nohold
+       | noforce
+       | nocentral
+       | norestart
+       | serial
+       | nomult
+       | pdate        : (0,0,c)
+       | rule         : ((UVSJ+1CN,01/01/2007))
+       | sdate        : 01/01/2007
+       | prlw         : (0000,000,00,0000,0000)
+       | mulw         : ()
+       | dalw         : (2000,000,10)
+       | mon          : (2000,000,10)
+       | tue          : (2000,000,10)
+       | wed          : (2000,000,10)
+       | thu          : (2000,000,10)
+       | fri          : (2000,000,10)
+       | sat          : (2000,000,10)
+       | sun          : (2000,000,10)
+       | cyclical     : ()
+       | edate        : ()
+       | xdate        : ()
+       | launchvar    : (
+       | exclusion    : ()
+       |
+
+	   
+
+	   
+	   UPR
+	   yvasa850:SYSAME:/users7/syz00/exploit/indus/EJECUCIONES/diego > uxshw upr upr=UVSKG010
+ Commande : uxshw upr upr=UVSKG010 vupr=* partage
+
+ TYPE  | upr
+
+ ITEMS | upr          : UVSKG010
+       | vupr         : 000
+       | class        :
+       | clfil        : /users/uvs00/exploit/schedule/uvskg010.sh
+       | label        : kill des process graphique
+       | dom          : I
+       | appl         : U_
+       | upt          : CL_EXT
+       | definfo      :
+       | defsev       :
+       | fperiod      : d
+       | memo         : n
+       | nbper        : 0
+       | command      :
+       | execdir      :
+       | incclass          : (  )
+       | launchvar         : (  )
+       | depcon            : (  )
+       | inccon            : (  )
+       | rescon            : (  )
+       | termins           : (  )
+       | formula           : (  )
+       | sap_xbp2          : (  )
+       | sap_xbp2_step     : (  )
+       | sap_xbp2_step_pr  : (  )
+       | sap_xbp2_step_ar  : (  )
+       | sap_pchain        : (  )
+       | sap_ipack         : (  )
+       | ftp_get           : (  )
+       | ftp_put           : (  )
+       | ejb               : (  )
+       | ejb_param         : (  )
+       | create_param      : (  )
+       | notify            : (  )
+       | upr_status        : (  )
+       |
+.
+
+
+
+listar sesion
+uxshw ses exp ses=SYZZR lst
+
+Mostrar en forma de grafico
+uxshw ses exp ses=SYZZR lnk
+
+
+
+ uxshw upr upr=SYZZRU09 | /usr/xpg4/bin/grep -E  "upr|condno|dep|status".
+ 
+ 
+  
+ 
+ uxshw upr upr=SYZZRU09 | /usr/xpg4/bin/grep -E  "upr|condno|dep|status" | /usr/xpg4/bin/grep -v -E "upr_status|TYPE|Commande|vupr|depcon"
+ 
+ 
+  uxshw upr upr=SYZZRU09 | /usr/xpg4/bin/grep -E  "condno|dep|status" | /usr/xpg4/bin/grep -v -E "upr_status|TYPE|Commande|vupr|depcon"| sed 's/                          //g'
+  
+  
+  
+  
+   uxlst ses ses=* | awk '{print $1"|"$3" "$4" "$5" "$6" "$7" "$8" "$9}'
+   
+    uxlst ses ses=\* | grep -v "Commande" | grep -v "SESSION"| awk '{print $1"|"$3" "$4" "$5" "$6" "$7" "$8" "$9}' 
+	
+	
+	uxlst ses ses=\* | grep -v "Commande" | grep -v "SESSION" | grep -v "\-\-\-" | sed '/^ *$/d'
+	
+	
+	
+	
+	
+	uxlst ctl status=a,w,o,e since=`date '+%d/%m/%Y'`,0000 full upr=* ses=* mu=* before=31/12/9999,2359 execinfo=* execsev=* |grep -v SESSION | grep -v Commande| grep -v "\-\-\-" | sed '/^ *$/d' | awk '{print $1,$2,$4,$5":"$6,$7":"$8}'

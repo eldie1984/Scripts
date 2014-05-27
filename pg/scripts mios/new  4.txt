@@ -1,0 +1,31 @@
+GRCIndus - BFGRCIn <grcindus@mpsa.com>
+
+
+-F 'GRCIndus - BFGRCIn' -f 'grcindus@mpsa.com' diego.gasch@ext.mpsa.com
+
+cat IF.html | sendmail -t -F 'GRCIndus - BFGRCIn' -f 'grcindus@mpsa.com' alberto.bley@ext.mpsa.com
+
+
+5b05461185c9a9c028ca575edb97a15
+
+
+
+
+cat /users/rlt00/exploit/data/rltfpmsf.dat | grep -i rlt46iae
+
+
+LDP Indus GRC <ldp_indus_grc@mpsa.com>
+
+
+while true
+> do
+> echo  "Subject:INFO FLASH SERVER No voy a hacer maldades"  | sendmail -F 'GRCIndus - BFGRCIn' -f 'grcindus@mpsa.com' alberto.bley@ext.mpsa.com
+> done
+
+
+
+The originating information will not be updated of 
+In transcuso in the morning the missing information would be updated 
+
+The information of $interf will not be  updated
+In the morning the missing information would be updated 

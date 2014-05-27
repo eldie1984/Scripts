@@ -1,0 +1,186 @@
+select (cpu_usr * 5 +cpu_sys *5)  as CPU,500  as TPU,TO_CHAR(fecha,'DD-MM-YY HH24:MI') from host_stats
+where fecha > '17-04-2014'
+and fecha < '18-04-2014';
+
+select * from host_stats;
+
+
+select cpu_usr,cpu_sys,TO_CHAR(fecha,'DD-Mon-YY HH24:MI') from host_stats where host like 'yvasa850'  
+and fecha > '21-04-2014'
+order by fecha desc;
+
+
+select cpu_usr,cpu_sys,(cpu_usr * 5 +cpu_sys *5)  as CPU
+,500  as TPU
+,TO_CHAR(fecha,'DD') as dia
+,TO_CHAR(fecha,'MM') as mes
+,TO_CHAR(fecha,'YYYY') as anio
+,TO_CHAR(fecha,'HH24') as hora
+,TO_CHAR(fecha,'MI') as minuto
+from host_stats
+where fecha > '05-04-2014'
+and fecha < '06-04-2014'
+order by fecha desc;
+
+delete from host_stats where fecha < '22-04-2014'
+;
+
+
+
+SELECT TO_DATE('19700101','yyyymmdd') + (1398124260000/24/60/60) from dual;
+
+select * from host_stats where fecha='22/04/2014 17:10'
+;
+
+
+
+select (cpu_usr * 5 +cpu_sys *5) as CPU ,500 as TPU ,TO_CHAR(fecha,'DD') as dia ,TO_CHAR(fecha,'MM') as mes ,TO_CHAR(fecha,'YYYY') as anio ,TO_CHAR(fecha,'HH24') as hora ,TO_CHAR(fecha,'MI') as minuto from host_stats where host like 'yvasa850' and fecha > '01-04-2013' and fecha < '01-04-2014' order by fecha asc 
+;
+
+ALTER SESSION SET NLS_NUMERIC_CHARACTERS = '. ';
+select 
+TO_CHAR(fecha,'YYYY') as anio
+,TO_CHAR(fecha,'MM') as mes
+,TO_CHAR(fecha,'DD') as dia
+,round(avg(cpu_usr * 5 +cpu_sys *5),2) as CPU, 500 as TPU from host_stats 
+where TO_CHAR(fecha,'HH24:MI') <> '00:00'
+group by TO_CHAR(fecha,'YYYY'), TO_CHAR(fecha,'MM'), TO_CHAR(fecha,'DD'), 500
+order by TO_CHAR(fecha,'YYYY'),TO_CHAR(fecha,'MM'),TO_CHAR(fecha,'DD') asc
+;
+
+INSERT
+INTO POSTS
+  (
+    ID,
+    "title ",
+    BODY,
+    CREATED,
+    MODIFIED
+  )
+  VALUES
+  (
+    :v0,
+    :v1,
+    :v2,
+    :v3,
+    :v4
+  );
+
+
+
+
+ALTER TABLE 
+   host_stats
+ADD
+   (
+   TPU  number ,
+   MEM_ASSIGNED number
+   );
+
+
+
+update host_stats
+set TPU=500,
+MEM_ASSIGNED=131072
+
+
+
+
+
+select cpu_usr *5 ,cpu_sys,TO_CHAR(fecha,'DD-Mon-YY HH24:MI')
+from host_stats 
+where TO_CHAR(fecha,'HH24:MI') <> '00:00'
+order by fecha asc
+
+
+;
+select * from host_stats;
+
+
+
+
+
+
+set time on
+set echo on
+alter session set nls_date_format='dd/mm/yyyy HH24:MI:SS';
+
+INSERT INTO EJECUCIONES  ( HOST, SESION, UPROC,  MU,  INICIO,  FIN,  ESTADO  )
+values
+('yvai2180','RLTPL','RLTPLCDF','ARLTER','29/04/2014 01:37:51','29/04/2014 01:38:08','TERMINE');
+
+
+
+
+select 
+TO_CHAR(fecha,'YYYY') as anio
+,TO_CHAR(fecha,'MM') as mes
+,TO_CHAR(fecha,'DD') as dia
+,round(avg(cpu_usr * tpu / 100 +cpu_sys * tpu / 100),2) as CPU,  TPU 
+,round(avg(MEMORIA * 131072 / 100),2) as memoria,  mem_assigned 
+from host_stats group by TO_CHAR(fecha,'YYYY'), TO_CHAR(fecha,'MM'), TO_CHAR(fecha,'DD'), TPU, mem_assigned ;
+
+
+
+
+select * from EJECUCIONES
+where SESION='RLTPL'
+and UPROC='RLTPLCDF'
+
+
+select sesion,estado,TO_CHAR(min(inicio),'DD-MM-YY HH24:MI:SS') as inicio, TO_CHAR(max(fin),'DD-MM-YY HH24:MI:SS') as fin 
+from ejecuciones
+where sesion not in (select sesion from ejecuciones where estado <> 'TERMINE') group by sesion, estado
+union 
+select sesion,estado,TO_CHAR(min(inicio),'DD-MM-YY HH24:MI:SS') as inicio, '00-00-00 00:00:00' as fin 
+from ejecuciones
+where estado <> 'TERMINE' group by sesion, estado
+
+
+select to_char (SYSDATE, 'MM') from dual;
+
+
+CREATE TABLE posts (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR2(50),
+    body TEXT,
+    created DATETIME DEFAULT NULL,
+    modified DATETIME DEFAULT NULL
+);
+
+/* Then insert some posts for testing: */
+INSERT INTO posts (ID,
+    "title ",
+    BODY,
+    CREATED)
+    VALUES (1,'The title', 'This is the post body.', sysdate);
+INSERT INTO posts (ID,
+    "title ",
+    BODY,
+    CREATED)
+    VALUES (2,'A title once again', 'And the post body follows.', sysdate);
+INSERT INTO posts (ID,
+    "title ",
+    BODY,
+    CREATED)
+    VALUES (3,'Title strikes back', 'This is really exciting! Not.', sysdate);
+    
+    
+    
+    
+    
+
+select sesion,estado,min(inicio) as inicio,max(fin) as fin, to_char(to_date('00:00:00','HH24:MI:SS') +  (max(fin) - min(inicio)), 'HH24:MI:SS') as duracion
+from ejecuciones 
+where estado='TERMINE'
+group by sesion, estado
+union
+select sesion,estado,min(inicio) as inicio,min(inicio) as fin,to_char(to_date('00:00:00','HH24:MI:SS') +  (min(inicio) - min(inicio)), 'HH24:MI:SS') as duracion from ejecuciones
+where estado <> 'TERMINE'
+group by sesion, estado
+order by 3
+;
+
+HORAIRE_DEPASSE
+select distinct(host) from ejecuciones;
+

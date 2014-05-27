@@ -1,0 +1,1632 @@
+################################################################################
+# Accion : Ver distintas estadisticas en ORACLE
+# Autor  : Miguel Angel Secatore (2000)
+#
+
+################################################################################
+
+onstat_v()
+{
+
+rm -f ${TEMPO}.* >/dev/null 2>&1
+
+cat <<EOF >/tmp/onstat.sql
+
+CONN / AS SYSDBA
+
+SET TERMOUT OFF
+set verify off
+set linesize 79
+set pagesize 10000
+set feed off
+
+COLUMN banner        FORMAT a79  JUSTIFY C       HEADING 'DESCRIPTION'
+
+COLUMN instancia     NEW_VALUE instancia_print   NOPRINT
+COLUMN fecha         NEW_VALUE fecha_print       NOPRINT
+
+SELECT SUBSTR(name,1,20)                     instancia,
+       TO_CHAR(sysdate,'DD/MM/YYYY HH24:MI') fecha
+  FROM v\$database;
+
+SPOOL /tmp/onstat.prn
+
+REPHEADER PAGE LEFT 'ONSTAT - DATABASE VERSION' CENTER 'ORACLE ' instancia_print RIGHT fecha_print
+
+TTITLE COL 1 FORMAT 1 ' '
+
+SELECT banner FROM v\$version;
+
+EXIT
+
+EOF
+
+comando="sqlplus /nolog @/tmp/onstat"
+
+return
+}
+
+################################################################################
+onstat_c()
+{
+
+rm -f ${TEMPO}.* >/dev/null 2>&1
+
+cat <<EOF >/tmp/onstat.sql
+
+CONN / AS SYSDBA
+
+SET TERMOUT OFF
+set verify off
+set linesize 79
+set pagesize 10000
+set feed off
+
+COLUMN name          FORMAT a40                  HEADING 'NAME'
+COLUMN value         FORMAT a38                  HEADING 'VALUE'
+
+COLUMN instancia     NEW_VALUE instancia_print   NOPRINT
+COLUMN fecha         NEW_VALUE fecha_print       NOPRINT
+
+SELECT SUBSTR(name,1,20)                     instancia,
+       TO_CHAR(sysdate,'DD/MM/YYYY HH24:MI') fecha
+  FROM v\$database;
+
+SPOOL /tmp/onstat.prn
+
+REPHEADER PAGE LEFT 'ONSTAT - DATABASE PARAMETERS' CENTER 'ORACLE ' instancia_print RIGHT fecha_print
+
+TTITLE COL 1 FORMAT 1 ' '
+
+SELECT name,
+       value
+  FROM v\$parameter;
+
+EXIT
+
+EOF
+
+comando="sqlplus /nolog @/tmp/onstat"
+
+return
+}
+
+################################################################################
+onstat_u()
+{
+
+cat <<EOF >/tmp/onstat.sql
+
+CONN / AS SYSDBA
+
+SET TERMOUT OFF
+set verify off
+set linesize 100
+set pagesize 10000
+set feed off
+
+COLUMN username      FORMAT a12                  HEADING 'USERNAME'
+COLUMN sid           FORMAT 9999                 HEADING 'SID'
+COLUMN serial#       FORMAT 999999               HEADING 'SERIAL'
+COLUMN spid          FORMAT a9                   HEADING 'SPID'
+COLUMN osuser        FORMAT a10                  HEADING 'OSUSER'
+COLUMN machine       FORMAT a18                  HEADING 'MACHINE'
+COLUMN logon         FORMAT a16                  HEADING 'LOGON'
+
+COLUMN instancia     NEW_VALUE instancia_print   NOPRINT
+COLUMN fecha         NEW_VALUE fecha_print       NOPRINT
+
+SELECT SUBSTR(name,1,20)                     instancia,
+       TO_CHAR(sysdate,'DD/MM/YYYY HH24:MI') fecha
+  FROM v\$database;
+
+
+SPOOL /tmp/onstat.prn
+
+REPHEADER PAGE LEFT 'ONSTAT - USERS ACTIVITY' CENTER 'ORACLE ' instancia_print RIGHT fecha_print
+
+
+TTITLE COL 1 FORMAT 1 ' '
+
+SELECT a.username,
+       a.sid,
+       a.serial#,
+       b.spid,
+       a.osuser,
+       a.status,
+       a.machine,
+       TO_CHAR(a.logon_time,'DD/MM/YYYY HH24:MI') logon
+  FROM V\$SESSION a,
+       V\$PROCESS b
+ WHERE a.username   !=  ' '
+   AND a.paddr       =  b.addr(+);
+
+EXIT
+
+EOF
+
+comando="sqlplus /nolog @/tmp/onstat"
+
+return
+}
+
+################################################################################
+onstat_d()
+{
+
+cat <<EOF >/tmp/onstat.sql
+
+rem @(#)tf.sql  1.1 - report free tablespace
+rem 
+rem Cary Millsap, Oracle USA   &  Intervencion posta: Miki Secatore, PIS Arg
+rem 92/10/25 y 16/10/2003
+
+CONN / AS SYSDBA
+
+SET TERMOUT OFF
+set verify off
+set linesize 79
+set pagesize 10000
+set feed off
+
+COLUMN instancia     NEW_VALUE instancia_print   NOPRINT
+COLUMN fecha         NEW_VALUE fecha_print       NOPRINT
+
+SELECT SUBSTR(name,1,20)                     instancia,
+       TO_CHAR(sysdate,'DD/MM/YYYY HH24:MI') fecha
+  FROM v\$database;
+
+
+SPOOL /tmp/onstat.prn
+
+REPHEADER PAGE LEFT 'ONSTAT - DATABASE SPACES' CENTER 'ORACLE ' instancia_print RIGHT fecha_print
+
+TTITLE COL 1 FORMAT 1 ' '
+
+col tsname  format        a24 justify c heading 'TABLESPACE'
+col nfrags  format 999,990    justify c heading 'FREE|FRAGS'
+col mxfrag  format  99,990.99 justify c heading 'LARGEST|FREE FRAG'
+col totsiz  format 999,990.99 justify c heading 'TOTAL|Mbytes'
+col avasiz  format 999,990.99 justify c heading 'AVAILABLE|Mbytes'
+col pctusd  format     990.99 justify c heading 'PERCENT|USED'
+
+SELECT total.tablespace_name                       tsname,
+       count(free.bytes)                           nfrags,
+       nvl(max(free.bytes)/1048576,0)              mxfrag,
+       total.bytes/1048576                         totsiz,
+       nvl(sum(free.bytes)/1048576,0)              avasiz,
+       (1-nvl(sum(free.bytes),0)/total.bytes)*100  pctusd
+  FROM ( SELECT a.tablespace_name  tablespace_name,
+                SUM(a.bytes)       bytes
+           FROM dba_data_files a
+          GROUP BY a.tablespace_name
+          UNION
+         SELECT b.tablespace_name  tablespace_name,
+                SUM(b.bytes)       bytes
+           FROM dba_temp_files b
+          GROUP BY b.tablespace_name ) total,
+       dba_free_space free
+ WHERE total.tablespace_name  =  free.tablespace_name(+)
+ GROUP BY total.tablespace_name,
+          total.bytes
+ ORDER BY pctusd DESC;
+
+SPOOL OFF
+
+EXIT
+
+EOF
+
+comando="sqlplus /nolog @/tmp/onstat"
+
+return
+}
+
+################################################################################
+onstat_k()
+{
+
+cat <<EOF >/tmp/onstat.sql
+
+CONN / AS SYSDBA
+set echo off
+SET TERMOUT OFF
+set verify off
+set linesize 100
+set pagesize 10000
+set feed off
+set heading on
+
+
+DROP TABLE sesiones;
+DROP TABLE retenidos;
+
+CREATE TABLE sesiones  AS SELECT * FROM v\$session;
+CREATE TABLE retenidos AS SELECT * FROM v\$lock;
+
+COMMIT;
+
+col tipo        format a4                  heading 'ACT'
+col username    format a12                 heading 'USERNAME'
+col sid         format 9999                heading 'SID'
+col object_name format a30                 heading 'OBJECT'
+col ctime       format 99999               heading 'TIME'
+col clase       format a30                 heading 'TYPE CLASS'
+col lock_mode   format a3                  heading 'LM'
+
+
+COLUMN instancia     NEW_VALUE instancia_print   NOPRINT
+COLUMN fecha         NEW_VALUE fecha_print       NOPRINT
+
+SELECT SUBSTR(name,1,20)                     instancia,
+       TO_CHAR(sysdate,'DD/MM/YYYY HH24:MI') fecha
+  FROM v\$database;
+
+
+SPOOL /tmp/onstat.prn
+
+REPHEADER PAGE LEFT 'ONSTAT - LOCKs ACTIVITY' CENTER 'ORACLE ' instancia_print RIGHT fecha_print
+
+TTITLE COL 1 FORMAT 1 ' '
+
+BREAK ON SQL_TEXT SKIP 1
+
+SELECT 'LOCK'           tipo,
+       a.username       username,
+       b.sid            sid,
+       (d.owner||'.'||d.object_name) object_name,
+       (b.ctime / 60)   ctime,
+       DECODE(b.lmode,
+              1, 'NUL',
+              2, 'RS',
+              3, 'RX',
+              4, 'S',
+              5, 'SRX',
+              6, 'X',
+              '???' )   lock_mode,
+       DECODE(b.type,
+              'TM', 'DML enqueue',
+              'TX', 'Transaction enqueue',
+              'UL', 'User supplied',
+              'BL', 'Buffer hash table instance',
+              'CF', 'Control file schema global enqueue',
+              'CI', 'Cross-instance function invocation instance',
+              'CU', 'Cursor bind',
+              'DF', 'Data file instance',
+              'DL', 'Direct loader parallel index create',
+              'DM', 'Mount/startup db primary/secondary instance',
+              'DR', 'Distributed recovery process',
+              'DX', 'Distributed transaction entry',
+              'FS', 'File set',
+              'HW', 'Space management operations on a specific segment',
+              'IN', 'Instance number',
+              'IR', 'Instance recovery serialization global enqueue',
+              'IS', 'Instance state',
+              'IV', 'Library cache invalidation instance',
+              'JQ', 'Job queue',
+              'KK', 'Thread kick',
+              'LA', 'Library cache lock instance lock namespace ' || b.type,
+              'LB', 'Library cache lock instance lock namespace ' || b.type,
+              'LC', 'Library cache lock instance lock namespace ' || b.type,
+              'LD', 'Library cache lock instance lock namespace ' || b.type,
+              'LE', 'Library cache lock instance lock namespace ' || b.type,
+              'LF', 'Library cache lock instance lock namespace ' || b.type,
+              'LG', 'Library cache lock instance lock namespace ' || b.type,
+              'LH', 'Library cache lock instance lock namespace ' || b.type,
+              'LI', 'Library cache lock instance lock namespace ' || b.type,
+              'LJ', 'Library cache lock instance lock namespace ' || b.type,
+              'LK', 'Library cache lock instance lock namespace ' || b.type,
+              'LO', 'Library cache lock instance lock namespace ' || b.type,
+              'LP', 'Library cache lock instance lock namespace ' || b.type,
+              'MM', 'Mount definition global enqueue',
+              'MR', 'Media recovery',
+              'NA', 'Library cache pin instance namespace ' || b.type,
+              'NB', 'Library cache pin instance namespace ' || b.type,
+              'NC', 'Library cache pin instance namespace ' || b.type,
+              'ND', 'Library cache pin instance namespace ' || b.type,
+              'NE', 'Library cache pin instance namespace ' || b.type,
+              'NF', 'Library cache pin instance namespace ' || b.type,
+              'NG', 'Library cache pin instance namespace ' || b.type,
+              'NH', 'Library cache pin instance namespace ' || b.type,
+              'NI', 'Library cache pin instance namespace ' || b.type,
+              'NJ', 'Library cache pin instance namespace ' || b.type,
+              'NK', 'Library cache pin instance namespace ' || b.type,
+              'NL', 'Library cache pin instance namespace ' || b.type,
+              'NM', 'Library cache pin instance namespace ' || b.type,
+              'NN', 'Library cache pin instance namespace ' || b.type,
+              'NO', 'Library cache pin instance namespace ' || b.type,
+              'NP', 'Library cache pin instance namespace ' || b.type,
+              'NQ', 'Library cache pin instance namespace ' || b.type,
+              'NR', 'Library cache pin instance namespace ' || b.type,
+              'NS', 'Library cache pin instance namespace ' || b.type,
+              'NT', 'Library cache pin instance namespace ' || b.type,
+              'NU', 'Library cache pin instance namespace ' || b.type,
+              'NV', 'Library cache pin instance namespace ' || b.type,
+              'NW', 'Library cache pin instance namespace ' || b.type,
+              'NY', 'Library cache pin instance namespace ' || b.type,
+              'NZ', 'Library cache pin instance namespace ' || b.type,
+              'PF', 'Password File',
+              'PI', 'Parallel operation',
+              'PS', 'Parallel operation',
+              'PR', 'Process startup',
+              'QA', 'Row cache instance  cache ' || b.type,
+              'QB', 'Row cache instance  cache ' || b.type,
+              'QC', 'Row cache instance  cache ' || b.type,
+              'QD', 'Row cache instance  cache ' || b.type,
+              'QE', 'Row cache instance  cache ' || b.type,
+              'QF', 'Row cache instance  cache ' || b.type,
+              'QG', 'Row cache instance  cache ' || b.type,
+              'QH', 'Row cache instance  cache ' || b.type,
+              'QI', 'Row cache instance  cache ' || b.type,
+              'QJ', 'Row cache instance  cache ' || b.type,
+              'QK', 'Row cache instance  cache ' || b.type,
+              'QL', 'Row cache instance  cache ' || b.type,
+              'QM', 'Row cache instance  cache ' || b.type,
+              'QN', 'Row cache instance  cache ' || b.type,
+              'QO', 'Row cache instance  cache ' || b.type,
+              'QP', 'Row cache instance  cache ' || b.type,
+              'QQ', 'Row cache instance  cache ' || b.type,
+              'QR', 'Row cache instance  cache ' || b.type,
+              'QS', 'Row cache instance  cache ' || b.type,
+              'QT', 'Row cache instance  cache ' || b.type,
+              'QU', 'Row cache instance  cache ' || b.type,
+              'QV', 'Row cache instance  cache ' || b.type,
+              'QW', 'Row cache instance  cache ' || b.type,
+              'QY', 'Row cache instance  cache ' || b.type,
+              'QZ', 'Row cache instance  cache ' || b.type,
+              'RT', 'Redo thread global enqueue',
+              'SC', 'System commit number instance',
+              'SM', 'SMON',
+              'SN', 'Sequence number instance',
+              'SQ', 'Sequence number enqueue',
+              'SS', 'Sort segment',
+              'ST', 'Space transaction enqueue',
+              'SV', 'Sequence number value',
+              'TA', 'Generic enqueue',
+              'TS', DECODE(b.id2,0, 'Temporary segment enqueue (ID2=0)',
+                           b.id2,1, 'New block allocation enqueue (ID2=1)',
+                           'Unknown lock type (TS)'
+                          ),
+              'TO', 'Temporary Table Object Enqueue',
+              'TT', 'Temporary table enqueue',
+              'UN', 'User name',
+              'US', 'Undo segment DDL',
+              'WL', 'Being-written redo log instance',
+              'Unknown lock type ? ' || b.type
+             ) clase
+  FROM sesiones a,
+       retenidos b,
+       dba_objects d
+ WHERE b.sid                =  a.sid (+)
+   AND b.id1                =  d.object_id (+)
+   AND b.lmode             !=  0
+   AND b.ctime              >  100
+ ORDER BY b.ctime DESC;
+
+
+set heading off
+set heads off
+
+TTITLE OFF
+REPHEADER OFF
+
+
+SELECT 'WAIT'           tipo,
+       a.username       username,
+       b.sid            sid,
+       (d.owner||d.object_name) object_name,
+       (b.ctime / 60)   ctime,
+       DECODE(b.lmode,
+              1, 'NUL',
+              2, 'RS',
+              3, 'RX',
+              4, 'S',
+              5, 'SRX',
+              6, 'X',
+              '???' )   lock_mode,
+       DECODE(b.type,
+              'TM', 'DML enqueue',
+              'TX', 'Transaction enqueue',
+              'UL', 'User supplied',
+              'BL', 'Buffer hash table instance',
+              'CF', 'Control file schema global enqueue',
+              'CI', 'Cross-instance function invocation instance',
+              'CU', 'Cursor bind',
+              'DF', 'Data file instance',
+              'DL', 'Direct loader parallel index create',
+              'DM', 'Mount/startup db primary/secondary instance',
+              'DR', 'Distributed recovery process',
+              'DX', 'Distributed transaction entry',
+              'FS', 'File set',
+              'HW', 'Space management operations on a specific segment',
+              'IN', 'Instance number',
+              'IR', 'Instance recovery serialization global enqueue',
+              'IS', 'Instance state',
+              'IV', 'Library cache invalidation instance',
+              'JQ', 'Job queue',
+              'KK', 'Thread kick',
+              'LA', 'Library cache lock instance lock namespace ' || b.type,
+              'LB', 'Library cache lock instance lock namespace ' || b.type,
+              'LC', 'Library cache lock instance lock namespace ' || b.type,
+              'LD', 'Library cache lock instance lock namespace ' || b.type,
+              'LE', 'Library cache lock instance lock namespace ' || b.type,
+              'LF', 'Library cache lock instance lock namespace ' || b.type,
+              'LG', 'Library cache lock instance lock namespace ' || b.type,
+              'LH', 'Library cache lock instance lock namespace ' || b.type,
+              'LI', 'Library cache lock instance lock namespace ' || b.type,
+              'LJ', 'Library cache lock instance lock namespace ' || b.type,
+              'LK', 'Library cache lock instance lock namespace ' || b.type,
+              'LO', 'Library cache lock instance lock namespace ' || b.type,
+              'LP', 'Library cache lock instance lock namespace ' || b.type,
+              'MM', 'Mount definition global enqueue',
+              'MR', 'Media recovery',
+              'NA', 'Library cache pin instance namespace ' || b.type,
+              'NB', 'Library cache pin instance namespace ' || b.type,
+              'NC', 'Library cache pin instance namespace ' || b.type,
+              'ND', 'Library cache pin instance namespace ' || b.type,
+              'NE', 'Library cache pin instance namespace ' || b.type,
+              'NF', 'Library cache pin instance namespace ' || b.type,
+              'NG', 'Library cache pin instance namespace ' || b.type,
+              'NH', 'Library cache pin instance namespace ' || b.type,
+              'NI', 'Library cache pin instance namespace ' || b.type,
+              'NJ', 'Library cache pin instance namespace ' || b.type,
+              'NK', 'Library cache pin instance namespace ' || b.type,
+              'NL', 'Library cache pin instance namespace ' || b.type,
+              'NM', 'Library cache pin instance namespace ' || b.type,
+              'NN', 'Library cache pin instance namespace ' || b.type,
+              'NO', 'Library cache pin instance namespace ' || b.type,
+              'NP', 'Library cache pin instance namespace ' || b.type,
+              'NQ', 'Library cache pin instance namespace ' || b.type,
+              'NR', 'Library cache pin instance namespace ' || b.type,
+              'NS', 'Library cache pin instance namespace ' || b.type,
+              'NT', 'Library cache pin instance namespace ' || b.type,
+              'NU', 'Library cache pin instance namespace ' || b.type,
+              'NV', 'Library cache pin instance namespace ' || b.type,
+              'NW', 'Library cache pin instance namespace ' || b.type,
+              'NY', 'Library cache pin instance namespace ' || b.type,
+              'NZ', 'Library cache pin instance namespace ' || b.type,
+              'PF', 'Password File',
+              'PI', 'Parallel operation',
+              'PS', 'Parallel operation',
+              'PR', 'Process startup',
+              'QA', 'Row cache instance  cache ' || b.type,
+              'QB', 'Row cache instance  cache ' || b.type,
+              'QC', 'Row cache instance  cache ' || b.type,
+              'QD', 'Row cache instance  cache ' || b.type,
+              'QE', 'Row cache instance  cache ' || b.type,
+              'QF', 'Row cache instance  cache ' || b.type,
+              'QG', 'Row cache instance  cache ' || b.type,
+              'QH', 'Row cache instance  cache ' || b.type,
+              'QI', 'Row cache instance  cache ' || b.type,
+              'QJ', 'Row cache instance  cache ' || b.type,
+              'QK', 'Row cache instance  cache ' || b.type,
+              'QL', 'Row cache instance  cache ' || b.type,
+              'QM', 'Row cache instance  cache ' || b.type,
+              'QN', 'Row cache instance  cache ' || b.type,
+              'QO', 'Row cache instance  cache ' || b.type,
+              'QP', 'Row cache instance  cache ' || b.type,
+              'QQ', 'Row cache instance  cache ' || b.type,
+              'QR', 'Row cache instance  cache ' || b.type,
+              'QS', 'Row cache instance  cache ' || b.type,
+              'QT', 'Row cache instance  cache ' || b.type,
+              'QU', 'Row cache instance  cache ' || b.type,
+              'QV', 'Row cache instance  cache ' || b.type,
+              'QW', 'Row cache instance  cache ' || b.type,
+              'QY', 'Row cache instance  cache ' || b.type,
+              'QZ', 'Row cache instance  cache ' || b.type,
+              'RT', 'Redo thread global enqueue',
+              'SC', 'System commit number instance',
+              'SM', 'SMON',
+              'SN', 'Sequence number instance',
+              'SQ', 'Sequence number enqueue',
+              'SS', 'Sort segment',
+              'ST', 'Space transaction enqueue',
+              'SV', 'Sequence number value',
+              'TA', 'Generic enqueue',
+              'TS', DECODE(b.id2,0, 'Temporary segment enqueue (ID2=0)',
+                           b.id2,1, 'New block allocation enqueue (ID2=1)',
+                           'Unknown lock type (TS)'
+                          ),
+              'TO', 'Temporary Table Object Enqueue',
+              'TT', 'Temporary table enqueue',
+              'UN', 'User name',
+              'US', 'Undo segment DDL',
+              'WL', 'Being-written redo log instance',
+              'Unknown lock type ? ' || b.type
+             ) clase
+  FROM sesiones a,
+       retenidos b,
+       dba_objects d
+ WHERE b.sid             =  a.sid (+)
+   AND b.id1             =  d.object_id (+)
+   AND b.request        !=  0
+   AND b.ctime           >  100
+ ORDER BY b.ctime DESC;
+
+
+SPOOL OFF
+
+DROP TABLE sesiones;
+DROP TABLE retenidos;
+
+COMMIT;
+
+EXIT
+
+EOF
+
+comando="sqlplus /nolog @/tmp/onstat"
+
+return
+}
+
+################################################################################
+onstat_g_sql()
+{
+
+[ "${TIPO3}" != "" ] && SQL_PREPARE="   AND a.sid      = ${TIPO3}" || SQL_PREPARE=""
+
+cat <<EOF >/tmp/onstat.sql
+
+CONN / AS SYSDBA
+
+SET TERMOUT OFF
+set verify off
+set feed off
+
+col username   format a12                 heading 'USERNAME'
+col sid        format 99999               heading 'SID'
+col sqltexto   format a8                  heading 'SQL'
+col sql_text   format a90                 heading 'SQL_TEXT'
+COL osuser     FORMAT a12                 HEADING 'OSUSER'
+col machine    format a20                 heading 'MACHINE'
+col status     format a10                 heading 'STATUS'
+
+
+COLUMN instancia     NEW_VALUE instancia_print   NOPRINT
+COLUMN fecha         NEW_VALUE fecha_print       NOPRINT
+
+SELECT SUBSTR(name,1,20)                     instancia,
+       TO_CHAR(sysdate,'DD/MM/YYYY HH24:MI') fecha
+  FROM v\$database;
+
+
+SPOOL /tmp/onstat.prn
+
+REPHEADER PAGE LEFT 'ONSTAT - SQLs ACTIVITY' CENTER 'ORACLE ' instancia_print RIGHT fecha_print
+
+TTITLE COL 1 FORMAT 1 ' '
+
+set linesize 100
+set pagesize 10000
+
+SELECT a.username,
+       a.sid,
+       UPPER(SUBSTR(TRIM(s.sql_text),1,7)) sqltexto,
+       a.osuser,
+       a.lockwait,
+       a.status,
+       SUBSTR(a.machine,1,19) machine
+  FROM v\$session a,
+       v\$sqltext s
+ WHERE a.sql_address     =  s.address
+   AND a.sql_hash_value  =  s.hash_value
+   AND a.username        NOT IN (' ','DBSNMP')
+   AND s.piece           =  0     ${SQL_PREPARE}
+ ORDER BY a.username,
+          a.sid;
+
+REPHEADER OFF
+
+set linesize 100
+set pagesize 10000
+
+BREAK ON sid SKIP 1
+
+SELECT a.sid      sid,
+       s.sql_text sql_text
+  FROM v\$session a,
+       v\$sqltext s
+ WHERE a.sql_address     =  s.address
+   AND a.sql_hash_value  =  s.hash_value
+   AND a.username       !=  ' '
+   AND a.username       !=  'DBSNMP'  ${SQL_PREPARE}
+ ORDER BY a.username,
+          a.sid,
+          s.piece;
+
+EXIT
+
+EOF
+
+comando="sqlplus /nolog @/tmp/onstat"
+
+return
+}
+
+################################################################################
+onstat_g_seg()
+{
+case "${VERSION}" in
+    "7") onstat_g_seg_7;;
+    "8") onstat_g_seg_8;;
+esac
+}
+
+################################################################################
+onstat_g_seg_7()
+{
+
+cat <<EOF >/tmp/onstat.sql
+
+CONN / AS SYSDBA
+
+SET TERMOUT OFF
+set verify off
+set linesize 79
+set pagesize 10000
+set feed off
+
+COLUMN instancia     NEW_VALUE instancia_print   NOPRINT
+COLUMN fecha         NEW_VALUE fecha_print       NOPRINT
+
+COLUMN nombre        FORMAT a60                HEADING 'NAME'
+COLUMN cantmem       FORMAT 999,999,999,999    HEADING 'VALUE'
+
+SELECT SUBSTR(name,1,20)                     instancia,
+       TO_CHAR(sysdate,'DD/MM/YYYY HH24:MI') fecha
+  FROM v\$database;
+
+SPOOL /tmp/onstat.prn
+
+REPHEADER PAGE LEFT 'ONSTAT - MEMORY DISTRIBUTION' CENTER 'ORACLE ' instancia_print RIGHT fecha_print
+
+TTITLE COL 1 FORMAT 1 ' '
+
+SELECT name      nombre,
+       value     cantmem
+  FROM v\$sga;
+
+SPOOL OFF
+EXIT
+
+EOF
+
+comando="sqlplus /nolog @/tmp/onstat"
+
+return
+}
+
+################################################################################
+onstat_g_seg_8()
+{
+
+cat <<EOF >/tmp/onstat.sql
+
+CONN / AS SYSDBA
+
+SET TERMOUT OFF
+set verify off
+set linesize 79
+set pagesize 10000
+set feed off
+
+COLUMN instancia     NEW_VALUE instancia_print   NOPRINT
+COLUMN fecha         NEW_VALUE fecha_print       NOPRINT
+
+COLUMN nombre        FORMAT a60              HEADING 'NAME'
+COLUMN cantmem       FORMAT 999,999,999,999  HEADING 'VALUE'
+
+COLUMN pool          FORMAT a20              HEADING 'POOL'
+COLUMN name          FORMAT a40              HEADING 'DESCRIPTION'
+COLUMN bytes         FORMAT 9,999,999,999    HEADING 'BYTES'
+
+
+SELECT SUBSTR(name,1,20)                     instancia,
+       TO_CHAR(sysdate,'DD/MM/YYYY HH24:MI') fecha
+  FROM v\$database;
+
+SPOOL /tmp/onstat.prn
+
+REPHEADER PAGE LEFT 'ONSTAT - MEMORY DISTRIBUTION' CENTER 'ORACLE ' instancia_print RIGHT fecha_print
+
+TTITLE COL 1 FORMAT 1 ' '
+
+SELECT name      nombre,
+       value     cantmem
+  FROM v\$sga;
+
+REPHEADER OFF
+
+SELECT pool,
+       name,
+       bytes
+  FROM v\$sgastat;
+
+SPOOL OFF
+EXIT
+
+EOF
+
+comando="sqlplus /nolog @/tmp/onstat"
+
+return
+}
+
+################################################################################
+onstat_p()
+{
+
+cat <<EOF >/tmp/onstat.sql
+
+define prefix='v'
+set document off
+
+doc
+
+This SQLPLUS script controls how the other stats gathering scripts behave
+
+Guy Harrison
+gharriso@werple.mira.net.au
+
+
+
+doc
+
+        Our favorite settings
+#
+
+CONN / AS SYSDBA
+
+set echo off
+set verify off
+set feedback off
+set pages 56
+set newpage 0
+set lines 78
+set document off
+
+
+doc
+
+ DEV_LIMIT sets the directory depth which defines a physical device.
+ If set to 2, then /db01/fred implies that /db01 is a unique device. 
+
+ DEV_DELIM defines the character which seperates directories or groups.
+ For instance
+    '/' for UNIX
+    '\' for Windows
+    '.' for MVS ? (haven't tried this)
+
+#  
+
+define DEV_LIMIT=3
+define DEV_DELIM='/'
+
+
+
+doc
+        Get instance and date values
+#
+
+set termout off
+
+COLUMN instancia     NEW_VALUE instancia_print   NOPRINT
+COLUMN fecha         NEW_VALUE fecha_print       NOPRINT
+
+SELECT substr(name,1,20)                     instancia,
+       TO_CHAR(sysdate,'DD/MM/YYYY HH24:MI') fecha 
+  FROM v\$database;
+
+
+column period_comment new_value period_comment_ noprint
+
+REM
+REM Can't read v\$instance on some systems and gh\$ tables might not exist
+rem so create a default message first
+rem
+
+select 'Sampled since database startup' period_comment 
+  from dual;
+
+ 
+select 'Sampled between '||to_char(start_time,'DD/MM HH24:MI:SS')||' and '
+       ||to_char(end_time,'DD/MM HH24:MI:SS') period_comment
+  from gh\$control
+ where upper('&prefix')='GH'
+/
+
+select 'Sampled since database startup at '||
+       to_char(to_date(j.value,'J')+s.value/(24*60*60),'DD/MM HH24:MI:SS')
+       period_comment
+  from v\$instance j,
+       v\$instance s,
+       gh\$control gh
+ where j.key='STARTUP TIME - JULIAN'
+   and s.key='STARTUP TIME - SECONDS'
+   and upper('&prefix')='GH'
+   and gh.start_time=gh.end_time
+/
+
+select 'Sampled since database startup at '||
+       to_char(to_date(j.value,'J')+s.value/(24*60*60),'DD/MM HH24:MI:SS')
+       period_comment
+  from v\$instance j,
+       v\$instance s
+ where j.key='STARTUP TIME - JULIAN'
+   and s.key='STARTUP TIME - SECONDS'
+   and upper('&prefix')='V'
+/
+
+column name     format a30        heading "RATIO "
+column notes    format a35        heading "COMMENTS"
+column value    format 99990.9999 heading "VALUE"
+column seq noprint
+
+-- set feedback off
+-- set pagesize 56
+-- set lines 80
+-- set pagesize 56
+-- set newpage 0
+-- set termout off
+
+drop table gh\$derived_stats;
+
+column instname new_value instance_name noprint
+column repdate new_value print_date noprint
+
+select substr(name,1,20) instname,to_char(sysdate,'DD/MM/YYYY HH24:MI') repdate from v\$database;
+
+rem 
+rem Temporary table to hold results
+rem 
+
+create table gh\$derived_stats
+   (name  varchar2(60),
+    value number,
+    notes varchar2(80),
+    seq number);
+
+
+DOC
+--------------------------------------------------------
+
+Calculate Buffer cache hit ratio since last bounce
+
+--------------------------------------------------------
+#
+
+insert into gh\$derived_stats (name,value,seq)
+select 'buffer cache hit ratio',
+       round((congets.value+dbgets.value-physreads.value)*100/
+       (congets.value+dbgets.value),4) "HIT RATE",1
+  from &prefix.\$sysstat congets,
+       &prefix.\$sysstat dbgets,
+       &prefix.\$sysstat physreads
+ where congets.name='consistent gets'
+   and dbgets.name = 'db block gets'
+   and physreads.name = 'physical reads'
+/
+
+update gh\$derived_stats
+   set notes='*** May need to increase db_block_buffers'
+ where name='buffer cache hit ratio'
+   and value <90
+/
+
+DOC
+---------------------------------------------------------
+
+Ratio of recursive calls to user calls.  Recursive calls
+are SQL statements generated by ORACLE.  High values can
+indicate excessive dynamic or non-sharable SQL,  excessive
+rows dynamic segment extention or free space fragmentation or 
+an inadequately sized shared pool.
+
+
+
+
+insert into gh\$derived_stats(name,value,seq)
+ select 'recursive calls/total calls',
+        (rc.value/(rc.value+uc.value))*100,10
+   from &prefix.\$sysstat rc,
+        &prefix.\$sysstat uc
+  where rc.name='recursive calls'
+    and uc.name='user calls'
+/
+
+
+update gh\$derived_stats
+   set notes='*** Fragmentation? Dynamic SQL? Shared pool?'
+ where name='recursive calls/total calls'
+   and value > 20
+/
+
+#
+
+DOC
+---------------------------------------------------
+
+Data dictionary cache (row cache) hit rates.  Low 
+values may mean that the shared pool is too small.
+However,  ORACLE doesn't always size the dictionary
+cache appropriately (or so it seems)
+
+--------------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+select 'dictionary cache hit rate',
+       sum(gets-getmisses)*100/sum(gets),1
+  from v\$rowcache;
+
+update gh\$derived_stats
+   set notes='*** high dictionary cache miss'
+ where name='dictionary cache hit rate'
+   and value <98
+/
+
+DOC
+-------------------------------------------------
+Ratio of small (< SMALL_TABLE) to large table scans.
+
+We hope for predominantly small scans,  otherwise there
+may be untuned SQL out there
+---------------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+select 'short/total table scan ratio',sc.value/(sc.value+ls.value)*100,
+       12
+  from &prefix.\$sysstat ls,
+       &prefix.\$sysstat sc
+ where sc.name='table scans (short tables)'
+   and ls.name='table scans (long tables)';
+
+update gh\$derived_stats
+   set notes='*** Too many long table scans?'
+ where name='short/total table scan ratio'
+   and value > <90
+
+DOC
+--------------------------------------------------
+
+Disk sort ratio.  Disk sorts are IO intensive as well
+as poorly implemented in ORACLE prior to 7.2.   
+
+To reduce disk sorts,  increase SORT_AREA_SIZE or 
+tune the SQL
+--------------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+select 'disk sort ratio',ds.value/
+          decode( (ds.value+ms.value) ,0,1,(ds.value+ms.value))*100 
+        ,10
+  from &prefix.\$sysstat ds,
+       &prefix.\$sysstat ms
+ where ms.name='sorts (memory)'
+   and ds.name='sorts (disk)'
+/
+update gh\$derived_stats
+   set notes='*** Too many disk sorts?'
+ where name='disk sort ratio'
+   and value > 10;
+
+DOC
+-------------------------------------------------
+
+Buffer busy ratio.  High values May indicate that there are 
+tables with insufficient free lists or too few
+rollback segments or extents
+
+-------------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+ select 'buffer busy wait ratio',
+        (bbw.total_waits*100/(cg.value+dbg.value)),5
+   from &prefix.\$system_event bbw,
+        &prefix.\$sysstat cg,
+        &prefix.\$sysstat dbg
+ where bbw.event='buffer busy waits'
+   and cg.name ='consistent gets'
+   and dbg.name='db block gets'
+/
+update gh\$derived_stats
+   set notes='*** RBack/Freelist contention?'
+ where name='buffer busy wait ratio'
+   and value > 1;
+/
+
+DOC
+--------------------------------------------------
+
+Free buffer wait raio.  High values are often associated
+with disk sorts.   In 7.2 try SORT_DIRECT_WRITES=TRUE.
+In earlier versions,  try making temporary tablespace
+raw (in UNIX or NT)
+
+---------------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+ select 'free buffer wait ratio',
+        (bbw.total_waits*100/(cg.value+dbg.value)),5
+   from &prefix.\$system_event bbw,
+        &prefix.\$sysstat cg,
+        &prefix.\$sysstat dbg
+ where bbw.event='free buffer waits'
+   and cg.name ='consistent gets'
+   and dbg.name='db block gets'
+/
+update gh\$derived_stats
+   set notes='*** Disk sort/inode contention?'
+ where name='free buffer wait ratio'
+   and value > 1;
+/
+
+DOC
+-------------------------------------------------
+Library cache hit rate.  Low values suggest that
+there is dynamic or unsharable SQL being submitted
+-------------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+select 'library cache get hit ratio',
+       sum(gethits)*100/sum(gets),1
+  from &prefix.\$librarycache
+/
+update gh\$derived_stats
+   set notes='*** dynamic SQL?'
+ where name='library cache get hit ratio'
+   and value < 85
+/
+
+
+DOC
+-------------------------------------------------
+
+Library cache pin hit ratio.   Low values indicate
+that the shared pool is too small
+
+-------------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+select 'library cache pin hit ratio',
+       sum(pinhits)*100/sum(pins),1
+  from &prefix.\$librarycache
+/
+update gh\$derived_stats
+   set notes='*** Shared Pool too small'
+ where name='library cache pin hit ratio'
+   and value < 90
+/
+
+DOC
+-----------------------------------------------------
+session_cached_cursor efficiency.  This is the %age
+of parse requests which appear to have been satisfied
+via cached session cursors.  Only relevent for 7.1 and
+above,  and only if session_cached_cursors is non-zero
+------------------------------------------------------
+#
+insert into gh\$derived_stats(name,value,seq)
+select 'cached cursor efficiency',(1-(l.gets/s.value))*100,9
+  from &prefix.\$librarycache l,
+       &prefix.\$sysstat s,
+       v\$parameter p
+ where l.namespace='SQL AREA'
+   and s.name='parse count'
+   and p.name='session_cached_cursors'
+   and p.value != '0'
+/
+DOC
+------------------------------------------------
+
+redo log space ratio is the number of times a redo
+write had to wait because there was no space in the
+log buffer.  High values may indicate a need to 
+increase log_buffer.
+
+--------------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+select 'redo space wait ratio',
+       (sw.value)*100/lw.value,9.2
+ from &prefix.\$sysstat sw,
+      &prefix.\$sysstat lw
+ where sw.name='redo log space requests'
+   and lw.name='redo writes'
+/
+
+update gh\$derived_stats set notes='*** log buffer too small?'
+ where name = 'redo space wait ratio'
+and value > 1;
+
+DOC
+-----------------------------------------------------
+
+Rate at which chained rows are encountered.  Indicates
+that PCTFREE for a table is too low.  Use analyse table
+to locate the chained rows
+
+------------------------------------------------------
+#
+
+
+insert into gh\$derived_stats(name,value,seq)
+select 'chained fetch ratio',
+       rfcr.value*100/(tsrg.value+tfbr.value),6
+  from &prefix.\$sysstat rfcr,
+       &prefix.\$sysstat tsrg,
+       &prefix.\$sysstat tfbr
+ where rfcr.name='table fetch continued row'
+   and tsrg.name='table scan rows gotten'
+   and tfbr.name='table fetch by rowid';
+
+update gh\$derived_stats
+   set notes='*** PCTFREE too low for a table'
+ where name='chained fetch ratio'
+   and value > .01
+/
+
+DOC
+----------------------------------------------
+Parse/execute ratio.  High values usually mean 
+that cursors are not being reused within the 
+application.
+----------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+select 'parse/execute',
+       pc.value*100/decode(ec.value,0,1,ec.value),9
+  from &prefix.\$sysstat ec,
+       &prefix.\$sysstat pc
+ where ec.name='execute count'
+   and pc.name='parse count';
+
+update gh\$derived_stats
+   set notes='***high parse rate'
+ where name='parse/execute'
+   and value > 20;
+
+DOC
+-----------------------------------------------
+Parse CPU usage ratio.  Proportion of time 
+spent parsing.  High values probably associated
+with poor SQL cache hit rates (dynamic SQL)
+-----------------------------------------------
+#
+
+
+insert into gh\$derived_stats(name,value,seq)
+select 'CPU parse overhead',
+       pc.value*100/decode(ec.value,0,1,ec.value),9
+  from &prefix.\$sysstat ec,
+       &prefix.\$sysstat pc
+ where ec.name='CPU used by this session'
+   and pc.name='parse time cpu';
+
+update gh\$derived_stats
+   set notes='***high parse overhead'
+ where name='CPU parse overhead'
+   and value > 15;
+
+DOC
+--------------------------------------------
+Latch get rates.  Low values are usually 
+significant performance problems,  but the 
+specific action depends on the latch
+--------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+ select 'Willing to wait latch get rate',
+        (sum(gets)-sum(misses))*100/sum(gets),4
+   from &prefix.\$latch;
+
+insert into gh\$derived_stats(name,value,seq)
+ select 'Immediate latch get rate',
+        (sum(immediate_gets)-sum(immediate_misses))*100/
+        sum(immediate_gets),4
+   from &prefix.\$latch;
+
+update gh\$derived_stats
+   set notes='*** Poor latch hit rate'
+ where name like '%latch get rate'
+   and value < 99;
+
+
+DOC
+----------------------------------------------------
+Ratio of rows got from an index vs rows got via 
+tablescan.  Low values may indicate poor SQL tuning
+or indexing but remember that tablescans return more
+rows anyway,  so a few tablescans can perturb this
+ratio
+---------------------------------------------------
+#
+
+insert into gh\$derived_stats(name,value,seq)
+select 'rows from idx/total rows',
+       (r.value/(r.value+s.value))*100,12
+  from &prefix.\$sysstat r,
+       &prefix.\$sysstat s
+ where r.name='table fetch by rowid'
+   and s.name='table scan rows gotten'
+;
+ 
+DOC
+---------------------------------------------
+Most of the following ratios give some idea of 
+the application profile (eg transaction size,
+sort size, etc)
+
+---------------------------------------------
+#
+
+rem ------------------------------------
+rem Block changes per transaction
+rem -----------------------------------
+
+insert into gh\$derived_stats(name,value,seq)
+select 'blk changes per transctn',bc.value/t.value,99
+  from &prefix.\$sysstat bc,
+       &prefix.\$sysstat t
+ where bc.name='db block changes'
+   and t.name='user commits'
+/
+rem --------------------------------------
+rem Calls per transaction
+rem -------------------------------------- 
+
+insert into gh\$derived_stats(name,value,seq)
+select 'calls per transctn',c.value/t.value,99
+  from &prefix.\$sysstat c,
+       &prefix.\$sysstat t
+ where c.name='user calls'
+   and t.name='user commits'
+/
+
+rem --------------------------------------
+rem Rows per sort
+rem --------------------------------------
+
+insert into gh\$derived_stats(name,value,seq)
+select 'rows per sort',r.value/
+       decode( (d.value+m.value) ,0,1, (d.value+m.value) ) ,99
+  from &prefix.\$sysstat r,
+       &prefix.\$sysstat d,
+       &prefix.\$sysstat m
+ where r.name='sorts (rows)'
+   and d.name='sorts (disk)'
+   and m.name='sorts (memory)';
+
+rem --------------------------------------
+rem Database writer statistics
+rem --------------------------------------
+
+DOC
+------------------------------------------
+Average scan depth is the average number of 
+blocks scanned by the DBWR.   Very high values
+(>500?) may indicate DBWR is working too hard.
+Having a very high value of db_files is known to 
+cause this problem.
+---------------------------------------------
+# 
+
+insert into gh\$derived_stats(name,value,seq)
+select 'DBWR Avg scan depth',
+        dbs.value/dls.value,13
+  from &prefix.\$sysstat dbs,
+       &prefix.\$sysstat dls
+ where dbs.name='DBWR summed scan depth'
+   and dls.name='DBWR lru scans'
+/
+insert into gh\$derived_stats(name,value,seq)
+select 'DBWR Avg buffers scanned',
+        dbs.value/dls.value,13
+  from &prefix.\$sysstat dbs,
+       &prefix.\$sysstat dls
+ where dbs.name='DBWR buffers scanned'
+   and dls.name='DBWR lru scans'
+
+update gh\$derived_stats set notes='*** DB_FILES too high?'
+ where name = 'DBWR Avg scan depth'
+   and value > 256
+/
+
+DOC
+------------------------------------------
+Free buffer count is the number of clean
+buffers on the LRU chain.  Very low values
+may indicate that DBWR is not keeping up.
+---------------------------------------------
+# 
+
+insert into gh\$derived_stats(name,value,seq)
+select 'DBWR LRU free buffers',
+        dbs.value/dls.value,13
+  from &prefix.\$sysstat dbs,
+       &prefix.\$sysstat dls
+ where dbs.name='DBWR free buffers found'
+   and dls.name='DBWR lru scans'
+/
+
+DOC
+-----------------------------------------
+Summed scan depth/buffers scanned.  Should
+be close to 1 if DBWR is keeping up
+-----------------------------------------
+#
+insert into gh\$derived_stats(name,value,seq)
+select 'DBWR summed scan/buffer scan',
+        dbs.value/dls.value,13
+  from &prefix.\$sysstat dbs,
+       &prefix.\$sysstat dls
+ where dbs.name='DBWR summed scan depth'
+   and dls.name='DBWR buffers scanned'
+/
+update gh\$derived_stats set notes='*** DBWR falling behind?'
+ where name = 'DBWR summed scan/buffer scan'
+   and (value > 2 or value <.5)
+/
+
+DOC
+------------------------------------------
+Number of dirty blocks after DBWR write
+completed
+------------------------------------------
+#
+insert into gh\$derived_stats(name,value,seq)
+select 'Dirty list after DBWR write',
+        dbs.value/dls.value,13
+  from &prefix.\$sysstat dbs,
+       &prefix.\$sysstat dls
+ where dbs.name='summed dirty queue length'
+   and dls.name='write requests'
+/
+
+DOC 
+-------------------------------------------
+dirty buffers inspected/free buffer requested.
+I think that this gives a fairly inaccurate 
+indication of the number of times a foreground
+encounters a dirty block when looking for a 
+free block.  Ratio should be very low.
+-------------------------------------------
+#
+insert into gh\$derived_stats(name,value,seq)
+select 'Dirty buffers/free buf req %',
+        dbs.value/dls.value*100,13
+  from &prefix.\$sysstat dbs,
+       &prefix.\$sysstat dls
+ where dbs.name='dirty buffers inspected'
+   and dls.name='free buffer requested'
+/
+update gh\$derived_stats set notes='*** DBWR falling behind?'
+ where name = 'Dirty buffers/free buf req %'
+and value > 5
+/
+
+
+rem -------------------------------------
+rem Consistent change ratio (not usefull?)
+rem ------------------------------------- 
+
+insert into gh\$derived_stats(name,value,seq)
+select 'consistent change ratio',
+       (cg.value-cc.value)*100/cg.value,99
+ from &prefix.\$sysstat cg,
+      &prefix.\$sysstat cc
+ where cg.name='consistent gets'
+   and cc.name='consistent changes'
+
+
+
+rem -----------------------------------------
+rem Enqueues
+rem ----------------------------------------
+
+insert into gh\$derived_stats(name,value,seq)
+ select 'enqueue success (no wait)',
+        100-(ew.value*100/er.value),8
+   from &prefix.\$sysstat ew,
+        &prefix.\$sysstat er
+ where ew.name='enqueue waits'
+   and er.name='enqueue requests'
+
+insert into gh\$derived_stats(name,value,seq)
+ select 'enqueue success (no timeout)',
+        100-(ew.value*100/er.value),8
+   from &prefix.\$sysstat ew,
+        &prefix.\$sysstat er
+ where ew.name='enqueue timeouts'
+   and er.name='enqueue requests'
+
+
+insert into gh\$derived_stats(name,value,seq)
+select 'commits/(commits+rollbacks)',
+       (c.value/(r.value+c.value))*100,99
+  from &prefix.\$sysstat r,
+       &prefix.\$sysstat c
+ where r.name='user rollbacks'
+   and c.name='user commits';
+
+
+
+insert into gh\$derived_stats(name,value,seq)
+select 'cursors/transaction',
+       oc.value/(r.value+c.value),99
+  from &prefix.\$sysstat c,
+       &prefix.\$sysstat r,
+       &prefix.\$sysstat oc
+ where c.name='user commits'
+   and r.name='user rollbacks'
+   and oc.name='cumulative open cursors';
+
+
+rem select 'free buffer inspects/scan',
+rem       i.value/s.value,7
+rem  from &prefix.\$sysstat s,
+rem       &prefix.\$sysstat i
+rem where i.name='free buffer inspected'
+rem   and r.name='user rollbacks'
+rem   and oc.name='cumulative open cursors';
+
+set pagesize 10000
+
+SPOOL /tmp/onstat.prn
+
+REPHEADER PAGE LEFT 'ONSTAT - DATABASE PROFILE' CENTER 'ORACLE ' instancia_print RIGHT fecha_print
+
+TTITLE COL 1 FORMAT 1 ' '
+
+break on seq skip 1
+
+select seq,
+       name,
+       value,
+       notes
+  from gh\$derived_stats
+ order by seq,name;
+
+set feedback on
+spool off
+
+DROP TABLE gh\$derived_stats;
+
+EXIT
+
+EOF
+
+comando="sqlplus /nolog @/tmp/onstat"
+
+echo                     >>/tmp/onstat.prn
+echo                     >>/tmp/onstat.prn
+echo "ESTADO - LISTENER" >>/tmp/onstat.prn
+echo                     >>/tmp/onstat.prn
+lsnrctl stat             >>/tmp/onstat.prn
+
+return
+}
+
+################################################################################
+################################################################################
+proceso()
+{
+
+ESTADO=0
+
+case "${TIPO}" in
+    "-v") onstat_v;;
+    "-c") onstat_c;;
+    "-u") onstat_u;;
+    "-d") onstat_d;;
+    "-k") onstat_k;;
+    "-p") onstat_p;;
+    "-g") case "${TIPO2}" in
+	      "sql") onstat_g_sql;;
+	      "seg") onstat_g_seg;;
+		  *) comando="echo onstat";;
+	  esac
+	  ;;
+       *) echo 
+          echo "onstat -a (all)" 
+          echo "       -v (products version)" 
+          echo "       -c (show parameters)" 
+          echo "       -p (profile)" 
+          echo "       -u (users running)"
+          echo "       -d (database space)" 
+          echo "       -k (locks)" 
+          echo "       -g seg (memory distribution)" 
+          echo "       -g sql [sid] (sqls running)" 
+          comando="echo";;
+esac
+
+${comando} >/dev/null 2>&1
+
+grep "ORA-" /tmp/onstat.prn >/dev/null 2>&1 && ESTADO=1
+
+if [ -f /tmp/onstat.prn ]
+then
+    echo
+    more /tmp/onstat.prn
+    echo
+    echo
+else
+    echo 
+    echo "Without Results ..."
+    echo
+    ESTADO=1
+fi
+
+return
+
+}
+
+################################################################################
+################################################################################
+proceso_g()
+{
+
+TIPO="-g"
+
+for TIPO2 in `echo "sql seg"`
+do
+    proceso
+done
+
+return
+
+}
+
+################################################################################
+################################################################################
+################################################################################
+# MAIN
+
+{
+
+export TIPO=$1
+export TIPO2=$2
+export TIPO3=$3
+export VERSION=8
+
+export ESTADO=0
+export TEMPO="/tmp/onstat_${FECHA}"
+
+rm -f /tmp/onstat* >/dev/null 2>&1
+
+#estado.sh | grep "OFF" >/dev/null 2>&1 && ESTADO=1
+#
+#if [ ${ESTADO} = 1 ]
+#then
+#    echo "\nonstat: Oracle not available (${ORACLE_SID})\n\n"
+#    exit -1
+#fi
+
+if [ "${TIPO}" = "-a" ]
+then
+    for TIPO in `echo "-v -c -p -u -d -k -g"`
+    do
+	[ ${TIPO} = "-g" ] && proceso_g || proceso
+    done
+else
+    proceso
+fi
+
+#rm -f /tmp/onstat* >/dev/null 2>&1
+
+exit ${ESTADO}
+
+}
+
+################################################################################
+
